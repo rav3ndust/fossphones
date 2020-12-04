@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--news page of fossphones-->
+<html>
+
+<style>
+    footer { 
+        background-color: black;
+        color: white;
+        text-align: center;
+        }
+        
+    .navList {
+        background-color: black;
+        color: red;
+        text-align: center; 
+    }
+</style>
+
+<head>
+<title>How to Change Operating Systems on Your PinePhone</title>
+<p style="font-size:32px;text-align:center"><b><u><a href="index.html">fossphones</a></u></b></p> 
+<p style="text-align:center"><i>your number one source for linux phone news</i></p>
+<!--create a simple navigation list-->
+<div class="navList">
+<h4>navigation links</h4>
+<p><a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a></p>
+</div>
+</head>
+
+<body>
+<h1>How to Change Operating Systems on Your PinePhone</h1>
+<p>Just like you can with many SBCs (single-board computers) from the likes of companies like the Raspberry Pi Foundation and Pine64, you have the ability to easily swap out operating systems on the fly with your PinePhone. Many people think the process of switching their OS is some kind of daunting task, but it is actually very easy.</p>
+<p>With your PinePhone, just like you can with any of these ARM-based SBCs, you can easily write an image to an SD card and boot your device from that. You’ll only need a few things to achieve this task:</p>
+
+<ul>
+<li><b>A desktop or laptop computer.</b> You’ll need access to a separate machine with image-writing software on it for this. The machine should have an SD slot for writing to your SD card.</li>
+<li><b>A spare SD card.</b> This is what you will write your operating system to. To make sure everything works smoothly and you have a good bit of storage left, you should opt for an SD card with 8GB of storage or above.</li>
+<li><b>A microSD adapter.</b> For your computer to be able to read your SD card, you will need a microSD adapter to insert it into the machine.</li>
+</ul>
+
+<p>If you have these things, you’re ready to move onto the next step.</p>
+<h3>Deciding Which OS You Want to Try</h3>
+<p>While you may have gotten a Ubports Community Edition PinePhone, you may want to try out other distributions without affecting the installation of Ubuntu Touch on your PinePhone’s eMMC. You could be wondering how to swap out operating systems on your Braveheart Edition, or gathering your information for the PostmarketOS Community Edition that will soon be shipping to eager buyers.</p>
+<p>There are now a wide array of operating systems available on the PinePhone from many community-supported projects. From Ubuntu Touch, to Mobian, to Arch, you’re sure to find something you’ll love.</p>
+<p>You can find detailed information on each PinePhone operating system and where to download them at the PinePhone software wiki.</p>
+
+<img src="img/article2/2.png" alt="So many distros!">
+<h5>So many distros to choose from! Which one is your favorite?</h5>
+
+<p>Once you know which operating system you want to try on your PinePhone, download the image, extract it to a sensible location, and get ready to flash it to your SD card.</p>
+<p>There are several ways you can do this. If you really know what you’re doing, you can use the dd command to write the image to the SD card directly from the terminal. We’re going to assume that you’re completely new to this, though, and give you a friendly GUI option.</p>
+<p>Now, if you’re on a Linux distribution, you can use this friendly tool that I have always loved, Disks, or gnome-disks. To grab it on your machine, simply open up a terminal and type the following.</p>
+<p><i>If you’re on a Debian or Ubuntu based distro, use this command:</i>
+
+<code>sudo apt install gnome-disks</code>
+
+<p>If you are on an Arch based distro, use this command:</p>
+
+<code>sudo pacman -S gnome-disks</code>
+
+<p>Once installed, you should now have an application called <b>Disks</b> in your menu. Open it, and you’ll be greeted like this:</p>
+
+<img src="img/article2/1.png" alt="the disks utility on manjaro">
+<h5>The GNOME Disks Utility on Manjaro.</h5>
+
+<p>When your SD card is inserted, you will see it in Disks. Click on it, and then select “Restore Disk Image,” where you will then be prompted to select your extracted .iso file. When everything is selected, you will be prompted to enter your administrative password before the image is written to the SD card.</p>
+<p>All you have to do now is sit back and wait. When the image write is successfully finished, you can safely eject it from your computer, slide it into your PinePhone, and boot! Enjoy testing your new Linux phone operating system.</p>
+<p><b>What if I’m not on Linux?</b></p>
+
+<img src="img/article2/3.png" alt="the Balena Etcher software">
+<h5>The Balena Etcher website, where you can download Etcher on your platform.</h5>
+
+<p>If you are on a Windows or MacOS machine, you can still write images to SD cards. Download an application called <a href="https://www.balena.io/etcher/">Balena Etcher</a> (it is available for Linux, too!), and then install it to your Windows or MacOS machine as you would any other app. The process for writing images to your SD card is very similar here as it is for the <b>Disks</b> utility on GNU/Linux.</p>
+</body>
+
+<footer>
+<p><a href="index.html">fossphones</a></p>
+<p>find our video content on:</p>
+<p><a href="#">LBRY</a> | <a href="#">YouTube</a> | <a href="#">BitChute</a></p>
+<p><i>like what we're doing? send us some bitcoin if you'd like to contribute to keeping this site up and running!</i></p>
+<p><b>Bitcoin address</b> - 1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL
+<p style="color:red"><b>fossphones is proudly built and maintained by <a href="https://www.rav3ndust.xyz">rav3ndust</a>.</b></p>
+</footer>
+
+</html>
