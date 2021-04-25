@@ -1,0 +1,41 @@
+/* copy in the styles from the index page - this should be good for the global look 
+
+Keep the links in the navbar and footer red for unvisited state and white for visited state. this is better than blue and purple for readability.
+
+fossphones global stylesheets */
+
+	/* ensure the darker theme is global */
+	head {background-color: black;}
+	body {background-color: black;}
+	footer {background-color: black;}
+/* let's make the navigation links red and white so they can be easily readble against the black background */ 
+
+a:link {color: red;}
+a:visited {color: white;} 
+
+/* let's separate some div elements to test out simple uniformity */ 
+
+.headElement {									/* this is our div element for the header */
+	background-color: black; 
+	color: white; 
+	text-align: center; 
+	}
+	
+.bodyElement { 									/* this is our div element for the body section of our pages */ 
+	background-color: black;
+	color: white; 
+	}
+
+.footerElement { 								/* this is our div element for the footer section of our pages */ 
+	background-color: black;
+	color: white; 
+	text-align: center;
+	} 
+	
+.breakHelper {background-color: #4B0082;} 		/* used to separate sections in a visually appealing and simple way */
+	
+.navButtons {									/* create navigation buttons to get around the site easily */
+	background-color: black;
+	text-align: center;
+	color: red;
+	}	
