@@ -1,53 +1,99 @@
 <!DOCTYPE html>
-<!--index page of fossphones-->
+<!--this is a test page for a new layout.-->
 <html>
 
 <style>
-    footer { 
-        background-color: black;
-        color: white;
-        text-align: center;
-        }
-        
-    .navList {
-        background-color: black;
-        color: red;
-        text-align: center; 
-    }
+	/* ensure the darker theme is global */
+	head {background-color: black;}
+	body {background-color: black;}
+	footer {background-color: black;}
+/* let's make the navigation links red and white so they can be easily readble against the black background */ 
+
+a:link {color: red;}
+a:visited {color: white;} 
+
+/* let's separate some div elements to test out simple uniformity */ 
+
+.headElement {									/* this is our div element for the header */
+	background-color: black; 
+	color: white; 
+	text-align: center; 
+	}
+	
+.bodyElement { 									/* this is our div element for the body section of our pages */ 
+	background-color: black;
+	color: white; 
+	}
+
+.footerElement { 								/* this is our div element for the footer section of our pages */ 
+	background-color: black;
+	color: white; 
+	text-align: center;
+	} 
+	
+.breakHelper {background-color: #4B0082;} 		/* used to separate sections in a visually appealing and simple way */
+	
+.navButtons {									/* create navigation buttons to get around the site easily */
+	background-color: black;
+	text-align: center;
+	color: red;
+	}			
+	
 </style>
 
 <head>
 <title>FOSSphones</title>
-<p style="font-size:32px;text-align:center"><b><u>fossphones</u></b></p> 
-<p style="text-align:center"><i>your number one source for linux phone news</i></p>
-<!--create a simple navigation list-->
-<div class="navList">
-<h4>navigation links</h4>
-<p><a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a></p>
+<div class="headElement">
+	<h1 style="color:red">fossphones</h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ ~ ~ <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~ ~ ~</p>	
 </div>
-<h3>Welcome to FOSSphones!</h3>
 </head>
 
 <body>
-<!--create a scrolling marquee with the latest updates-->
-<marquee behavior="scroll" direction="left"><b>New Article:</b> <a href="pboot.html">"p-boot: The PinePhone Multi-Distro Image"</a></marquee>
-<p>Thank you for visiting FOSSphones. We're glad you stopped by!</p>
-<h3>Find your way around!</h3>
-<p>Check out the <b>News</b> tab for the latest in the world of GNU/Linux mobile software and hardware projects.</p>
-<p>Check out the <b>Operating Systems</b> tab to learn more about operating systems for Linux mobile devices.</p>
-<p>Check out the <b>Software</b> tab for information on free and open source software projects.</p>
-<p>Check out the <b>Devices</b> tab to learn about mobile hardware specialized to run FOSS software.</p>
-<p>Check out the <b>Contact</b> tab to find out how you can get in touch with us.</p>
-<p>Check out the <b>About Us</b> tab to learn more about <b>fossphones</b> and what we're all about.</p>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">	
+	<h3 style="color:red">Welcome to FOSSphones!</h3>
+	<marquee behavior="scroll" direction="left"><b>FOSSphones Special Giveaway:</b> <a href="pinetime-giveaway.html">Get a PineTime On Us!</a></marquee>
+	<!--announce the giveaway of the PineTime on the main page-->
+	<p><b><u>Heads up! Special FOSSphones announcement!</u></b></p>
+	<p>We're giving away a <b>PineTime</b> by our friends at <a href="https://pine64.org">PINE64</a>. Learn more about it <a href="pinetime-giveaway.html">here</a> or by watching the video below.</p>
+	<!--video insertion-->
+<video width="420" height="340" controls>
+    <source src="fossphones-pinetime.webm" type="video/webm">
+</video>
+	<p>Thank you for visiting FOSSphones. We're glad you stopped by!</p>
+	<p>Please note that we are currently changing around the color scheme of the site. It might look different across pages as we bring the changes to each page, which I am just now getting around to doing. Thank you for your patience, and the site should be nice and uniform again quite soon.</p>
+	<h3 style="color:red">Find your way around!</h3>
+	<p>Check out the <b>News</b> tab for the latest in the world of GNU/Linux mobile software and hardware projects.</p>
+	<p>Check out the <b>Operating Systems</b> tab to learn more about operating systems for mobile Linux devices.</p>
+	<p>Check out the <b>Software</b> tab for information on free and open-source software projects.</p>
+	<p>Check out the <b>Devices</b> tab to learn about mobile hardware specialized to run FOSS software.</p>
+	<p>Check out the <b>Contact</b> tab to find out how you can get in touch with us.</p>
+	<p>Check out the <b>About Us</b> tab to learn more about <b>fossphones</b> and what we're all about.</p>
+</div>
+<!--separate the body and footer-->
+	<div class="breakHelper">
+		<br>
+	</div>
 </body>
 
 <footer>
-<p><a href="index.html">fossphones</a></p>
-<p>find our video content on:</p>
-<p><a href="#">LBRY</a> | <a href="#">YouTube</a> | <a href="#">BitChute</a></p>
-<p><i>like what we're doing? send us some bitcoin if you'd like to contribute to keeping this site up and running!</i></p>
-<p><b>Bitcoin address</b> - 1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL
-<p style="color:red"><b>fossphones is proudly built and maintained by <a href="https://www.rav3ndust.xyz">rav3ndust</a>.</b></p>
+<div class="footerElement">
+	<p style="color:red"><u>fossphones</u></p>
+	<p>find our video content on:</p>
+	<p><a href="#">Odysee</a> | <a href="#">YouTube</a></p>
+	<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+	<p><b style="color:red">Bitcoin address:</b> <u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+	<p><b style="color:red">Ethereum address:</b> <u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+	<p><b style="color:red">Monero address:</b> <u>4ANpq4fxmb6N9ekXNvuJ4rLCG1A3bxyA2386X9xV3JsjZWJCbnKrVACdPD8rnpENtdAbMkmmMDrBNcrQZzVADeMMMTTWdXm</u></p>
+	<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
 </footer>
 
 </html>
