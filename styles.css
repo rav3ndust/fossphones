@@ -15,7 +15,7 @@ a:visited {color: white;}
 
 /* let's separate some div elements to test out simple uniformity */ 
 
-.headElement {									/* this is our div element for the header */
+.headElement {									/* this is our div element for the header section of our pages */
 	background-color: black; 
 	color: white; 
 	text-align: center; 
@@ -39,3 +39,23 @@ a:visited {color: white;}
 	text-align: center;
 	color: red;
 	}	
+	
+	/* globally style the heading elements */
+	h1 {                                          /* we want h1 tags to be red */ 
+        color: red;
+        text-align: left;
+    }
+    
+    h2 {                                        /* h2 tags will follow h1 tags for uniformity */
+        color: red; 
+        text-align: left;
+    }
+    
+    h3 { 
+        color: red; 
+        text-align: left;                       /* for uniformity, other heading tags should follow the h1 schema */
+    }
+    
+    h6 {                                        /* for the small descriptors on images */
+        color: red;
+    }
