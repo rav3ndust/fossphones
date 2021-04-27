@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <!--news page of fossphones-->
 <html>
-
-<style>
-    footer { 
-        background-color: black;
-        color: white;
-        text-align: center;
-        }
-        
-    .navList {
-        background-color: black;
-        color: red;
-        text-align: center; 
-    }
-</style>
+<!--link in our stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
 
 <head>
-<title>postmarketOS Pinephones to Begin Shipping</title>
-<p style="font-size:32px;text-align:center"><b><u><a href="index.html">fossphones</a></u></b></p> 
-<p style="text-align:center"><i>your number one source for linux phone news</i></p>
-<!--create a simple navigation list-->
-<div class="navList">
-<h4>navigation links</h4>
-<p><a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a></p>
+<title>postmarketOS Community Edition PinePhones to Begin Shipping</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ ~ ~ <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~ ~ ~</p>	
 </div>
 </head>
 
 <body>
+-separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
 <h1>postmarketOS PinePhones to Begin Shipping</h1>
 <p>In an exciting new tweet today, Pine64 announced that the shipments of the new PinePhone PostmarketOS Community Edition, the Pinetab, and the Pinebook Pro are about to begin.</p>
 
@@ -39,24 +32,33 @@
 <h3>What Should I Do When My PinePhone Shows Up?</h3>
 <p>If you have a new PostmarketOS Community Edition on the way to you, whether you ordered the standard package or the Convergence Bundle, then you might be wondering if you will need to take any special steps to get it set up and ready for use when it arrives.</p>
 <p>Not to worry! The setup process for your device will be very simple. Since your PinePhone will arrive with PostmarketOS preinstalled, you will not have to worry about installing it to an SD card like you will have to do if you would like to test other Linux phone operating systems.</p>
-<p>Normally, folks wanting to use PostmarketOS would use pmaports’ pmbootstrap tool, but since your device is going to come with PostmarketOS ready to use out of the box, you will not have to undergo this process. Instead, you will be able to use an on-device installer (the familiar Calamares) to prepare your OS to your liking.</p>
+<p>Normally, folks wanting to use PostmarketOS would use pmaports' <b>pmbootstrap</b> tool, but since your device is going to come with PostmarketOS ready to use out of the box, you will not have to undergo this process. Instead, you will be able to use an on-device installer (the familiar Calamares) to prepare your OS to your liking.</p>
 
 <img src="img/article3/sc1.png" alt="postmarketOS wiki entry for the on-device Calamares installer">
 <h5>postmarketOS wiki entry for the on-device Calamares installer</h5>
 
-<p>You’ll be prompted to set up your PIN code, set up SSH credentials if you desire, and set up full-disk encryption if you’d like (which you definitely should!).</p>
-<p>That’ll be it! You will then be free to install other applications through the terminal or through the Software Centre as you would on any other Linux distribution. Your PinePhone will come with the Phosh environment by default, which is a great mobile UI developed by Purism for the Librem 5.</p>
+<p>You will be prompted to set up your PIN code, set up SSH credentials if you desire, and set up full-disk encryption if you'd like (which you definitely should!).</p>
+<p>That will be it! You will then be free to install other applications through the terminal or through the Software Centre as you would on any other Linux distribution. Your PinePhone will come with the Phosh environment by default, which is a great mobile UI developed by Purism for the Librem 5.</p>
 <p>In a future article, we will explore PostmarketOS further, show you some applications that are mobile-friendly, and dive a little further into the Phosh and Plasma Mobile environments so you can know better which environment might be right for you!</p>
-<p>Stay tuned, and keep an eye on your mailboxes if you’re expecting your new Pine64 device!</p>
+<p>Stay tuned, and keep an eye on your mailboxes if you are expecting your new Pine64 device!</p>
+</div>
+<!--separate the body and footer-->
+	<div class="breakHelper">
+		<br>
+	</div>
 </body>
 
 <footer>
-<p><a href="index.html">fossphones</a></p>
-<p>find our video content on:</p>
-<p><a href="#">LBRY</a> | <a href="#">YouTube</a> | <a href="#">BitChute</a></p>
-<p><i>like what we're doing? send us some bitcoin if you'd like to contribute to keeping this site up and running!</i></p>
-<p><b>Bitcoin address</b> - 1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL
-<p style="color:red"><b>fossphones is proudly built and maintained by <a href="https://www.rav3ndust.xyz">rav3ndust</a>.</b></p>
+<div class="footerElement">
+	<p style="color:red"><u>fossphones</u></p>
+	<p>find our video content on:</p>
+	<p><a href="#">Odysee</a> | <a href="#">YouTube</a></p>
+	<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+	<p><b style="color:red">Bitcoin address:</b> <u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+	<p><b style="color:red">Ethereum address:</b> <u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+	<p><b style="color:red">Monero address:</b> <u>4ANpq4fxmb6N9ekXNvuJ4rLCG1A3bxyA2386X9xV3JsjZWJCbnKrVACdPD8rnpENtdAbMkmmMDrBNcrQZzVADeMMMTTWdXm</u></p>
+	<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
 </footer>
 
 </html>
