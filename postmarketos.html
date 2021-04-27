@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <!--postmarketOS page of fossphones-->
 <html>
-
-<style>
-    footer { 
-        background-color: black;
-        color: white;
-        text-align: center;
-        }
-        
-    .navList {
-        background-color: black;
-        color: red;
-        text-align: center; 
-    }
-</style>
+<!--link the stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css"
 
 <head>
 <title>postmarketOS</title>
-<p style="font-size:32px;text-align:center"><b><u><a href="index.html">fossphones</a></u></b></p> 
-<p style="text-align:center"><i>your number one source for linux phone news</i></p>
-<!--create a simple navigation list-->
-<div class="navList">
-<h4>navigation links</h4>
-<p><a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a></p>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ ~ ~ <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~ ~ ~</p>	
 </div>
 </head>
 
 <body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
 <h1>postmarketOS</h1>
 <p>PostmarketOS is a mobile Linux distribution that began as a vision to bring an alternative operating system to older devices in an effort to reduce electronic waste. The PostmarketOS team has now set their sights on the PinePhone, with impressive results.</p>
 <p>PostmarketOS is the first mobile Linux distro to support full-disk encryption, and can be used with several different user interfaces, with the most popular options being Phosh and Plasma Mobile.</p>
@@ -37,15 +30,24 @@
 <p>PostmarketOS is one of those mobile Linux distributions that has also been ported to Android devices by community members. You can grab PostmarketOS for yourself, either for your PinePhone or for your supported device.</p>
 <!--postmarketOS download links-->
 <p><a href="http://fossphones.com/postmarketos/">Download postmarketOS for PinePhone</a> | <a href="https://wiki.postmarketos.org/wiki/Devices">Supported Devices</a></p>
+</div>
+<!--separate the body and footer-->
+	<div class="breakHelper">
+		<br>
+	</div>
 </body>
 
 <footer>
-<p><a href="index.html">fossphones</a></p>
-<p>find our video content on:</p>
-<p><a href="#">LBRY</a> | <a href="#">YouTube</a> | <a href="#">BitChute</a></p>
-<p><i>like what we're doing? send us some bitcoin if you'd like to contribute to keeping this site up and running!</i></p>
-<p><b>Bitcoin address</b> - 1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL
-<p style="color:red"><b>fossphones is proudly built and maintained by <a href="https://www.rav3ndust.xyz">rav3ndust</a>.</b></p>
+<div class="footerElement">
+	<p style="color:red"><u>fossphones</u></p>
+	<p>find our video content on:</p>
+	<p><a href="#">Odysee</a> | <a href="#">YouTube</a></p>
+	<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+	<p><b style="color:red">Bitcoin address:</b> <u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+	<p><b style="color:red">Ethereum address:</b> <u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+	<p><b style="color:red">Monero address:</b> <u>4ANpq4fxmb6N9ekXNvuJ4rLCG1A3bxyA2386X9xV3JsjZWJCbnKrVACdPD8rnpENtdAbMkmmMDrBNcrQZzVADeMMMTTWdXm</u></p>
+	<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
 </footer>
 
 </html>
