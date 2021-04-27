@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <!--Operating Systems page of fossphones-->
 <html>
-
-<style>
-    footer { 
-        background-color: black;
-        color: white;
-        text-align: center;
-        }
-        
-    .navList {
-        background-color: black;
-        color: red;
-        text-align: center; 
-    }
-</style>
+<!--link the stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css"
 
 <head>
 <title>Operating Systems</title>
-<p style="font-size:32px;text-align:center"><b><u><a href="index.html">fossphones</a></u></b></p> 
-<p style="text-align:center"><i>your number one source for linux phone news</i></p>
-<!--create a simple navigation list-->
-<div class="navList">
-<h4>navigation links</h4>
-<p><a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a></p>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ ~ ~ <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~ ~ ~</p>	
 </div>
 </head>
 
 <body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
 <h3>Operating Systems</h3>
-<p>If you’re just getting started out with Linux phones like the PinePhone, then of course you’re going to be looking for operating systems you can test and tinker with to your heart’s content.</p>
-<p>Remember, not many of these mobile distributions are going to be considered “daily-driver” ready for most people just yet, but you can still flash it to an SD card and give it a go!</p>
-<p>If you want to learn about a certain operating system, just click on it and you’ll learn a bit about its background, what it does best, and where you can download it for yourself.</p>
+<p>If you are just getting started out with Linux phones like the PinePhone, then of course you're going to be looking for operating systems you can test and tinker with to your heart's content.</p>
+<p>Remember, not many of these mobile distributions are going to be considered daily-driver ready for most people just yet, but you can still flash it to an SD card and give it a go!</p>
+<p>If you want to learn about a certain operating system, just click on it and you'll learn a bit about its background, what it does best, and where you can download it for yourself.</p>
 
 <ul>
 <li><a href="ubuntu-touch.html">Ubuntu Touch</a> - A privacy respecting and friendly mobile operating system aiming to achieve convergence and simplicity.</li>
@@ -41,19 +34,27 @@
 <li><a href="pureos.html">PureOS</a> - A pure distribution that seeks to be as secure and private for the user as possible.</li>
 <li><a href="manjaro.html">Manjaro ARM</a> - A streamlined rolling release distribution that builds on Arch while maintaining simplicity.</li>
 </ul>
-    
+
 <p>For testing <b>various mobile Linux distros without swapping your SD card</b>, check out the following great project.</p>
 <p><a href="pboot.html">p-boot</a> - an image preloaded with 17 GNU/Linux mobile distributions.</p>
-
+</div>
+<!--separate the body and footer-->
+	<div class="breakHelper">
+		<br>
+	</div>
 </body>
 
 <footer>
-<p><a href="index.html">fossphones</a></p>
-<p>find our video content on:</p>
-<p><a href="#">LBRY</a> | <a href="#">YouTube</a> | <a href="#">BitChute</a></p>
-<p><i>like what we're doing? send us some bitcoin if you'd like to contribute to keeping this site up and running!</i></p>
-<p><b>Bitcoin address</b> - 1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL
-<p style="color:red"><b>fossphones is proudly built and maintained by <a href="https://www.rav3ndust.xyz">rav3ndust</a>.</b></p>
+<div class="footerElement">
+	<p style="color:red"><u>fossphones</u></p>
+	<p>find our video content on:</p>
+	<p><a href="#">Odysee</a> | <a href="#">YouTube</a></p>
+	<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+	<p><b style="color:red">Bitcoin address:</b> <u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+	<p><b style="color:red">Ethereum address:</b> <u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+	<p><b style="color:red">Monero address:</b> <u>4ANpq4fxmb6N9ekXNvuJ4rLCG1A3bxyA2386X9xV3JsjZWJCbnKrVACdPD8rnpENtdAbMkmmMDrBNcrQZzVADeMMMTTWdXm</u></p>
+	<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
 </footer>
 
 </html>
