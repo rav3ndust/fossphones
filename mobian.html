@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <!--mobian page of fossphones-->
 <html>
-
-<style>
-    footer { 
-        background-color: black;
-        color: white;
-        text-align: center;
-        }
-        
-    .navList {
-        background-color: black;
-        color: red;
-        text-align: center; 
-    }
-</style>
+<!--link the stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css"
 
 <head>
-<title>Ubuntu Touch</title>
-<p style="font-size:32px;text-align:center"><b><u><a href="index.html">fossphones</a></u></b></p> 
-<p style="text-align:center"><i>your number one source for linux phone news</i></p>
-<!--create a simple navigation list-->
-<div class="navList">
-<h4>navigation links</h4>
-<p><a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a></p>
+<title>Mobian</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ ~ ~ <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~ ~ ~</p>	
 </div>
 </head>
 
 <body>
-<h1>Mobian</h1>
-<p>If you are a fan of using Debian on your desktop machine, laptop, or even your server, then you’re going to feel right at home with <a href=https://mobian-project.org/">Mobian</a>. Mobian is a “<b>Mob</b>ile Deb<b>ian</b>” and is essentially Debian scaled down to a <i><a href="https://developer.puri.sm/Librem5/Software_Reference/Environments/Phosh.html">Phosh</a></i> overlay.</p>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Mobian</h1>
+<p>If you are a fan of using Debian on your desktop machine, laptop, or even your server, then you’re going to feel right at home with <a href=https://mobian-project.org/">Mobian</a>. Mobian is a "<b>Mob</b>ile Deb<b>ian</b>" and is essentially Debian scaled down to a <i><a href="https://developer.puri.sm/Librem5/Software_Reference/Environments/Phosh.html">Phosh</a></i> overlay.</p>
 
 <img src="img/mobian/mobterm.jpg">
 <h5>Mobian's terminal emulator.</h5>
 
-<p>Currently, Mobian is based on Debian Bullseye. Built by developer “a-wai” and a small team of contributors, it is fast becoming one of the most usable Linux mobile distributions for the PinePhone.</p>
-<p>The Mobian team doesn’t plan to stop with the PinePhone either – they also eventually have plans to port the distro to Purism’s Librem 5.</p>
+<p>Currently, Mobian is based on Debian Bullseye. Built by developer <i>a-wai</i> and a small team of contributors, it is fast becoming one of the most usable Linux mobile distributions for the PinePhone.</p>
+<p>The Mobian team doesn't plan to stop with the PinePhone either - they also eventually have plans to port the distro to Purism's Librem 5.</p>
 <h3>Download Mobian For Your PinePhone</h3>
 <p>Ready to try everything you love about pure Debian on your PinePhone? Scoop up the latest image from the link below, extract it, flash it to an SD card, and enjoy!</p>
 <!--make a download link for mobian-->
 <p><a href="https://images.mobian-project.org/pinephone/">Download Mobian for PinePhone</a></p>
+</div>
+<!--separate the body and footer-->
+	<div class="breakHelper">
+		<br>
+	</div>
 </body>
 
 <footer>
-<p><a href="index.html">fossphones</a></p>
-<p>find our video content on:</p>
-<p><a href="#">LBRY</a> | <a href="#">YouTube</a> | <a href="#">BitChute</a></p>
-<p><i>like what we're doing? send us some bitcoin if you'd like to contribute to keeping this site up and running!</i></p>
-<p><b>Bitcoin address</b> - 1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL
-<p style="color:red"><b>fossphones is proudly built and maintained by <a href="https://www.rav3ndust.xyz">rav3ndust</a>.</b></p>
+<div class="footerElement">
+	<p style="color:red"><u>fossphones</u></p>
+	<p>find our video content on:</p>
+	<p><a href="#">Odysee</a> | <a href="#">YouTube</a></p>
+	<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+	<p><b style="color:red">Bitcoin address:</b> <u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+	<p><b style="color:red">Ethereum address:</b> <u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+	<p><b style="color:red">Monero address:</b> <u>4ANpq4fxmb6N9ekXNvuJ4rLCG1A3bxyA2386X9xV3JsjZWJCbnKrVACdPD8rnpENtdAbMkmmMDrBNcrQZzVADeMMMTTWdXm</u></p>
+	<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
 </footer>
 
 </html>
