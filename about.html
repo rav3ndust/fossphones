@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <!--about page of fossphones-->
 <html>
-
-<style>
-    footer { 
-        background-color: black;
-        color: white;
-        text-align: center;
-        }
-        
-    .navList {
-        background-color: black;
-        color: red;
-        text-align: center; 
-    }
-</style>
+<!--link in our new stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
 
 <head>
 <title>About Us</title>
-<p style="font-size:32px;text-align:center"><b><u><a href="index.html">fossphones</a></u></b></p> 
-<p style="text-align:center"><i>your number one source for linux phone news</i></p>
-<!--create a simple navigation list-->
-<div class="navList">
-<h4>navigation links</h4>
-<p><a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a></p>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ ~ ~ <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~ ~ ~</p>	
 </div>
 </head>
 
 <body>
-<h1>About Us</h1>
-<p>I go by the name <b>rav3ndust</b>, and I have been an avid Linux enthusiast and user for quite awhile now. I have always loved being able to have full control over my computers without worrying about my data being sent to some server overseen by corporations. I could use free and open source software that I could modify and hack to my heart’s content if I wanted.</p>
-<p>This is functionality that is just missing in modern Android and iOS phones. Your devices don’t feel like that really belong to you, they feel you just get to use them for awhile. Sadly, most phones are a gateway for spying on our lives to build up an advertising profile and follow our browsing habits to make a little money off of us.</p>
-<p>What if we could take back our privacy with Linux phones? As mobile Linux devices have been coming over the horizon, much like the PinePhone and the Librem 5, I had started to consider a “news hub” for all things Linux phone related. Information about operating systems, devices, and so much more!</p>
-<p>That’s what FOSSphones is all about. Helping everyone who is interested learn all they can about a privacy-respecting mobile phone, and a Linux phone is going to be your best option for that.</p>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">About Us</h1>
+<p>I go by the name <b>rav3ndust</b>, and I have been an avid Linux enthusiast and user for quite awhile now. I have always loved being able to have full control over my computers without worrying about my data being sent to some server overseen by corporations. I could use free and open source software that I could modify and hack to my heart's content if I wanted.</p>
+<p>This is functionality that is just missing in modern Android and iOS phones. Your devices don't feel like that really belong to you, they feel you just get to use them for awhile. Sadly, most phones are a gateway for spying on our lives to build up an advertising profile and follow our browsing habits to make a little money off of us.</p>
+<p>What if we could take back our privacy with Linux phones? As mobile Linux devices have been coming over the horizon, much like the PinePhone and the Librem 5, I had started to consider a news hub of sorts for all things Linux phone related. Information about operating systems, devices, and so much more!</p>
+<p>That is what FOSSphones is all about. Helping everyone who is interested learn all they can about a privacy-respecting mobile phone, and a Linux phone is going to be your best option for that.</p>
 <br>
 <p>Here are a few more resources of mine if you're interested in my free software projects or some other stuff I run.</p>
 
@@ -40,16 +33,24 @@
 <li><a href="https://www.rav3ndust.xyz/index.html">rav3ndust.xyz</a>, my personal website</li>
 <li><a href="https://github.com/rav3ndust">My Github</a>, where you can see and contribute to some of my own free software projects</li>
 </ul>
-
+</div>
+<!--separate the body and footer-->
+	<div class="breakHelper">
+		<br>
+	</div>
 </body>
 
 <footer>
-<p><a href="index.html">fossphones</a></p>
-<p>find our video content on:</p>
-<p><a href="#">LBRY</a> | <a href="#">YouTube</a> | <a href="#">BitChute</a></p>
-<p><i>like what we're doing? send us some bitcoin if you'd like to contribute to keeping this site up and running!</i></p>
-<p><b>Bitcoin address</b> - 1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL
-<p style="color:red"><b>fossphones is proudly built and maintained by <a href="https://www.rav3ndust.xyz">rav3ndust</a>.</b></p>
+<div class="footerElement">
+	<p style="color:red"><u>fossphones</u></p>
+	<p>find our video content on:</p>
+	<p><a href="#">Odysee</a> | <a href="#">YouTube</a></p>
+	<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+	<p><b style="color:red">Bitcoin address:</b> <u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+	<p><b style="color:red">Ethereum address:</b> <u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+	<p><b style="color:red">Monero address:</b> <u>4ANpq4fxmb6N9ekXNvuJ4rLCG1A3bxyA2386X9xV3JsjZWJCbnKrVACdPD8rnpENtdAbMkmmMDrBNcrQZzVADeMMMTTWdXm</u></p>
+	<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
 </footer>
 
 </html>
