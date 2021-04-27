@@ -1,38 +1,27 @@
 <!DOCTYPE html>
 
 <html>
-
-<style>
-    footer { 
-        background-color: black;
-        color: white;
-        text-align: center;
-        }
-        
-    .navList {
-        background-color: black;
-        color: red;
-        text-align: center; 
-    }
-</style>
+<!--link the stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css"
 
 <head>
 <title>p-boot</title>
-<p style="font-size:32px;text-align:center"><b><u><a href="index.html">fossphones</a></u></b></p> 
-<p style="text-align:center"><i>your number one source for linux phone news</i></p>
-<!--create a simple navigation list-->
-<div class="navList">
-<h4>navigation links</h4>
-<p><a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a></p>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ ~ ~ <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~ ~ ~</p>	
 </div>
-<h1>p-boot: The PinePhone Multi-Distro Demo Image</h1>
 </head>
-<!--
-We can take pictures of my pinephone running p-boot and post them here at a later date.
 
-photos should include the bootscreen and clear displays of the distro selection 
--->
 <body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1>p-boot: The PinePhone Multi-Distro Image</h1>
 <p>What if you could test out all of the major PinePhone mobile GNU/Linux distros without having to swap your SD card around every time you felt like distro-hopping 
 on your PinePhone? A great way you can do this is to grab the <a href="https://xnux.eu/p-boot-demo/">multi-distro demo image</a>, known as <b>p-boot</b>,
 and use it on your Pinephone.</p>
@@ -75,17 +64,27 @@ each distro and be able to save things as you test, I would recommend making sur
 <li>Through <a href="http://mirror.uxes.cz/dl.xnux.eu/">this mirror</a>.</li>
 </ul>
 <p>Your fastest option will be to use software such as <b>Transmission</b> to grab the torrent quickly.</p>
-</br>
+<br>
 <p>I'll be posting some images to this page featuring the p-boot image, and will probably be including a video walkthrough of the image.</p>
+</div>
+<!--separate the body and footer-->
+	<div class="breakHelper">
+		<br>
+	</div>
 </body>
 
 <footer>
-<p><a href="index.html">fossphones</a></p>
-<p>find our video content on:</p>
-<p><a href="#">LBRY</a> | <a href="#">YouTube</a> | <a href="#">BitChute</a></p>
-<p><i>like what we're doing? send us some bitcoin if you'd like to contribute to keeping this site up and running!</i></p>
-<p><b>Bitcoin address</b> - 1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL
-<p style="color:red"><b>fossphones is proudly built and maintained by <a href="https://www.rav3ndust.xyz">rav3ndust</a>.</b></p>
+<div class="footerElement">
+	<p style="color:red"><u>fossphones</u></p>
+	<p>find our video content on:</p>
+	<p><a href="#">Odysee</a> | <a href="#">YouTube</a></p>
+	<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+	<p><b style="color:red">Bitcoin address:</b> <u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+	<p><b style="color:red">Ethereum address:</b> <u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+	<p><b style="color:red">Monero address:</b> <u>4ANpq4fxmb6N9ekXNvuJ4rLCG1A3bxyA2386X9xV3JsjZWJCbnKrVACdPD8rnpENtdAbMkmmMDrBNcrQZzVADeMMMTTWdXm</u></p>
+	<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
 </footer>
 
 </html>
+
