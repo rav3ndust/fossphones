@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--the March 29, 2022 news update for fossphones-->
+<html>
+<!--link in our new stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+    <!--add in coil meta tag for web monetization-->
+	<meta name="monetization" content="$ilp.uphold.com/3yHq7FiyJJMX">
+<title>Linux Phone News - March 29, 2022</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ <a href="community.html">Community</a> | <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~</p>	
+</div>
+</head>
+<body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Linux Phone News - March 29, 2022</h1>
+<p>It's been another month, which means it is time for the next roundup of news for your favorite mobile Linux and other projects that we all know and love.</p>
+<p>There's been a good bit to tackle happening in the world of free software on mobile this week, so let's jump right in and see what all is new!</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">PineTime News Updates</h1>
+<p>One of my favorite accessories that I wear all the time is my <b>PineTime</b>, the affordable little smartwatch from Pine64 that can run several different community-supported free operating systems, one of the biggest (and the one I use) being <a href="https://github.com/InfiniTimeOrg/InfiniTime">Infinitime</a>.</p>
+<p>There are a few updates regarding PineTime software in the March blog update from Pine64, so I thought it would be prudent to share some of the main points here.</p>
+<p><b>Here are some of the latest updates:</b></p>
+<ul>
+    <li>Work on the <a href="https://github.com/JF002/pinetime-mcuboot-bootloader/releases/tag/1.0.0">MCUBoot bootloader</a> has been ongoing. If you are unsure of what this is, it is the part of the code that runs when the watch is first booting up. It makes sure your watch is able to revert back to previous, working states if something goes wrong, and making sure it is built in a safe manner is very important so that one doesn't end up bricking their device. You can read more about this exciting update in the <b>PineTime</b> section of the Pine64 update, which will be linked below.</li>
+    <li>Over the last few months, BLE connectivity has seen big strides on the PineTime, with the releases of versions 0.12 and 0.13 of Infinitime. This means you should notice less random disconnects and less failed OTA upgrades.</li>
+    <li><a href="https://github.com/JF002/InfiniTime/releases/tag/0.14.0">Infintime 0.14 "Green Avocado"</a> is also available for you to download now, bringing with it some awesome new looks to the UI - a good deal of which is thanks to Joaquim and work performed on LVGL, which is the open-source graphics library used by the Infinitime team. You'll find some little visual overhauls here, with things like the notification app looking ever more spectacular.</li>
+    <li><a href="https://wasp-os.readthedocs.io/en/latest/index.html">WaspOS</a> (the MicroPython-based PineTime firmware), has also recently seen a <a href="https://wasp-os.readthedocs.io/en/latest/TODO.html#id12">new release with version 0.4</a>. The main focus here in this update is bringing integration between the watch and the device it is connected with. You will also be able to find new UI widgets, a theming engine, and a new analog watch face in this update.</li>
+    <li><a href="https://github.com/InfiniTimeOrg/InfiniSim">InfiniSim</a>, an Infinitime "simulator" software, is now available in its own dedicated project on the <a href="https://github.com/InfiniTimeOrg">Infinitime GitHub organization</a>. With it, anyone can run the interface of Infinitime on almost any device - from their PCs to the PinePhone Pro!</li>
+</ul>
+<p>If you want to catch up on all of the latest bits of information from the world of the PineTime, make sure you dive into the finer details from this month's <a href="https://www.pine64.org/2021/03/15/march-update/">Pine64 community update</a> in the <b>PineTime (by JF)</b> section.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">Tow-Boot Software Released For PinePhone/PinePhone Pro</h1>
+<p>This is an interesting one that I have not had the chance to mess with yet on my devices. <a href="https://tow-boot.org/">Tow-Boot</a> is sort of a more "user-friendly" version of U-Boot, and is now able to be used on the PinePhone and PinePhone Pro devices. They aim to make the booting of different ARM-based devices standard and "boring", and in their most recent version, you can find a smartphone interface.</p>
+<p>Tow-Boot can also act in a similar fashion to JumpDrive, and allows users to expose the eMMC in their device in order to flash operating systems directly onto the phone. Through button press combos, you can also select which device (<i>between the eMMC and SD</i>) that you would like to boot from.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">PinePhone "Beta Edition" Could Be Ready Soon</h1>
+<p>In the last update by Pine64, the team let us all know about some hardware component shortages they have been having trouble finding lately, which affected when the new PinePhone batches were going to be ready to ship out to buyers. To make a long story short (and one that you can find in greater detail on the update), Pine64 booked components before Chinese New Year in February, and had some issues with the vendors. Because of this.</p>
+<p>In a last minute edit to the March update, it was added that the team got word about replacing an elusive part they were unable to source, and potentially finding an alternative. With this, given that nothing else unexpected comes up for the company, we might be able to see the <b>PinePhone "Beta Edition"</b> becoming ready to go up for pre-order sometime very soon. I will try to stay on top of this news and let you know as soon as the devices are up for pre-order.</p>
+<p>The PinePhone Beta Edition is named so because of the current software status we see in the devices. While we have seen it come huge strides over the last few months (and indeed, over the last few years), the team still feels like software is at a beta stage, and not quite ready to comfortably called an "end user product." We are only going to continue to keep seeing mobile Linux software for the PinePhone improve and continue to get better as time goes on, however, and hopefully once we get some more things figured out on the software side over time, it is really going to be ready for prime-time.</p>
+<p>The hardware in this edition of the PinePhone is unchanged from the last three community editions that were shipped, and will contain the <a href="https://wiki.pine64.org/wiki/PinePhone_v1.2b">1.2b revision</a> of the devices's PCB.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">Phosh 0.17 Released</h1>
+<p><b>Phosh</b> has seen a new release, with its 0.17 version dropping just a few days ago. While this is isn't a huge new release, it does bring a few new niceties with it, as well as the usual small changes and bug fixes.</p>
+<p>When it comes to the new features you might be wondering about, they are rather simple this time around:</p>
+<ul>
+    <li>A new <b>mobile data indicator</b> will now be visible.</li>
+    <li><b>Access portal support</b> is now implemented.</li>
+</ul>
+<p>Other changes include suspend after resume fixes and some other small changes that you can read about in the changelog, if you are so inclined.</p>
+<p><a href="https://gitlab.gnome.org/World/Phosh/phosh/-/tags/v0.17.0">Click here</a> to learn all about what is happening with the latest Phosh 0.17.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">Updates From the World of Ubports</h1>
+<p>It has been awhile since we have covered some of the news happening with our friends over at <a href="https://ubports.com">Ubports</a>, the team bringing us the Ubuntu Touch software for PinePhone and other devices. Not long ago, a new update post came from their site, and I am happy to share some of the biggest pieces of information from it.</p>
+<p>Here are a few of the biggest pieces of news from the post in short form. I'm going to be linking the original post at the bottom of this section so you can read it in further detail if you would like.</p>
+<ul>
+    <li>Ubports is going to be working on "UT courseware," teaching folks how they can get involved in developing apps and software for Ubuntu Touch.</li>
+    <li>There is now a new, beta version of the Ubports installer, featuring a graphical overhaul. You can check it out <a href="https://github.com/ubports/ubports-installer/releases/tag/0.9.2-beta">here</a>, or you can grab it as a <a href="https://snapcraft.io/">snap package</a> using the command <code>snap install ubports-installer --beta</code>.</li>
+    <li>The team is also looking for people who would like to help work on the VoLTE dev team, the hard working devs who are working on bringing VoLTE to the Ubuntu Touch telephony stack. Feel free to help out if this line of work is in your wheelhouse!</li>
+</ul>
+<p>Those are just a few points from the overall post. You can read a deeper dive at Ubports' blog <a href="https://ubports.com/blog/ubports-news-1/post/your-biweekly-ubports-news-with-a-buggy-new-design-3842">at this link</a>.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<p>Well, that's another FOSSphones news roundup taken care of. As you can see, there are all kinds of things going on in the world of Linux phone news, and it is only going to keep getting better as software and hardware continues to improve as time goes on. Keep an eye here and on our social pages for our next Linux phone news roundup - see you next time!</p>
+<div class="breakHelper">
+    <br>
+</div>
+<!--bring in the footer-->
+<footer>
+    <div class="footerElement">
+    <p style="color:red"><u>fossphones</u></p>
+    <p>connect with us on:</p>
+    <p><a href="https://https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://twitter.com/FSphones">Twitter</a></p>
+    <p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+    <p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+    <p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+    <p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+    </div>
+</footer>
+</html>
