@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--the August 9, 2022 news update for fossphones-->
+<html>
+<!--link in our stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+    <!--add in coil meta tag for web monetization-->
+	<meta name="monetization" content="$ilp.uphold.com/3yHq7FiyJJMX">
+<title>Linux Phone News - August 9, 2022</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ <a href="community.html">Community</a> | <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~</p>	
+</div>
+</head>
+<body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Linux Phone News - August 9, 2022</h1>
+<p>It's been a busy last month - both for me and for the world of GNU/Linux on mobile, with another new community update from our friends at Pine64 to dissect, updates on some projects to take a look at, and more.</p>
+<p>So, without too much further ado, let's get into our early August roundup. We'll get started with some updates straight from the new <a href="https://www.pine64.org/2022/07/28/july-update-a-pinecil-evolved/">Pine64 Update</a> - and as always, I encourage you to read the linked update in full if you'd like to go even deeper. This update has less phone-related content, but some exciting updates regarding InfiniTime, single-board computing, and more!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">InfiniTime 1.10 For PineTime Released</h1>
+<p>If you're a fan of the PineTime and use the InfiniTime software like I do, if you haven't already heard this news and grabbed your update, head over to the <a href="https://github.com/InfiniTimeOrg/InfiniTime/releases/tag/1.10.0">InfiniTime GitHub releases page</a> to grab this new update - it's a nice update, and I have been using it since I first saw that it had been released on GitHub.</p>
+<p>Dubbed <i>"InfiniTime 1.10 Yellow Mango"</i>, this update brings some of the following improvements to the software:</p>
+<ul>
+	<li>You can now dismiss notifications by swiping them away on the notification display screen.</li>
+	<li>A sharer-looking battery icon was brought in.</li>
+	<li>The <b>Timer</b> UI was enhanced.</li>
+	<li>There is now a faster sleep time.</li>
+	<li>The <b>Flashlight</b> now defaults to the maximum brightness.</li>
+	<li>Thanks to improvements in the display gamma, colors displayed are on the LCD are enhanced.</li>
+</ul>
+<p>There were also a few bugfixes and "under-the-hood" changes brought in. Here is the rundown:</p>
+<h4 style="color:red"><b><u>Bugfixes</u></b></h4>
+<ul>
+	<li>The current track progress in the <b>Music</b> app was fixed.</li>
+	<li>An issue with the alarm sometimes not ringing was fixed.</li>
+</ul>
+<h4 style="color:red"><b><u>"Under-the-hood" Improvements</u></b></h4>
+<ul>
+	<li>Fonts are auto-generated at build time.</li>
+	<li>The GCC toolchain was updated.</li>
+	<li>The project can now be built by <b>GitHub Actions</b>, using the Infinitime-build Docker container.</li>
+	<li>Basic hardware configuration options for P8 were added.</li>
+	<li>General improvements to the codebase, build system, and UI.</li>
+</ul>
+<p>If you haven't already scooped it up and flashed the update to your PineTime, remember to grab the download from the link above so you can get to using this nice new update.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h3 style="color:red">Star64 - a New, RISC-V Single-Board Computer From Pine64</h3>
+<p>This is an exciting development that I'm excited about, as I will certainly be getting my hands on one for building on, and the fact that it is RISC-V based is that much more exciting to me.</p>
+<p>Dubbed the "Star64", this board is comparable to the Quartz64 Model A according to Pine64, with the biggest difference being the RISC-V SoC (system-on-chip) it wields at its core, along with some interesting bits of kit making up the rest of the board:</p>
+<ul>
+	<li>StarFive JH7110 64-bit CPU, featuring qud SiFive FU740 1.5GHz cores</li>
+	<li>BXE-2-32 GPU from Imagination Technologies</li>
+	<li>Open-ended PCIe port</li>
+	<li>USB 3.0 and GPIO on board</li>
+	<li>Two native gigabit Ethernet ports</li>
+	<li>Will be available in 4GB and 8GB RAM variants</li>
+</ul>
+<p>Another exciting piece of news in regards to the Star64 is that it aims to be comparable in price to the Quartz64, which is already a powerful but affordable board. It is also hinted at in the update from Pine64 that a slightly cheaper version with only one Ethernet port will be available later on. The team at Pine64 have been doing some testing to some nice-sounding results, which you can read more about in further detail in the update linked above. It might be awhile before we can expect the Star64 to hit the Pine Store, but I'm willing to bet that it is going to garner a fair bit of interest when it lands.</p>
+<h3 style="color:red">New Updates for Quartz64 and QuartzPro64</h3>
+<p>Not long ago, we heard about the new <b>QuartzPro64</b> boards from Pine64 - and they have recently made their way to devs for support to begin being added. If you're a dev who is interested in building to support the platform, you can <a href="https://preorder.pine64.org/#/quartzpro64">submit an application</a> to pick up a dev board at half-price.</p>
+<p>In terms of the original line of Quartz64 boards, I'm excited to share that there are some cool new choices of images you can run on the board. Recently, DietPi added support and images for every Quartz64 model, with community contributors adding applications such as TailScale, ZeroTier, and Prometheus to the software catalog for the platform.</p>
+<p>With DietPi support joining the lineup, you can now run this growing list of operating systems on your Quartz64:</p>
+<ul>
+	<li>DietPi</li>
+	<li>Manjaro</li>
+	<li>Armbian</li>
+	<li>Arch Linux</li>
+	<li>NetBSD</li>
+</ul>
+<p>The Quartz64 is a nice and powerful board that I have been having some fun building on, and I hope to be able to share some updates on some of my own projects regarding these boards in the very near future.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h3 style="color:red">Updates on the "PineSound" Project</h3>
+<p>I have been interested to read some other interesting bits of kit that Pine64 is getting ready to start introducing into the Pine Store - and one of the things that I'm certainly interested in testing out is the lineup of things to come from the "PineSound" project. I enjoy creating music often as a side hobby of mine, and affordable audio gear from Pine64 is something that is right up my alley.</p>
+<p>In the latest update, we found out that the <b>PineBuds</b>, whose concept was first introduced in April, have been going through the pre-manufacturing phase in order to bring production units out sooner. The tooling is now wrapped up, and work on the PineBuds' plastic molding has begun. After all of this is finished, electronics will need to be sorted out. If everything goes according to plan, the Pine64 Team hopes to have them available in the Pine Store by sometime in early October.</p>
+<p>You can check out the update if you'd like to see some cool images of how the PineBuds and their carrying cases are expected to look.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h3 style="color:red">Purism's Librem 5 USA Reaches Shipping Parity - Meaning Quicker Shipping Times</h3>
+<p>The <a href="https://puri.sm/products/librem-5-usa/">Librem 5 phone from Purism</a> has officially reached shipping parity with other Purism products, meaning that if you order one, your order will be shipped within 10 business days. This is due to Purism investing in maintaining a larger inventory so they can deal with future supply-chain issues that might occur in a much simpler way while still being able to deliver products to customers.</p>
+<p>The Librem 5 USA is the "premium" Librem mobile experience, using the same hardware design and feature-set that can be found on the standard Librem 5, but the electronics and components are sourced from the USA where possible. Like other devices in the Librem line, the device runs <b>PureOS</b>, Purism's own Debian-based GNU/Linux distro.</p>
+<div class="breakHelper">
+	<br>
+</div> 
+<p>That's about it for this roundup - stay tuned to FOSSphones, however, because in the next week or so I am going to be doing my write-up on using my PinePhone, and only my PinePhone, as my daily-driver, and how the experience has been. I am going to try to make some video content surrounding this as well, just for the fun of it - and of course, to get some conversation going about the state of GNU/Linux on mobile for everyday usage.</p>
+<p>As always, thanks for stopping by and reading our Linux Phone updates. Until next time!</p>
+<div class="breakHelper">
+    <br>
+</div>
+</div>
+</body>
+<!--bring in the footer-->
+<footer>
+    <div class="footerElement">
+    <p style="color:red"><u>fossphones</u></p>
+    <p>connect with us on:</p>
+    <p><a href="https://https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://twitter.com/FSphones">Twitter</a></p>
+    <p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+    <p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+    <p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+    <p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+    </div>
+</footer>
+</html>
