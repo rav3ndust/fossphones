@@ -118,5 +118,10 @@
 	</item>
 	<!--Bring in newer items after this line:
 	= = = = = = = = = = = = = = = = = = = = = -->	
+	<item>
+		<title>Linux Phone News - January 17, 2023</title>
+		<description>Catch up on Linux Phone news from the week of January 17, 2023.</description>
+		<link>https://fossphones.com/01-17-23.html</link>
+	</item>
 </channel>
 </rss>
