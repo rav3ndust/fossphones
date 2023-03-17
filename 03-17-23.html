@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--the March 17, 2023 news update for fossphones-->
+<html>
+<!--link in our stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+    <!--add in coil meta tag for web monetization-->
+	<meta name="monetization" content="$ilp.uphold.com/3yHq7FiyJJMX">
+<title>Linux Phone News - March 17, 2023</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ <a href="community.html">Community</a> | <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~</p>	
+</div>
+</head>
+<body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Linux Phone News - March 17, 2023</h1>
+<p>It's about that time - the newest FOSSphones News Roundup is here! As usual, there has been a lot going on in the world of mobile GNU/Linux to get caught up on, so sit back, relax, and get up-to-date with the latest information on your favorite hardware and software projects!</p>
+	<div class="breakHelper">
+		<br>
+	</div>
+<h1 style="color:red">New Updates From The Mobian Project</h1>
+<p>I've made no secret of it that Mobian is probably my favorite of the GNU/Linux mobile distributions. I love Debian and Debian-based systems, and I run Debian or a derivative on all of my main production machines and servers. Naturally, Debian being the main distro base that I have used since I began running GNU/Linux, I have always rooted for the Mobian project.</p>
+<p>The Mobian Team has released a few new updates on <a href="https://blog.mobian.org">their blog</a> touching on some new updates surrounding ongoing work on the project. I highly encourage you to read the individual posts, but for the sake of brevity, I want to summarize the key information from each of these blog entries below:</p>
+<ul>
+	<li>The team touched on what they have been up to throughout February and March thus so far, including their time at FOSDEM 2023, ongoing improvements to the Mobian website, the upcoming first stable released based upon Bookworm, and their inclusion of Plasma Mobile into the Debian repos before the freeze. This is great news, bringing the mobile environments you can use effectively on Mobian up to three (Phosh, Plasma Mobile, and SXMO). <a href="https://blog.mobian.org/posts/2023/03/10/tmim/">Read the whole post here!</a></li>
+	<li>Due to how popular Mobian and GNU/Linux phones in general are becoming, the Mobian team is also focusing even more on porting the mobile distribution to even more devices. This is a detailed post that is worth reading for anyone who is interested in how the porting process works, and how volunteers can get into building ports for their own devices if they would like. A very worthy effort, indeed! <a href="https://blog.mobian.org/posts/2023/03/07/porting-to-new-devices/">Read the whole post here!</a></li>
+	<li>In another post, the Mobian team talked about firmware files in new Debian releases moving from <code>non-free</code> and into the new <code>non-free-firmware</code> area in the Debian repositories. They detail how this affects Mobian users, as it changes the location of the <i>firmware-realtek-rtl8723cs-bt</i> package for PinePhone and the <i>firmware-brcm80211</i> package for PinePhone Pro. Users are encouraged to edit their <code>/etc/apt/sources.list</code> file to include the new <code>non-free-firmware</code> section. Running a quick <code>apt update && apt upgrade -y</code> will have users back in-sync with the Debian upstream repos. <a href="https://blog.mobian.org/posts/2023/03/11/non-free-firmware/">Read the whole post here!</a></li>
+</ul>
+<p>It's been exciting to see so much activity ramping up on Mobian. I think 2023 is going to prove to be a very exciting year for my favorite mobile distribution! Great work to everyone at Team Mobian from us at FOSSphones.</p>
+	<div class="breakHelper">
+		<br>
+	</div>
+<h1 style="color:red">New Updates From the Ubuntu Touch Team</h1>
+<p>Mobian hasn't been alone in having a busy start to 2023. Arguably the most well-known and one of the most well-supported mobile distributions, Ubuntu Touch has also shared some updates recently that we want to highlight here in the roundup, as well.</p>
+<p>Here are some of the latest updates from the Ubuntu Touch Team, and most of this information comes from the latest newsletter update from the Ubports team, which, as usual, I will link below for you to read in full at your convenience.</p>
+<ul>
+	<li>The first Stable release of 20.04 OTA is on its way! The team has been working on a few issues that have been holding back the stable release, one of the biggest of which was an issue with call audio regression (this has been solved). The Ubports team now aims to establish a continual release flow with a Dev Release, an RC (Release Candidate), and Stable release each time.</li>
+	<li>The team has also begun their planning for a 2023 Development Roadmap for Ubuntu Touch. If you would like to contrbute to the community discussion regarding the roadmap, please check out the <a href="https://forums.ubports.com/topic/8670/development-planning-2023-lets-take-over-the-world">Ubports Forum thread</a>.</li>
+	<li>The team also touch on their recent visit to FOSDEM 2023, share some of the talks so that you can watch them anytime you'd like, and share some photographs of the event. Always great seeing the community come together at these events (if all goes according to plan, I am hoping to get to the next FOSDEM!).</li>
+	<li>There are some notes on the Debian 12 Bookworm soft freeze, and how the team is working on getting Lomiri to a point to where it is able to run efficiently as a desktop environment and integrate well with the base Debian operating system.</li>
+	<li>There is now voice and video calling support in the <a href="https://open-store.io/app/nl.btr.jitsi">Jitsi</a>, <a href="https://open-store.io/app/nl.btr.element">Element</a>, and <a href="https://open-store.io/app/nl.btr.telegram">Telegram</a> applications on the Ubuntu Touch OpenStore. Give them a try!</li>
+</ul>
+<p>Those are some of the main points from the latest Ubports newsletter! Check out the full text, images, and videos <a href="https://ubports.com/blog/ubports-news-1/post/the-post-fosdem-newsletter-edition-3884">here at Ubports' website</a>.</p>
+	<div class="breakHelper">
+		<br>
+	</div>
+<h1 style="color:red">Phosh 0.25.0 Released</h1>
+<p>If you have a GNU/Linux phone, you're sure to be very familiar with <a href="https://phosh.mobi">Phosh</a>, the GNOME-based mobile desktop environment built by Purism initially for the Librem 5.</p>
+<p>Phosh has since become almost the default way to interface with your Linux phone, as most mobile distributions support Phosh or ship it by default. It has only continued to get better over the last few years, and on March 2, it saw its 0.25.0 release.</p>
+<p>Here are a few of the newest changes you will be able to notice as you use the latest Phosh update:</p>
+<ul>
+	<li>There was a refresh to the Quick Settings menu styling.</li>
+	<li>Status icon transitions are now animated.</li>
+	<li>Improvements were made to make the Settings menu more easy to use in landscape mode.</li>
+	<li>There is a new plugin for configuring preferences for Emergency Contacts.</li>
+	<li>Internal cleanup and several bugs squashed.</li>
+</ul>
+<p>You can check out the full list of changes and see some screenshots, as well as the list of contributors, at <a href="https://phosh.mobi/releases/rel-0.25.0/">this link</a>.</p>
+	<div class="breakHelper">
+		<br>
+	</div>
+<h1 style="color:red">How Can You Help the Linux Phone Community?</h1>
+<p>Have you been thinking about trying to dive further into the Linux Phone community, but don't know where to start or how you can contribute? This is something that is often not talked about enough, so I thought I would take just a second to give it its own small section in this roundup.</p>
+<p>There are seemingly endles ways that you can get involved in just about any free and open-source software community, but Linux Phones are a little different since this ecosystem is still so new and still growing so rapidly. This is why there is no better time for you to get into Linux Phones and join the community to begin helping out.</p>
+<p>Of course, one of the most prominent things you can do if you have development experience is to jump right in and begin contributing code to an existing project, or start a Linux Phone project of your own! Build an app just for mobile Linux, or help port other Linux desktop applications to be more mobile-friendly, or help port mobile distributions to more hardware!</p>
+<p>As a user, you can test out your favorite distributions and applications and aid in their development by submitting bug reports to the development team when you encounter issues. This way, the team becomes aware of the issue and can fix it, or a community member can pick up the issue and work on it on their own, then issue a pull request so that the fix can be landed for everybody!</p>
+<p>Are you a content creator? Make something that shares Linux Phones with other people! If you're a YouTuber, you can make videos showing people mobile distributions or Linux phone hardware devices like the Librem 5, or the PinePhone. You could write about your experiences with Linux phones and share them online, or whatever else you like to do to share content and stories with people. The lsit of possibilities are huge!</p>
+<p>Love mobile Linux, but don't have time to contribute in any other way? Drop some money to your favorite projects! If you have some cash to spare and feel like helping out the projects that have empowered your computing with their software, find their website and see how you can contribute some cash or cryptocurrency to them. Some developers have a GitHub Sponsors area setup, or a "Contribute" page. Donations are the main source of funding for a lot of popular free software projects, and they keep the dev team able to keep working on the project without having to find other ways to fund themselves.</p>
+<p>These are just a few of the ways you can help leave your impact in the Linux Phone community and help out. There is no contribution that is too small, and whether you contribute code, money, or just kind words about your favorite project, you are helping all of us in the community, and it is appreciated!</p>
+	<div class="breakHelper">
+		<br>
+	</div>
+<p>Thanks for checking out the latest Linux Phone news roundup! It's been a busy year for everyone, and as you can tell from some of the updates from our favorite projects lately, it is only going to continue to get busier and more exciting as we get further and further into 2023.</p>
+<p>Thanks again for stopping by, and we will see you again in the next news roundup!</p>
+	<div class="breakHelper">
+		<br>
+	</div>
+</div>
+</body>
+<!--bring in the footer-->
+<footer>
+    <div class="footerElement">
+    <p style="color:red"><u>fossphones</u></p>
+    <p>connect with us on:</p>
+    <p><a href="https://https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://twitter.com/FSphones">Twitter</a></p>
+    <p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+    <p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+    <p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+    <p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+    </div>
+</footer>
+</html>
