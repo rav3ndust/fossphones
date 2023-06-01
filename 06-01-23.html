@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--the June 1, 2023 news update for fossphones-->
+<html>
+<!--link in our stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+    <!--add in coil meta tag for web monetization-->
+	<meta name="monetization" content="$ilp.uphold.com/3yHq7FiyJJMX">
+<title>Linux Phone News - June 1, 2023</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ <a href="community.html">Community</a> | <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~</p>	
+</div>
+</head>
+<body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Linux Phone News - June 1, 2023</h1>
+<p>A bit of a delayed update this roundup, but a roundup nonetheless! After a busy last little while for my personal life, I'm finally shifting my focus back to my work on FOSSphones, and there are several pieces of news to get caught up on!</p>
+<p>If you're ready, let's dive right into some of the latest pieces of news in the world of mobile Linux!</p>
+	<div class="breakHelper">
+		<br>
+	</div>
+<h1 style="color:red">PineTab2 and PineTab-V: Ready For Lift-Off</h1>
+<p>If you, like me, missed out on picking up the original PineTab when they were first being discussed in the mobile Linux world, you'll be glad to know that you now have not one, but <i>two</i> options available to you when it comes to a new Linux tablet from Pine64.</p>
+<p>The new <b>PineTab2</b> and <b>PineTab-V</b> devices can be found in the Pine Store, having been officially announced for launch back in April. Let's take a look at their specs:</p>
+<p style="color:red"><b><u>PineTab2</u></b></p>
+<ul>
+  <li>Rockchip RK3566 chipset</li>
+  <li>64-bit Quad-core 1.8GHz ARM Cortex A-55 CPU</li>
+  <li>Mali-G52 GPU</li>
+  <li>128GB internal flash memory</li>
+  <li>8GB LPDDR SDRAM</li>
+  <li>Expandable up to 2TB with microSD (SDHC, SDXC)</li>
+  <li>Ships with DanctNIX Arch Linux</li>
+</ul>
+<p style="color:red"><b><u>PineTab-V</u></b></p>
+<ul>
+  <li>StarFive JH7110 chipset</li>
+  <li>64-bit Quad-core 1.5GHz SiFive U74 RISC-V CPU</li>
+  <li>Imagination Technology BXE-4-32 GPU</li>
+  <li>128GB internal flash memory</li>
+  <li>8GB LPDDR4 SDRAM</li>
+  <li>Expandable up to 2TB with microSD (SDHC, SDXC)</li>
+  <li>Ships without an operating system</li>
+</ul>
+<p>At the time of writing, the PineTab2 is currently in stock and available for purchase, and the PineTab-V is currently out of stock. You can visit these devices' Pine Store pages easily - here's links for the <a href="https://pine64.com/product/pinetab2-10-1-8gb-128gb-linux-tablet-with-detached-backlit-keyboard/">PineTab2</a> and the <a href="https://pine64.com/product/pinetab-v-10-1-8gb-128gb-risc-v-based-linux-tablet-with-detached-backlit-keyboard/">PineTab-V</a> so you can bookmark them and pick one up when you're ready (or when your choice is available)!</p>
+  <div class="breakHelper">
+		<br>
+	</div>
+<h1 style="color:red">Fedora Mobility Coming to More Devices</h1>
+<p>If you're a Fedora fan and want to use it on your mobile devices as well as on your desktop, you're in luck - there are some builds being released that might be just what you're looking for.</p>
+<p>For running Fedora on <b>PinePhone</b>, you should read this write-up on the <a href="https://gitlab.com/fedora/sigs/mobility/pinephone">GitLab page</a> for the project. The dev team working on this project are updating some scripts using Kickstart and the new Fedora Phosh images. If you want to test out one of these images for yourself, check out the <a href="ftp://pine.warpspeed.dk/nightly/pinephone/">nightly builds</a> page. P-boot is included as the bootloader, and is configured for use only on SD cards at the moment, so don't install these on your device's eMMC storage yet unless you're comfortable with changing your P-boot config. You can also run the included <code>btrfs-expand-root-part.sh</code> in order to expand your partition to the full size of the SD card.</p> 
+<p>You can also run Fedora on the <b>PinePhone Pro</b>. Most of the above things for PinePhone are also true here, but you should still read the <a href="https://gitlab.com/fedora/sigs/mobility/pinephonepro">GitLab page for PinePhone Pro</a> before you get started using it on your device. When you're ready, grab an image of Fedora for PinePhone Pro from the <a href="ftp://pine.warpspeed.dk/nightly/pinephone-pro/">nightly builds</a> link.</p>
+<p>Got a <b>OnePlus 6</b>? You can also now run Fedora on that - check out <a href="https://www.maggu2810.de/mobile-devices/op6-instructions-fedora.html">this script by Markus Rathgeb</a> for building an image, and read the post on that link for the breakdown on how it's done.</p>
+  <div class="breakHelper">
+		<br>
+	</div>
+<h1 style="color:red">postmarketOS Call For Testing</h1>
+<p>If you're a fan of postmarketOS and want to join in on a fresh call for testing, now is the time! Alpine Linux 3.18 just dropped, and the postmarketOS team is getting ready with the upcoming release of pmOS 23.06, which will be available before too long.</p>
+<p>In the meantime, the team has been getting a testing group together. You can read more about and join the testing team <a href="https://wiki.postmarketos.org/wiki/Testing_Team">at this link</a> if you are interested in participating.</p>
+<p>This is a great opportunity to do some testing on your specific device, make sure everything is running as expected, and report any bugs you might find to the postmarketOS team! If you have a supported device and are interested, get in on the action by getting caught up further with <a href="https://postmarketos.org/blog/2023/05/21/call-for-testers/">this post from the postmarketOS team</a>.</p>
+  <div class="breakHelper">
+    <br>
+  </div>
+<h1 style="color:red">Use AI Tools on Your Linux Phone</h1>
+<p>This isn't a big piece of news as much as a small, fun tip. Since the last FOSSphones roundup, a few interesting applications for GNU/Linux have dropped, called <b>Bavarder</b> and <b>Imaginer</b>.</p>
+<p>Here's a quick look at what each of these applications do:</p>
+<ul>
+  <li><b>Bavarder</b> allows you to talk to different AI models in a chatbox. You can use the included BAI Chat to speak to an implementation of ChatGPT, you can speak to the HuggingFace bot, or you can use your own OpenAI key to interact with 3.5 Turbo or GPT-4.</li>
+  <li><b>Imaginer</b> allows you to generate images using a text prompt. Imaginer uses Stable Diffusion as the default model for image generation.</li>
+</ul>
+<p>If these apps sound like something you'd like to try on your Linux phone or desktop, you can grab them both as Flatpaks from Flathub. Head <a href="https://flathub.org/apps/io.github.Bavarder.Bavarder">here for Bavarder</a> or <a href="https://flathub.org/apps/page.codeberg.Imaginer.Imaginer">here for Imaginer</a>.</p>
+	<div class="breakHelper">
+		<br>
+	</div>
+</div>
+</body>
+<!--bring in the footer-->
+<footer>
+    <div class="footerElement">
+    <p style="color:red"><u>fossphones</u></p>
+    <p>connect with us on:</p>
+    <p><a href="https://https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://twitter.com/FSphones">Twitter</a></p>
+    <p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+    <p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+    <p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+    <p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+    </div>
+</footer>
+</html>
