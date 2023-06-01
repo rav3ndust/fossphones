@@ -116,8 +116,6 @@
 		<description>Catch up on Linux Phone news from the week of October 11, 2022.</description>
 		<link>https://fossphones.com/10-11-22.html</link>
 	</item>
-	<!--Bring in newer items after this line:
-	= = = = = = = = = = = = = = = = = = = = = -->	
 	<item>
 		<title>Linux Phone News - January 17, 2023</title>
 		<description>Catch up on Linux Phone news from the week of January 17, 2023.</description>
@@ -127,6 +125,13 @@
 	    <title>Linux Phone News - March 17, 2023</title>
 	    <description>Catch up on Linux Phone news from the week of March 17, 2023.</description>
 	    <link>https://fossphones.com/03-17-23.html</link>
-    </item>
+    	</item>
+	<item>
+	    <title>Linux Phone News - June 1, 2023</title>
+	    <description>Catch up on Linux Phone news from the week of June 1, 2023.</description>
+	    <link>https://fossphones.com/06-01-23.html</link>
+	</item>
+	<!--Bring in newer items after this line:
+	= = = = = = = = = = = = = = = = = = = = = -->	
 </channel>
 </rss>
