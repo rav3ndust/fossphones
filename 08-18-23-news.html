@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--the August 18, 2023 news update for fossphones-->
+<html>
+<!--link in our stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+<title>Linux Phone News - August 18, 2023</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ <a href="community.html">Community</a> | <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~</p>	
+</div>
+</head>
+<body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Linux Phone News - August 18, 2023</h1>
+<p>Hello again! It has been a minute since I've been able to do another roundup on here due to some things going on in my personal life (planning a move out to a new piece of property we just picked up!), but finally, I can get things going on here again, planning on a weekly basis, to keep everyone more informed on the latest happenings in the world of Linux on mobile.</p>
+<p>Quite a few updates to pass along since the last roundup, so let's get started!</p>
+<div class="breakHelper">
+    <br>
+</div>
+<!--new release for Infinitime (1.13 Pomegranate)-->
+<h1 style="color:red">InfiniTime 1.13 "Pomegranate" Released!</h1>
+<p>For those of you out there, who like, are rocking their PineTimes, you will be happy to know that there is a new Infinitime update available for download! It brings some cool new features for you to enjoy, as usual.</p>
+<p>Let's see what some of these new updates in this release consist of:</p>
+<ul>
+    <li>A new algorithm for heart rate processing, which aims to provide faster, and more accurate results for your heart rate logging on your watch.</li>
+    <li>This release should also improve the battery life on your PineTime, thanks to some recommendations from <b>@aykevl</b> on the <a href="https://wiki.pine64.org/wiki/PineTime#Reducing_power_consumption">PineTime Wiki</a>. These fixes bring the power consumption on the PineTime down to 200µA - it was previously observed to be consuming ~900µA in previous releases, so this a neat and welcome improvement! You should be able to see your PineTime hit 10-day (or more) charges now, instead of the usual 3-5 day range you could get out of it before.</li>
+    <li>You can now see weather updates in the PineTimeStyle watchface. The groundwork for this feature was laid all the way back in InfiniTime 1.8, and we are finally seeing the fruition of that work take shape. Using your companion application (like Gadgetbridge), InfiniTime can now display the weather forecast on the PineTimeStyle watchface. You simply need to press and hold down on the watchface, select the "Settings" icon, and enable the weather option.</li>
+    <li>There was also a bugfix for shake-to-wake, along with some new memory management work done using heap unification.</li>
+</ul>
+<p>You can dive even further into the changes and download the release by visiting <a href="https://github.com/InfiniTimeOrg/InfiniTime/releases">this page</a> showcasing the new release and its downloads.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<!--new 'starlite' tablet from star labs-->
+<h1 style="color:red">StarLite - a New Linux Tablet by Star Labs Revealed</h1>
+<p>It looks like we're about to see another entry into the world of mobile Linux hardware. Coming from the well-known company <a href="https://us.starlabs.systems">Star Labs</a>, who also create lines of Linux-powered laptops, the StarLite will be an exciting new option for people considering a Linux tablet.</p>
+<p>Let's take a look at some of the hardware specs:</p>
+<ul>
+    <li>The StarLite sports a 12.5-inch LED-backlit touch display (2880x1920 resolution at 276ppi)</li>
+    <li>A 1.00GHz quad-core Alder Lake N200 processor</li>
+    <li>512GB Gen3 PCIe SSD, which can be configured up to 2TB, if you desire</li>
+    <li>16GB of 4800MHz LPDDR5 onboard memory</li>
+    <li>Intel WiFi 5 9560, 802.11ac Wifi, supports up to 1.73Gbps. Compatible with 802.11ac/a/b/g/n. The tablet also has Bluetooth 5.1 support.</li>
+    <li>On the power side, we are looking atr up to 12 hours of battery life. The tablet sports a 38Wh lithium-polymer battery, and charges with the included 65W USB-C adapter.</li>
+    <li>Finally on the connectivity side, the tablet has microHDMI support, 2x USB-C ports, a microSD card reader, and a 3.5mm headphone jack!</li>
+</ul>
+<p>The StarLite also features a nice convertible keyboard case, with a backlit keyboard and layouts available for US and UK English, French, German, Nordic, and Spanish.</p>
+<p>You can also configure it the way you like before shipment, including choosing which GNU/Linux distribution you would like it to arrive with. The options currently include Ubuntu LTS, elementaryOS, Linux Mint, Manjaro, MX Linux, and Zorin OS. If you love any of these distros, you can have it shipped right to you with the distro of your choice pre-installed and ready to use.</p>
+<p>This new tablet from StarLabs is looking to be quite interesting, and I will certainly be trying to get my hands on one for testing and review down the line. If you're interested in it, you can read all about it <a href="https://us.starlabs.systems/pages/starlite">at this link</a>.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<!--release of Mobian bookworm-->
+<h1 style="color:red">Mobian Releases Bookworm, First Stable Release! 🎉</h1>
+<p>It is no big secret to anyone that my favorite Linux distro has always been Debian, and in turn, my favorite mobile distro is <a href="https://mobian.org">Mobian</a>! I have kept Mobian around installed on my PinePhone for ages, and I am happy to say I also just flashed this newest Mobian release, based on Debian 12 Bookworm, to my PinePhone for daily usage.</p>
+<p>This is a special release for Mobian, because it is the first they are considering truly stable enough for mobile devices, and Debian 12 becomes the base for the first stable Mobian release.</p>
+<p>With this release, we see some of the following highlights:</p>
+<ul>
+    <li>Support for MMS, visual voicemail, and more</li>
+    <li>GNOME core apps are all adaptive!</li>
+    <li>Updates and improvements to Phosh and its related components.</li>
+    <li>sxmo/swmo in the Debian repositories</li>
+    <li>Plasma Mobile core packages have also made their way into Debian</li>
+    <li>Phog (the phone greeter), can be used now to swap desktop options at login!</li>
+    <li>SIP support maturity in the Calls application.</li>
+    <li>Kernel CI setup for making it simple for the Mobian team to rebase patches for supported devices.</li>
+</ul>
+<p>If you love Debian and have never given Mobian a shot, I highly recommend it! You can read even more about this update at <a href="https://blog.mobian.org/posts/2023/06/10/bookworm/">the Mobian blog</a>, and you can download the images for installation on your devices at <a href="https://images.mobian.org/">this link</a>.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<!--ubuntu touch updates-->
+<h1 style="color:red">Ubuntu Touch OTA-2 Focal Released!</h1>
+<p>In further mobile distro news, if you love Ubuntu Touch, you might be excited to learn about the new update to the 20.04 Focal series!</p>
+<p>OTA-2 has been rolling out to these devices lately:</p>
+<ul>
+    <li>Fairphone 3</li>
+    <li>Fairphone 4</li>
+    <li>F(x)tec Pro 1 X</li>
+    <li>Google Pixel 3a and 3a XL</li>
+    <li>OnePlus 5 and 5T</li>
+    <li>OnePlus 6 and 6T</li>
+    <li>Vollaphone and Vollaphone X</li>
+    <li>Vollaphone 22</li>
+    <li>Vollaphone X23</li>
+    <li>Xiaomi Mi A2</li>
+    <li>Xiaomi Poco M3</li>
+    <li>Xiaomi Redmi Note 7 and 7 Pro</li>
+</ul>
+<p>If you have one of these devices, check for updates! This is the first round of support for the Fairphone 3, the Vollaphone X23, and the F(x)tec Pro 1 X, so if you have been wanting to use Ubuntu Touch on these devices, the time is now to make the switch!</p>
+<p>Here are a few of the updates and new features found in this release:</p>
+<ul>
+    <li>The layouts of some pages in the Settings app have been made more consistent.</li>
+    <li>You can now make adjustments to the sensitivity of edge gestures in Lomiri.</li>
+    <li>You can now use the physical camera button when taking pictures.</li>
+    <li>You can now easily delete custom background images you've added when you don't want them anymore.</li>
+</ul>
+<p>There were also a bunch of bugfixes and improvements. Here are a few:</p>
+<ul>
+    <li>You can reset APNs to default settings.</li>
+    <li>The reliability of the mobile hotspot feature has seen improvements.</li>
+    <li>Bluetooth should now work more reliably after a device reboot.</li>
+    <li>Choosing custom alarm sounds has been fixed.</li>
+    <li>Video playback on some MediaTek devices has seen improvements.</li>
+</ul>
+<p>These are just a few of the new features and fixes. To read a more through deep-dive into what's new, please check out the <a href="https://ubports.com/en/blog/ubports-news-1/post/ubuntu-touch-ota-2-focal-release-3894">release notes from UBports</a>!</p>
+<p>For PinePhone and PinePhone Pro users, please note that these devices are updated independently of Halium-based devices, so you won't see an update labeled OTA-2 on these devices for the stable channel.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<!--news on pinetab2 and pinetab-v-->
+<h1 style="color:red">New Updates on PineTab2 and PineTab-V Progress</h1>
+<p>We just saw a new update from Pine64 about the PineTab devices in the latest August Community Update. Here are the highlights in regards to PineTab2 and PineTab-V progress:</p>
+<ul>
+    <li>Software releases are coming along, with support for Arch Linux ARM, Mobian, NixOS, postmarketOS, Ubuntu Touch, Rhino Linux, and more in the works.</li>
+    <li>Work on the Wifi driver of the PineTab2 has seen progress. While some releases ship with initial support for the onboard wireless chip, there is still work ongoing on the driver to help it reach maturity.</li>
+</ul>
+<p>The new PineTab devices were just dropped a few months ago, and the community has been working hard to bring software releases and more to support them. In the future, I aim to be able to pick up a PineTab2 for myself to do some testing and building on. Expect articles and/or videos when I can make this happen!</p>
+<p>If you want to learn more about the latest in the world of Pine64, I encourage you to check out the newest <a href="https://www.pine64.org/2023/08/15/august-update-kept-you-waiting-huh/">August Community Update</a>.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<p>That just about wraps up this roundup. Thanks a ton for your patience on this one, and as I said, I'm planning on going back to weekly updates going forward, and there are several other things I plan to bring to FOSSphones in the future as well, including video tutorials, hands-on device reviews, distro and app reviews and how-tos, and more. Keep an eye out on this site, our <a href="https://neighborli.xyz/@FOSSphones">Fediverse account</a>, and our <a href="https://x.com/FSphones">X account</a> for more details!</p>
+<p>Until next time, friends!</p>
+<div class="breakHelper">
+    <br>
+</div>
+</div>
+</body>
+<!--bring in the footer-->
+<footer>
+<div class="footerElement">
+<p style="color:red"><u>fossphones</u></p>
+<p>connect with us on:</p>
+<p><a href="https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://twitter.com/FSphones">Twitter</a></p>
+<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+<p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+<p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
+</footer>
+</html>
