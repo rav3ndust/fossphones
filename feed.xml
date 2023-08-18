@@ -131,6 +131,11 @@
 	    <description>Catch up on Linux Phone news from the week of June 1, 2023.</description>
 	    <link>https://fossphones.com/06-01-23.html</link>
 	</item>
+	<item>
+		<title>Linux Phone News - August 18, 2023</title>
+		<description>Catch up on the latest Linux Phone news from the week of August 18, 2023.</description>
+		<link>https://fossphones.com/08-18-23-news.html</link>
+	</item>
 	<!--Bring in newer items after this line:
 	= = = = = = = = = = = = = = = = = = = = = -->	
 </channel>
