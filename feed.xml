@@ -30,6 +30,7 @@
 			<title>Linux Phone News Update - September 2020</title>
 			<description>Catch up on Linux Phone news from September 2020!</description>
 			<link>https://fossphones.com/05.html</link>
+			<pubDate>28 Sep 2020</pubDate>
 		</item>
 		<item>
 			<title>Why Are Linux Phones So Important?</title>
@@ -45,26 +46,31 @@
 			<title>Linux Phone News - May 17, 2021</title>
 			<description>Catch up on Linux Phone news from the week of May 17, 2021.</description>
 			<link>https://fossphones.com/0517-news.html</link>
+			<pubDate>17 May 2021</pubDate>
 		</item>
 		<item>
 			<title>Linux Phone News - June 8, 2021</title>
 			<description>Catch up on Linux Phone news from the week of June 8, 2021.</description>
 			<link>https://fossphones.com/0608-news.html</link>
+			<pubDate>8 Jun 2021</pubDate>
 		</item>
 		<item>
 			<title>Linux Phone News - August 4, 2021</title>
 			<description>Catch up on Linux Phone news from the week of August 4, 2021.</description>
 			<link>https://fossphones.com/0804-news.html</link>
+			<pubDate>4 Aug 2021</pubDate>
 		</item>
 	<item>
 		<title>Linux Phone News - August 31, 2021</title>
 		<description>Catch up on Linux Phone news from the week of August 31, 2021.</description>
 		<link>https://fossphones.com/0831-news.html</link>
+		<pubDate>31 Aug 2021</pubDate>
 	</item>
 	<item>
 		<title>Linux Phone News - October 4, 2021</title>
 		<description>Catch up on Linux Phone news from the week of October 4, 2021.</description>
 		<link>https://fossphones.com/10-04.html</link>
+		<pubDate>4 Oct 2021</pubDate>
 	</item>
 	<item>
 		<title>PinePhone Pro Announcement</title>
@@ -75,21 +81,25 @@
 		<title>Linux Phone News - November 19, 2021</title>
 		<description>Catch up on Linux Phone news from the week of November 19, 2021.</description>
 		<link>https://fossphones.com/111921-news.html</link>
+		<pubDate>19 Nov 2021</pubDate>
 	</item>
 	<item>
 		<title>Linux Phone News - December 28, 2021</title>
 		<description>Catch up on Linux Phone news from the week of December 28, 2021.</description>
 		<link>https://fossphones.com/1228-news.html</link>
+		<pubDate>28 Dec 2021</pubDate>
 	</item>
 	<item>
 		<title>Linux Phone News - February 1, 2022</title>
 		<description>Catch up on Linux Phone news from the week of February 1, 2022.</description>
 		<link>https://fossphones.com/feb-1-22.html</link>
+		<pubDate>1 Feb 2022</pubDate>
 	</item>
 	<item>
 		<title>Linux Phone News - March 29, 2022</title>
 		<description>Catch up on Linux Phone news from the week of March 29, 2022.</description>
 		<link>https://fossphones.com/03-29-22.html</link>
+		<pubDate>29 Mar 2022</pubDate>
 	</item>
 	<item>
 		<title>The PinePhone Daily Driver Challenge</title>
@@ -100,51 +110,61 @@
 		<title>Linux Phone News - June 24, 2022</title>
 		<description>Catch up on Linux Phone news from the week of June 24, 2022.</description>
 		<link>https://fossphones.com/06-24-22.html</link>
+		<pubDate>24 Jun 2022</pubDate>
 	</item>
 	<item>
 		<title>Linux Phone News - August 9, 2022</title>
 		<description>Catch up on Linux Phone news from the week of August 9, 2022.</description>
 		<link>https://fossphones.com/08-09-22.html</link>
+		<pubDate>9 Aug 2022</pubDate>
 	</item>
 	<item>
 		<title>Linux Phone News - October 5, 2022</title>
 		<description>Catch up on Linux Phone news from the week of October 5, 2022.</description>
 		<link>https://fossphones.com/10-05-22.html</link>
+		<pubDate>10 October 2022</pubDate>
 	</item>
 	<item>
 		<title>Linux Phone News - October 11, 2022</title>
 		<description>Catch up on Linux Phone news from the week of October 11, 2022.</description>
 		<link>https://fossphones.com/10-11-22.html</link>
+		<pubDate>11 Oct 2022</pubDate>
 	</item>
 	<item>
 		<title>Linux Phone News - January 17, 2023</title>
 		<description>Catch up on Linux Phone news from the week of January 17, 2023.</description>
 		<link>https://fossphones.com/01-17-23.html</link>
+		<pubDate>17 Jan 2023</pubDate>
 	</item>
 	<item>
 	    <title>Linux Phone News - March 17, 2023</title>
 	    <description>Catch up on Linux Phone news from the week of March 17, 2023.</description>
 	    <link>https://fossphones.com/03-17-23.html</link>
+	    <pubDate>17 March 2023</pubDate>
     	</item>
 	<item>
 	    <title>Linux Phone News - June 1, 2023</title>
 	    <description>Catch up on Linux Phone news from the week of June 1, 2023.</description>
 	    <link>https://fossphones.com/06-01-23.html</link>
+	    <pubDate>1 June 2023</pubDate>
 	</item>
 	<item>
 		<title>Linux Phone News - August 18, 2023</title>
 		<description>Catch up on the latest Linux Phone news from the week of August 18, 2023.</description>
 		<link>https://fossphones.com/08-18-23-news.html</link>
+		<pubDate>18 Aug 2023</pubDate>
 	</item>
 	<item>
 	  <title>Linux Phone News - September 21, 2023</title>
 	  <description>Catch up on the latest Linux Phone news from the week of September 21, 2023.</description>
 	  <link>https://fossphones.com/09-21-23.html</link>
+	  <pubDate>21 Sep 2023</pubDate>
 	</item>
 	<item>
-	  <title>Linux Phone News - February 10, 2024</title>
-	  <description>Catch up on the latest Linux Phone news from the week of February 10, 2024.</description>
-	  <link>https://fossphones.com/02-10-2024.html</link>
+		<title>Linux Phone News - February 10, 2024</title>
+		<description>Catch up on the latest Linux Phone news from the week of February 10, 2024.</description>
+		<link>https://fossphones.com/02-10-2024.html</link>
+		<pubDate>10 Feb 2024</pubDate>
 	</item>
 	<!--Bring in newer items after this line:
 	= = = = = = = = = = = = = = = = = = = = = -->	
