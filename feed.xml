@@ -7,10 +7,16 @@
 		<link>https://fossphones.com/news.html</link>
 		<!--begin separating the news items-->
 		<item>
+			<title>New PinePhone Manjaro Community Edition Announced</title>
+			<description>Learn about the PinePhone Manjaro Community Edition!</description>
+			<link>https://fossphones.com/04.html</link>
+			<pubDate>1 Sep 2020</pubDate>
+		</item>
+		<item>
 			<title>Linux Phone News Update - September 2020</title>
 			<description>Catch up on Linux Phone news from September 2020!</description>
 			<link>https://fossphones.com/05.html</link>
-			<pubDate>28 Sep 2020</pubDate>
+			<pubDate>16 Sep 2020</pubDate>
 		</item>
 		<item>
 			<title>Linux Phone News - May 17, 2021</title>
