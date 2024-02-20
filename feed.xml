@@ -5,6 +5,7 @@
 		<title>FOSSphones News</title>
 		<description>Your number one source for Linux Phone news.</description>
 		<link>https://fossphones.com/news.html</link>
+		<!--<atom:link href="https://fossphones.com/feed.xml" rel="self" type="application/rss+xml"/>-->
 		<!--begin separating the news items-->
 		<item>
 			<title>Linux Phone News Update - September 2020</title>
@@ -41,11 +42,6 @@
 			<description>Catch up on Linux Phone news from the week of October 4, 2021.</description>
 			<link>https://fossphones.com/10-04.html</link>
 			<pubDate>4 Oct 2021</pubDate>
-		</item>
-		<item>
-			<title>PinePhone Pro Announcement</title>
-			<description>New PinePhone Pro announced! Get the scoop here.</description>
-			<link>https://fossphones.com/pinephone-pro-announcement.html</link>
 		</item>
 		<item>
 			<title>Linux Phone News - November 19, 2021</title>
