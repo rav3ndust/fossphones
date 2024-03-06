@@ -104,9 +104,9 @@
 		</item>
 		<item>
 			<title>Linux Phone News - March 17, 2023</title>
-	    		<description>Catch up on Linux Phone news from the week of March 17, 2023.</description>
-	    		<link>https://fossphones.com/03-17-23.html</link>
-	    		<pubDate>2023-03-17</pubDate>
+	    	<description>Catch up on Linux Phone news from the week of March 17, 2023.</description>
+	    	<link>https://fossphones.com/03-17-23.html</link>
+	    	<pubDate>2023-03-17</pubDate>
 		</item>
 		<item>
 			<title>Linux Phone News - June 1, 2023</title>
@@ -131,6 +131,12 @@
 			<description>Catch up on the latest Linux Phone news from the week of February 10, 2024.</description>
 			<link>https://fossphones.com/02-10-2024.html</link>
 			<pubDate>2024-02-10</pubDate>
+		</item>
+		<item>
+			<title>Linux Phone News - March 6, 2024</title>
+			<description>Catch up on the latest Linux PPhone news from the week of March 6, 2024!</description>
+			<link>https://fossphones.com/03-06-24.html</link>
+			<pubDate>2024-03-06</pubDate>
 		</item>
 	<!--Bring in newer items after this line:
 	= = = = = = = = = = = = = = = = = = = = = -->	
