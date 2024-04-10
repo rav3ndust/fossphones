@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--the April 10, 2024 news update for fossphones-->
+<html>
+<style>
+    code {color: red;}
+</style>
+<!--link in our stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+<title>Linux Phone News - April 10, 2024</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ <a href="community.html">Community</a> | <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~</p>
+</div>
+</head>
+<body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Linux Phone News - April 10, 2024</h1>
+<p>Salutations, and welcome to the newest FOSSphones Linux Phone news roundup! It's been a fun start to April - I've been working on some things, seeing some family, and of course, viewing the total eclipse a few days ago. Hope your month has been going well so far, too!</p>
+<p>We have some fun new developments to get into, as well as our usual mobile free software application highlights, so let's jump right into it!</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">Phosh 0.38.0 Release</h1>
+<p>The well-known and much-loved GNOME-based mobile desktop environment, <a href="https://phosh.mobi">Phosh</a>, just saw its 0.38.0 release.</p>
+<p>As usual, Phosh itself, as well as the Phoc compositor, and Squeekboard, Phosh's onscreen keyboard, all saw some quality-of-life improvements. Here's a quick breakdown of the new features and fixes:</p>
+<p style="color:red"><b>~ Phosh updates</b></p>
+<ul>
+    <li>Lock screen launcher entries can display count and progress status.</li>
+    <li>Improved handling on devices with rounded corners.</li>
+    <li>Fixed some issues with background scaling noticed in Phosh 0.37.0.</li>
+    <li>The session startup for <code>gnome-session</code> 46.</li>
+    <li><code>data:</code> URIs can now be handled in the media player.</li>
+    <li>There were new i18n updates from a variety of community translators.</li>
+</ul>
+<p>You can see the full list of updates for Phosh in greater detail <a href="https://phosh.mobi/releases/rel-0.38.0/#phosh-0380-1">here</a>.</p>
+<p style="color:red"><b>~ Phoc updates</b></p>
+<ul>
+    <li>Allow views to be placed always-on-top.</li>
+    <li>Clients can now check for hardware keyboards.</li>
+    <li>Phoc was updated to <code>wlroots</code> 0.17.2.</li>
+    <li>There were fixes to fractional scaling.</li>
+    <li>layer-shell version was bumped to 3.</li>
+    <li>Move-to-corner is now allowed via keybinds.</li>
+    <li>Subsurfaces and Popups are now GObjects.</li>
+    <li>There were also a variety of internal fixes and cleanups, with improvements made to the build system with regards to how files are validated.</li>
+</ul>
+<p>You can find all of the updates for Phoc <a href="https://phosh.mobi/releases/rel-0.38.0/#phoc-0380">here</a>.</p>
+<p style="color:red"><b>~ Squeekboard updates</b></p>
+<ul>
+    <li>"PgUp" and "PgDn" (PageUp and PageDown, respectively), are now labeled "Page ↑" and "Page ↓".</li>
+    <li>Every available keyboard layout now has a wide shape, with 25 new wide shapes available.</li>
+    <li>Terminal layout key names for French and Spanish are now translated.</li>
+    <li>The development date was brought up to Debian Testing (trixie).</li>
+    <li>Various other fixes and layout files cleanup.</li>
+</ul>
+<p>A full breakdown of Squeekboard updates can be found <a href="https://phosh.mobi/releases/rel-0.38.0/#squeekboard-1380">here</a>.</p>
+<p>If you run a mobile Linux distro with Phosh as your mobile environment, these updates should make their way to you fairly quickly depending on which distribution you use.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">Arch Linux ARM Sees Some Updates</h3>
+<p>If you like to tell your friends <i>"btw, i run mobile arch"</i>, then you might like to know about some of the new updates the DanctNIX team has brought to the mobile distribution just 2 weeks ago.</p>
+<p>Please note that this release targets PinePhone, PinePhone Pro, and PineTab2. Here are some of the notes from the changelog:</p>
+<ul>
+    <li>Phosh and Phoc were both updated to 0.37.0.</li>
+    <li><code>phosh-mobile-settings</code> was updated to 0.37.0.</li>
+    <li>Squeekboard was updated to 1.24.0.</li>
+    <li><code>mmsd-tng</code> was updated to 2.6.0.</li>
+    <li><code>vvmd</code> was updated to 0.18.</li>
+    <li><code>vvmplayer</code> was updated to 2.5.</li>
+    <li><code>gnome-contacts-mobile</code> was updated to 45.1.</li>
+    <li><code>gnome-control-center-mobile</code> was updated to 45.3.</li>
+    <li><code>wvkbd</code> was updated to 0.14.4.</li>
+    <li>The PineTab2 kernel was updated to <code>6.8.danctnix1</code>.</li>
+</ul>
+<blockquote style="color:red"><b style="color:white">Quick Tip:</b> If you're running Arch ARM on the Pinephone Pro, make sure you have Tow-Boot installed on the SPI.</blockquote>
+<p>If you would like to see the full changelog in deeper detail, as well as download this release for yourself, please see <a href="https://github.com/dreemurrs-embedded/Pine64-Arch/releases">this page</a> on GitHub.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">CalyxOS 5.6.0 Arrives With Security and Bug Fixes</h1>
+<p>If you're a fan of the AOSP distribution, <a href="https://calyxos.org">CalyxOS</a>, you should be checking your device for the newest bits! CalyxOS 5.6.0 is here with the April Android security patches, bugfixes, and some other announcements. Let's take a quick peek and breakdown the latest from the CalyxOS team:</p>
+<ul>
+    <li>Updated to the 2024-04-05 Android Security patches.</li>
+    <li>Updated to the latest stable Chromium version 123.0.6312.99.</li>
+    <li>Separate mobile data and WiFi tiles have returned.</li>
+    <li>All included applications have been updated to their current versions.</li>
+</ul>
+<p>Also, a few device-specific fixes:</p>
+<p style="color:red"><b>~ Pixel Tablet, Pixel Fold, Fairphone 5, Fairphone 4, Moto G32, Moto G42</b></p>
+<ul>
+    <li>The fingerprint sensor's "touch to unlock" setting has been fixed.</li>
+</ul>
+<p style="color:red"><b>~ Moto G52</b></p>
+<ul>
+    <li>The fingerprint sensor's "touch to unlock" setting has been fixed, as with the other devices.</li>
+    <li>Additionally, NFC functions saw some fixes.</li>
+</ul>
+<p>It is worth noting that this update is for the Pixel 3 and above, along with Calyx-supported Fairphone and Motorola devices.</p>
+<p>CalyxOS also showed up with a booth at the FOSSASIA Summit in Vietnam a few days ago. You can read about this and further details of things we listed off here about this update by checking out <a href="https://calyxos.org/news/2024/04/03/april-security-update/">this post</a> from the CalyxOS team.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">LineageOS 18.1 is Sunsetting</h1>
+<p>Speaking of AOSP distributions, there is some news from the world of LineageOS, as well. While most users are probably up-to-date to LineageOS 21 (as I currently am on my Moto z3 and my Essential Phone), users on older devices might still be using some of the older versions of LineageOS.</p>
+<p>With that being said, LineageOS 18.1 just saw its final update. Going forward, LOS 18.1 will be considered sunset. This is due to the fact that in February, Google published the final ASB (Android Security Bulletin) for Android 11, the version of Android on which LineageOS 18.1 is based on.</p>
+<p>The Lineage team clarifies that while backports could technically be done, it would very difficult for changes across versions to be tracked - and the worry that backporting the code to fix security vulnerabilities on this older version could introduce newer vulnerabilities in the process.</p>
+<p>If your device is currently running 18.1, be sure to see if it is still supported by LineageOS. If it isn't, you can always grab a device which is supported by current versions, or you could see if development for your device starts up again - or you could always take up the mantle for yourself!</p>
+<p>If you want further details on the sunsetting of LineageOS 18.1, be sure to check <a href="https://lineageos.org/Sunsetting-LineageOS-18.1/">the announcement</a> from the LineageOS team to get the full scoop.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">Linux Phone App Highlight</h1>
+<p>As usual, we have a few free software mobile apps to spotlight. If this is your first roundup, we share a few of our favorite apps on Linux phones and AOSP devices each time, in the hopes that more people learn about them.</p>
+<ul>
+    <li><a href="https://f-droid.org/en/packages/corewala.gemini.buran/">Buran</a>: Buran is an Android app great for AOSP devices. It is a dedicated mobile web browser for the Gemini protocol, and can be customised and tweaked in various ways. I like finding and reading new Gemini capsules, and I find myself opening this app frequently for my Gemini browsing.</li>
+    <li><a href="https://f-droid.org/en/packages/com.vitorpamplona.amethyst/">Amethyst</a>: Another application for AOSP, this is a client app for the Nostr protocol. <a href="nostr.com">Nostr</a> is a newer decentralised social networking protocol, and it has been a lot of fun to use and build on over the last couple of years. I might do a bigger writeup into Nostr someday, but it is quite simple - your identity is managed by a private and public key, much like a crypto wallet. If you want to check it out, Amethyst is a great client app for the protocol.</li>
+    <li><a href="https://flathub.org/apps/dev.geopjr.Tuba">Tuba</a>: Tuba is a GTK application for accessing Fediverse instances (things in the ActivityPub family, such as Mastodon and Pleroma). The app is well-designed, and it allows you to create posts, interact with others' posts, and other things you would expect to do with your favorite Fediverse client apps. Being GTK based, it also blends well in GNOME-based environments.</li>
+</ul>
+<p>As usual, if you have any recommendations for FOSS mobile apps you like and use frequently, tell us about it on the Fediverse or X, and we will be sure to highlight them in a future roundup!</p>
+<div class="breakHelper">
+    <br>
+</div>
+<p>That's about it for this first April roundup! As usual, thanks for stopping in and checking out what's new in the latest in the world of Linux and free software on mobile devices. Until next time, we hope everyone has a great week, and we'll see you in the next roundup!</p>
+<div class="breakHelper">
+    <br>
+</div>
+</div>
+</body>
+<!--bring in the footer-->
+<footer>
+<div class="footerElement">
+<p style="color:red"><u>fossphones</u></p>
+<p>connect with us on:</p>
+<p><a href="https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://x.com/FSphones">X</a></p>
+<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+<p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+<p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
+</footer>
+</html>
