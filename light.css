@@ -1,0 +1,50 @@
+/* lighter theme for fossphones.com */
+/* users will be able to switch back and forth with a toggle. */
+head {background-color: white;}
+body {background-color: white;}
+footer {background-color: white;}
+
+/* links */
+
+a:link {color: #FF7F50;}
+a:visited {color: #000080;}
+
+/* elements */
+
+.headElement {
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+.bodyElement {
+	background-color: white;
+	color: black;	
+}
+.footerElement {
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+.breakHelper {
+	background-color: black;
+}
+.navButtons {
+	background-color: white;	
+	text-align: center;
+	color: #FF7F50;
+	h1 {
+		color: #FF7F50;
+		text-align: left;
+	}
+	h2 {
+		color: #FF7F50;
+		text-align: left;
+	}
+	h3 {
+		color: #FF7F50;
+		text-align: left;
+	}
+	h6 {
+		color: #FF7F50;
+	}
+}
