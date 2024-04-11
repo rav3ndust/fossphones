@@ -22,25 +22,25 @@ a:visited {color: #000080;}
 	text-align: center;
 }
 .breakHelper {
-	background-color: black;
+	background-color: #FF7F50;
 }
 .navButtons {
 	background-color: white;	
 	text-align: center;
 	color: #FF7F50;
-	h1 {
-		color: #FF7F50;
-		text-align: left;
-	}
-	h2 {
-		color: #FF7F50;
-		text-align: left;
-	}
-	h3 {
-		color: #FF7F50;
-		text-align: left;
-	}
-	h6 {
-		color: #FF7F50;
-	}
+}
+h1 {
+	color: #FF7F50;
+	text-align: left;
+}
+h2 {
+	color: #FF7F50;
+	text-align: left;
+}
+h3 {
+	color: #FF7F50;
+	text-align: left;
+}
+h6 {
+	color: #FF7F50;
 }
