@@ -3,14 +3,10 @@
 head {background-color: white;}
 body {background-color: white;}
 footer {background-color: white;}
-
 /* links */
-
 a:link {color: #FF7F50;}
 a:visited {color: #000080;}
-
 /* elements */
-
 .headElement {
 	background-color: white;
 	color: black;
