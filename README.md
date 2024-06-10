@@ -1,5 +1,5 @@
 # fossphones
-the complete source to my Linux phone website, fossphones.com.
+the complete source to our Linux phone website, fossphones.com.
 
 **fossphones** keeps up with the latest news in Linux Phones (such as the PinePhone and Librem 5) and the latest in AOSP (Android Open Source Project) news. This repository houses all of our website code.
 
