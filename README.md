@@ -7,7 +7,7 @@ the complete source to our Linux phone website, [fossphones](https://fossphones.
 
 Got any ideas for articles about Linux Phones or other FOSS mobile stuff (such as free Android distributions like [LineageOS](https://www.lineageos.org/) or [GrapheneOS](https://grapheneos.org/))? Or a piece of FOSS mobile news we might have missed? Found some cool FOSS mobile apps we should know about? Did you notice a typo or a [404](https://en.wikipedia.org/wiki/HTTP_404) from one of our pages?
 
-Please feel free to send us a short write-up about your idea if you want to have it posted on the Web and Gemini versions of FOSSphones. We are always happy to share any content about Linux Phones and FOSS AOSP distros/apps with the world. Just format your article in HTML or gemtext and send it over through a pull request - I will check it out and merge it. :) 
+Please feel free to send us a short write-up about your idea if you want to have it posted on the Web and Gemini versions of FOSSphones. We are always happy to share any content about Linux Phones and FOSS AOSP distros/apps with the world.
 
 If you hear about something but don't want to bother with the PR process, just hit us up on the [Fediverse](https://neighborli.xyz/@FOSSphones) or on [X](https://x.com/FSphones) with the information, and we'll get it included in the next FOSSphones roundup!
 
