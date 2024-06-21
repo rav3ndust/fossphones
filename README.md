@@ -1,7 +1,7 @@
 # fossphones
 the complete source to our Linux phone website, [fossphones](https://fossphones.com).
 
-**fossphones** keeps up with the latest news in Linux Phones (such as the [PinePhone](https://pine64.org/devices/pinephone/) and [Librem 5](https://puri.sm/products/librem-5/) and the latest in [AOSP](https://source.android.com/) news. This repository houses all of our website code.
+**fossphones** keeps up with the latest news in Linux Phones (such as the [PinePhone](https://pine64.org/devices/pinephone/) and [Librem 5](https://puri.sm/products/librem-5/)) and the latest in [AOSP](https://source.android.com/) news. This repository houses all of our website code.
 
 ## Wanna help?
 
