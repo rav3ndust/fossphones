@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<style>
+    code {color: red;}
+</style>
+<!--link in our stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+<title>Linux Phone News - October 14, 2024</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ <a href="community.html">Community</a> | <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~</p>
+</div>
+</head>
+<body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Linux Phone News - October 14, 2024</h1>
+<p>Greetings, and welcome to your October FOSSphones news roundup! We have a bit of catching up to do since the last one, so let's cover some of the biggest highlights of September up until now.</p>
+<p>We have a few big things to cover this time around, including a new Linux phone joining the fray, LineageOS gaining support on some new devices, a new release of Phosh, our usual FOSSphones App Highlights, and more. Let's take a look!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">FuriPhone FLX1 - A New Linux Phone</h1>
+<p>The <b>FuriPhone</b> is a new device from <a href="https://furilabs.com/">Furi Labs</a>, and it is looking quite interesting.</p>
+<p>The FuriPhone runs FuriOS, a Debian-derived system that aims to support also running Android applications through <a href="https://waydro.id/">Waydroid</a>. This first device from Furi Labs, the FLX1, sports the following specs:</p>
+<ul>
+	<li><b>Chipset</b>: Mediatek Dimensity 900</li>
+	<li><b>Memory</b>: 6GB LPDDR4X</li>
+	<li><b>Onboard storage</b>: 128GB UFS2.1</li>
+	<li><b>Expanded storage</b>: Up to 1TB (microSD)</li>
+	<li><b>CPU</b>: 2x Cortex-A78 2.4Ghz && 6x Cortex A55 2.0Ghz</li>
+	<li><b>GPU</b>: Mali G68 MC4</li>
+	<li><b>Front camera</b>: 16MP</li>
+	<li><b>Rear camera</b>: 50MP with optical image stabilization</li>
+	<li><b>Charging</b>: Wired and wireless</li>
+	<li><b>Battery type</b>: Li-Po removable</li>
+	<li><b>Connectivity type</b>: USB-C 3.0</li>
+	<li><b>Display</b>: 6.59" FHD+ IPS Display 10 point multi touch (Gorilla Glass 5)</li>
+	<li><b>Biometrics</b>: Side-mounted fingerprint sensor</li>
+	<li><b>Headphone jack</b>: 3.5mm waterproof</li>
+</ul>
+<p>On their blog, the Furi Labs team noted that the device now <a href="https://furilabs.com/usa-bands/">has USA bands enabled</a>, with T-Mobile, AT&T, and Mint all having been confirmed to be working well with the Furi Phone.</p>
+<p>The Furi Labs team says they are aiming to build a device that they would want to use as their own daily driver, and I also welcome that same mindset in the Linux phone space. It will be interesting to see further developments on this device, as it is always nice to see new devices entering this still small space.</p>
+<p>You can learn even more about the Furi Phone FLX1 at its <a href="https://furilabs.com/shop/flx1/">product page</a>.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Updates From the World of postmarketOS</h1>
+<p><a href="https://postmarketOS.org">postmarketOS</a> is one of the premier Linux phone distributions, and they have had quite a bit going on in their world lately. Let's take a look at some of the latest updates from the postmarketOS Team, and see what the project has been up to.</p>
+<p style="color:red"><b>~ postmarketOS GitLab migration</b></p>
+<p>Recently, postmarketOS migrated from gitlab.org to its own, self-hosted instance of GitLab.</p>
+<p>Citing friction with some ways the managed version of GitLab is now, such as how the user sign-in works (credit card and phone number information required at signup), the utilization of Cloudflare, and more, the team has decided to move to their own, self-hosted instance of GitLab.</p>
+<p>The team's new instance of GitLab is being managed by the Oregon State University Open Source Lab, otherwise known as OSUOSL. This lab has also provided machines and services for free software projects such as GNOME, Kodi, KDE, Alpine Linux, OpenBSD, and more. The postmarketOS team mentions that this brings them the benefit of having the same source forge they've been using for a long time, but without some of the issues present on the managed instance.</p>
+<p>The postmarketOS Team's new GitLab instance is located <a href="https://gitlab.postmarketos.org">here</a>.</p>
+<p>If you want a deeper dive into this story, you can read all about the recent migration in a blog post from the team <a href="https://postmarketos.org/blog/2024/10/14/gitlab-migration/">here</a>.</p>
+<p style="color:red"><b>~ postmarketOS updates</b></p>
+<p>There have also been a lot of new developments in the postmarketOS distribution itself. Let's take a quick look at some of the highlights:</p>
+<ul>
+    <li>Improvements are being made in the inclusion of systemd on postmarketOS. The team has finalized a design on how to enable services in systemd, after many discussions on the topic.</li>
+    <li>pmbootstrap v3's staging branch is now being tested in the pmaports CI.</li>
+    <li>Kernels received releases, with the latest being on Linux 6.11.</li>
+    <li>Kernel configuration was moved from pmbootstrap to the pmaports repo. A process is also in place to request and apply changes affecting multiple kernels.</li>
+    <li>GNOME 47 was released, and the GNOME Software apk has been updated.</li>
+    <li>Work is ongoing to add Alpine/musl CI for the entire KDE software stack.</li>
+    <li>A new device port was added for postmarketOS (Samsung Galaxy Tab s5e Wifi).</li>
+    <li>New installations of postmarketOS now use <code>doas</code> instead of <code>sudo</code> for privilege escalation.</li>
+    <li>GNOME Shell Mobile was updated with the latest patches.</li>
+</ul>
+<p>You can read all about some of these newest developments in the postmarketOS world <a href="https://postmarketos.org/blog/2024/09/29/pmOS-update-2024-09/">here</a>.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">LineageOS Gains Support on More Devices</h1>
+<p>LineageOS already supports a numerous amount of devices, and that support just expanded a bit with the announcement of <a href="https://www.androidpolice.com/lineageos-21-supports-5-more-phones/">five new devices</a> joining the roster.</p>
+<p>Here are the newest devices gaining support:</p>
+<ul>
+	<li>Samsung Galaxy A71</li>
+	<li>Xiaomi Mi 10 Pro</li>
+	<li>Redmi K60 Pro</li>
+	<li>OnePlus Nord N10</li>
+	<li>Realme 10 Pro 5G</li>
+</ul>
+<p>These new devices join the list just after another round of devices also gained support for LineageOS just a month before, including:</p>
+<ul>
+	<li>LG G7 ThinQ</li>
+	<li>LG V35 ThinQ</li>
+	<li>LG V40 ThinQ</li>
+	<li>Realme 9 Pro 5G</li>
+	<li>Poco F4</li>
+	<li>Xiaomi Black Shark</li>
+	<li>moto g power 2021</li>
+	<li>moto e7 plus</li>
+</ul>
+<p>One of Android's biggest issues is the fact that so many device manufacturers cease OS support after just a handful of years, sometimes as few as two, and the devices might see only one major update (if any)! Custom Android distributions such as LineageOS keep these devices updated and secure, and safe from landfills. Why create more e-waste when your phone is still in perfectly fine condition, simply because the manufacturer decided to quit pushing updates?</p>
+<p>If you run any of the above devices and want to keep up-to-date with current versions of Android, or if you just want to use your favorite device without Google services, you might consider checking out LineageOS! A great way to run FOSS-only apps on your mobile phone if you want, while keeping your favorite device and staying up-to-date when it comes to your operating system version and security patches.</p>
+<p>If you're interested in running LineageOS on your own device and are unsure of whether or not it is currently supported, please take a look at the <a href="https://wiki.lineageos.org/devices/">supported devices list</a> on the LineageOS Wiki.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Phosh 0.42.0 Release</h1>
+<p><a href="https://phosh.mobi">Phosh</a>, as you probably know, is one of the premier Linux phone "desktop environments" built on top of the GNOME stack. We've seen a steady stream of releases in the world of Phosh over the last few months, bringing incremental improvements to the impressive environment each time.</p>
+<p>As usual, we will cover the updates to the Phosh shell, as well as some of its core components, below.</p>
+<p style="color:red"><b>~ Phosh updates</b></p>
+<ul>
+	<li>Lockscreen now adjusts to smaller display sizes.</li>
+	<li>Hide the brightness slider on the torch when there's only one brightness level.</li>
+	<li>Improve the appearance of notifications when there are multiple notifications from the same application.</li>
+	<li>Use <code>mm-glib</code> for ModemManager interaction, in preparation for Cell Broadcast support.</li>
+	<li>Ease setup and lib versioning for users of <code>libphosh-rs</code>.</li>
+	<li>Use parent's icon for toplevels when there isn't a matching icon.</li>
+	<li>WWan network types should now be handled better.</li>
+	<li>Number of days can now be configured in the <code>upcoming-events</code> plugin.</li>
+	<li>Other improvements and bug fixes.</li>
+</ul>
+<p>You can read the detailed list of changes to Phosh <a href="https://gitlab.gnome.org/World/Phosh/phosh/-/releases/v0.42.0">here</a>.</p>
+<p style="color:red"><b>~ Phoc updates</b></p>
+<ul>
+	<li>Preedit should now be preserved better. This makes the behavior of on-screen keyboards with text prediction and correction more predictable.</li>
+	<li>Internal cleanups and fixes.</li>
+</ul>
+<p>You can read the detailed list of changes to Phoc <a href="https://gitlab.gnome.org/World/Phosh/phoc/-/releases/v0.42.0">here</a>.</p>
+<p style="color:red"><b>~ Squeekboard updates</b></p>
+<ul>
+	<li>New layouts were added.</li>
+	<li>The height of the panel will now adapt to screens differently.</li>
+	<li>GSettings for adjusting panel height for keyboard have been added.</li>
+	<li>Squeekboard documentation has been improved.</li>
+	<li><code>update-alternatives</code> is now supported when building a Debian package for Squeekboard and installing it.</li>
+</ul>
+<p>You can read the detailed list of changes to Squeekboard <a href="https://gitlab.gnome.org/World/Phosh/squeekboard/-/releases/v1.42.0">here</a>.</p>
+<p style="color:red"><b>~ Phosh Mobile Settings updates</b></p>
+<ul>
+	<li>Allow OSK layouts to be selected when OSK supports it.</li>
+	<li>Open the last opened panel on startup.</li>
+	<li>Some issues were fixed.</li>
+</ul>
+<p>You can read the detailed list of changes to Phosh Mobile Settings <a href="https://gitlab.gnome.org/World/Phosh/phosh-mobile-settings/-/releases/v0.42.0">here</a>.</p>
+<p>If you haven't updated your device running Phosh in awhile, be sure to do so, so you can test out some of these newest improvements for yourself! If you want to get the full scoop on this 0.42.0 update in deeper detail, please check out the <a href="https://phosh.mobi/releases/rel-0.42.0/">release announcement</a> from the Phosh Team.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Android 16 Could Feature Linux VM Support</h1>
+<p>Users of Chromebooks and ChromeOS have been able to run virtualized Linux environments for awhile, and now it looks like similar functionality is about to make its way to Android.</p>
+<p>Logically extending from work done on the <a href="https://www.androidauthority.com/chrome-os-on-android-hands-on-2-3442510/">Ferrochrome project</a>, where Google was showing off the ability of a new Pixel device to run ChromeOS, it is looking like Android 16 will be gaining a <b>Terminal</b> app with Linux VM support and GPU acceleration.</p>
+<p>Spotted from some recent commits to AOSP, this <code>ferrochrome-dev-option</code> would open up the Terminal app for use after the toggle has been flipped in Developer settings.</p>
+<p>Apparently, future plans for this integration include the ability to resize disks, forward ports, and recover partitions. It will be interesting to see this development begin to take shape and see future commits, which will be indicators of features one can expect from it.</p>
+<p>All of this is made possible thanks to the Android Virtualization Framework, and while some folks might not find the idea of running a Linux terminal in their phone all that thrilling, there are all kinds of possibilities that come from this development. Think of running Linux GUI apps on top of something such as Samsung's DeX mode - there is all kinds of fun that can be had with this once it takes shape.</p>
+<p>We've had similar things on Android thanks to tools such as <a href="https://f-droid.org/en/packages/com.termux/">Termux</a>, but it is cool to see this taking shape as a native feature of Android.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">FOSSphones App Highlights</h1>
+<p>Each roundup, FOSSphones likes to spotlight some of the free and open-source mobile applications we have been using on our devices, whether they are degoogled AOSP devices, or mobile Linux phones.</p>
+<p>Here are some of the ones we have been enjoying since the last roundup:</p>
+<ul>
+	<li><a href="https://f-droid.org/en/packages/com.zionhuang.music/">InnerTune</a>: InnerTune is a great FOSS app for listening to music. It is a Material 3 Youtube Music client, and plays tunes from the service without ads. It also has library management, background playback, the ability to search for songs, artists, and albums, cache and download songs for offline playback, silence skips, dynamic themes, Android Auto support, and more.</li>
+	<li><a href="https://f-droid.org/en/packages/com.mrsep.musicrecognizer/">Audile</a>: Audile is a FOSS alternative to something like Shazam. It is useful for recognizing music playing in the background.</li>
+	<li><a href="https://f-droid.org/en/packages/io.ente.auth/">Ente Auth</a>: An open-source 2FA authenticator with end-to-end encrypted backups. FOSS alternative to mobile apps such as Microsoft Authenticator, Authy, or Google Authenticator.</li>
+	<li><a href="https://f-droid.org/en/packages/io.ente.photos.fdroid/">Ente Photos</a>: An open-source alternative to something like Google Photos, allowing you to backup your images to a more private cloud. Ente Photos is end-to-end encrypted, has backup and sync, and is multi-platform, allowing you to access your photos from any device with ease.</li>
+</ul>
+<p>Have you been using some cool FOSS mobile apps lately that we haven't spotlighted here yet? Let us know on the Fediverse or X (our social links are in the footer of this site), and we will cover it in a future FOSSphones App Highlight!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<p>That just about wraps it up for this FOSSphones news roundup! Thanks again for stopping by and reading this one, and if you haven't yet, be sure to add our <a href="feed.xml">RSS feed</a> to your favorite newsreader so you can stay updated when the newest roundup comes around.</p>
+<p>Hope you are having a great start to your autumn (depending on which part of the world you are in), and we will see you in the next one!</p>
+<div class="breakHelper">
+	<br>
+</div>
+</div>
+</body>
+<!--bring in the footer-->
+<footer>
+<div class="footerElement">
+<p style="color:red"><u>fossphones</u></p>
+<p>connect with us on:</p>
+<p><a href="https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://x.com/FSphones">X</a></p>
+<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+<p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+<p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
+</footer>
+</html>
