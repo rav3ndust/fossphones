@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<style>
+    code {color: red;}
+</style>
+<!--link in our stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+<title>Linux Phone News - December 18, 2024</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ <a href="community.html">Community</a> | <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~</p>
+</div>
+</head>
+<body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Linux Phone News - December 18, 2024</h1>
+<p>Happy holidays! It's that time of the month again, your FOSSphones news roundup!</p>
+<p>In this December edition, we have some great new updates for you to check out, including a new InfiniTime update making its way to your favorite open-source smartwatches, new releases of some mobile Linux desktop environments, some cool new apps and a new app store making their way to Android and its forks, a new Pine64 community update, and more.</p>
+<p>We have quite a bit to cover in the mobile FOSS space going into New Year, so let's get into it!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">InfiniTime 1.15.0 Released</h1>
+<p>Got a smartwatch, such as the PineTime, running InfiniTime? If you haven't heard yet, there is a great new update (Infinitime 1.15.0 "ribes rubrum") for you to install on your watch!</p>
+<p>It has been awhile since the last version of InfiniTime dropped, so this is a welcome update, and brings along some cool new features to enjoy, along with usual bugfixes and more.</p>
+<p>Here are some of the new features you can expect to see after updating to 1.15.0:</p>
+<ul>
+	<li><b>Always-on Display (AOD)</b>: A requested feature by the community for awhile, the option to have an AOD on your smartwatch is now here in InfiniTime 1.15.0. When it is turned on, the AOD dims the screen brightness to the lowest level, and sets the display in a low-power mode in an effort to conserve battery. With this mode enabled on a PineTime, the watch lasted 2-3 days on a charge. This does shave a good chunk off the usual battery life I can expect from my PineTime (usually close to a week between charges), but for people who want to use it, the AOD is now there! Just tick the "Always On" checkbox in InfiniTime's <b>display timeout</b> settings.</li>
+	<li><b>New weather forecast app</b>: InfiniTime 1.15.0 brings in a new weather forecast app. It syncs with certain mobile apps (for example, mine uses Breezy Weather, a FOSS weather app on F-Droid) to display your local weather forecast on your watch. The app looks nice, and is a quick way to see the forecast at a glance. A very nice addition to InfiniTime!</li>
+	<li><b>New dice-rolling app</b>: A new dice-rolling application was also brought in with this update, allowing you to quickly simulate a dice roll. Handy for something like tabletop games.</li>
+	<li><b>Many other improvements</b>: The firmware, CI, and documentation all saw improvements, and a host of bug fixes and other quality-of-life updates were done. You can see the full list of updates by looking at the changelog in the link below.</li>
+</ul>
+<p>If you're an InfiniTime user and haven't updated to this newest version yet, or if you want to read the full announcement and changelog, be sure to check it out <a href="https://github.com/InfiniTimeOrg/InfiniTime/releases/tag/1.15.0">here</a>.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Phosh 0.43.1 Released</h1>
+<p>If you run a mobile Linux distribution running Phosh as your mobile desktop environment, it's time to update! Phosh 0.43.1 is out.</p>
+<p>This is not a major update by any means, just brings some bugfixes for Phosh and squeekboard. Of course, we like to go over these releases in our roundups since so many people on mobile Linux distros (including myself) tend to use Phosh as their environment of choice.</p>
+<p style="color:red"><b>~ Phoc updates</b></p>
+<ul>
+	<li>Notification banners are now constrained to their actual size, ensuring the areas around notifications remain touchable.</li>
+</ul>
+<p>You can see the detailed list of changes to Phosh <a href="https://gitlab.gnome.org/World/Phosh/phosh/-/releases/v0.43.1">here</a>.</p>
+<p style="color:red"><b>~ Squeekboard updates</b></p>
+<ul>
+	<li>Input modifiers are now able to be de-activated with all buttons for the same modifier, instead of only the button used to activate it.</li>
+</ul>
+<p>You can see the detailed list of changes to Squeekboard <a href="https://gitlab.gnome.org/World/Phosh/squeekboard/-/releases/v1.43.1">here</a>.</p>
+<p>As mentioned, this was a very small update with just a few bugfixes, but such updates are always welcome on a growing mobile environment.</p>
+<p>If you would like to read the full scoop on this Phosh 0.43.1 update directly from the Phosh Team, check out <a href="https://phosh.mobi/releases/rel-0.43.1/">this post</a> on the Phosh website.</p>
+<p></p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">sxmo 1.17.0 Released</h1>
+<p>Speaking of mobile desktop environments, another one recently saw a new release. As a tiling window manager enjoyer, sxmo has a special place in my heart on mobile, and I enjoy messing about with it. If you also run sxmo, here are the updates you can expect - this is a substantial update, and also brings in profiles for new devices, so if you've been thinking about trying sxmo and run one of the mentioned ones, now's a great time to try it out!</p>
+<p>Some new device profiles were added. Here's the list of new additions:</p>
+<ul>
+	<li>Google Pixel 3a (google-sargo)</li>
+	<li>Google Pixel 3a XL (google-bonito)</li>
+	<li>Alcatel Idol 3 (alcatel-idol3)</li>
+	<li>Nexus 7 (grouper)</li>
+	<li>Improvements made to Nokia N900 profile</li>
+</ul>
+<p>Some of the main highlights you can expect to find in this release include:</p>
+<ul>
+	<li>Users can now choose between <code>wofi</code> and <code>bemenu</code> on sway.</li>
+	<li>Documentation has been updated, and can now be accessed on the device by running <code>man sxmo</code> or by going <a href="https://sxmo.org">to the sxmo website</a> in your favorite browser.</li>
+	<li>Users on Wayland can now opt-in to enable a proper lockscreen experience by installing <code>peanutbutter</code>. If you want to use it, run <code>apk add peanutbutter</code> in your terminal.</li>
+	<li>There is now a "busy mode" setting for audio, which will disable device ringing and vibration.</li>
+	<li>A new, dedicated program was written to handle status LEDs on the device, providing performance improvements.</li>
+	<li>The notification system was rewritten and simplified.</li>
+	<li>Users can now find an "All Apps" entry in the menu, which scans for <code>.desktop</code> files and presents all indexed applications.</li>
+</ul>
+<p>Some other highlights that bring some quality-of-life updates in this release include:</p>
+<ul>
+	<li>The network menu now shows security used, and also allows for passwordless authentication when using open access points.</li>
+	<li>Redundant symbols in the status bar have been removed.</li>
+	<li>Wallpaper services were improved.</li>
+	<li>The older proximity lock was found to be unreliable, and has been reverted to using simpler probing.</li>
+	<li>Dismissing notifications with a swipe no longer opens them; this now requires clicking into the notification.</li>
+	<li>A hook was added for blocking numbers.</li>
+</ul>
+<p>Want to read the full update? Check it out <a href="https://lists.sr.ht/~mil/sxmo-announce/%3CD5WUL2U5KU8X.3T11SCVV548EO@anaproy.nl%3E">here</a>.</p>
+<blockquote style="color:#ff10f0"><b style="color:#39ff14"> ></b> Don't forget, if you're upgrading sxmo, remember to run <code>sxmo_migrate.sh</code> after the upgrade is finished, and reboot, in order to sync your custom configs and hooks to the latest release. The dev reminds you on the release notes to run <code>man sxmo_migrate.sh</code> to find out more about how it works if you haven't done the process before.</blockquote>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Accrescent: A New, Open Mobile App Store</h1>
+<p>Do you run Android or a de-googled fork, such as LineageOS, GrapheneOS, or CalyxOS? Already enjoy things like F-Droid, where you can get free and open-source apps and have them update, just like any other, bigger app store?</p>
+<p>Meet <a href="https://accrescent.app/">Accrescent</a>, a new entry into the small but growing family of open-source app stores. Like F-Droid, it's an open-source application store for Android that you can install on any Android 10+ device. What Accrescent is doing is adding in some security and privacy practices of their own, to build a robust and secure FOSS app store. In their own words as dispayed on the header of their website: "A novel Android app store built on security, privacy, and usability."</p>
+<p>Here's a quick rundown on some of the features of Accrescent:</p>
+<ul>
+	<li>Accrescent uses <b>app signing key pinning</b>, meaning that first-time installations are verified, so users don't need to trust on first-use.</li>
+	<li>Thanks to <b>signed repository data</b>, repo contents are protected from malicious tampering.</li>
+	<li>On Android 12+, app updates are <b>automatic and unattended</b> for your convenience, just like other mobile app stores. This is handled seamlessly without using privileged OS integration.</li>
+	<li>To save bandwidth, Accrescent uses <b>split APKs</b>. Downloaded <code>.apk</code> files are optimized for the recipient device.</li>
+	<li>There's <b>no remote APK signing</b> on Accrescent - app developers are in control of their keys for app signing.</li>
+	<li>There is <b>no account required</b> for using Accrescent - just install it, search for apps, and download them!</li>
+</ul>
+<p>Accrescent is still in alpha, and will probably undergo a number of changes. They have a <a href="https://github.com/orgs/accrescent/projects/4/views/2">public roadmap</a> you can check out detailing currently implemented, in-progress, and upcoming features for the project. There are not a ton of apps available at the moment, though the ones that are available on it at the moment are pretty well-known and solid applications. I love seeing new FOSS app stores making their way into the scene as an alternative to the corporate, walled-garden app stores. Accrescent is new and will do a lot of growing, but I'll be glad to continue testing it and seeing how it develops and joins F-Droid as another way to get great software on my de-googled Android devices.</p>
+<p>If you want to check out Accrescent on your device, download its <code>.apk</code> file <a href="https://accrescent.app/accrescent.apk">here</a>.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">PeerTube Has an Official Application Now</h1>
+<p>PeerTube, the federated and self-hosted video-hosting software, now has its own mobile application! Available on Android and iOS, users can now just head to the app store of their choice, search for "PeerTube", and grab this app if they'd like. It's important to note that PeerTube has had a number of third-party mobile apps available for it for quite awhile now, and PeerTube is now joining Mastodon federated platforms that have an "official" application, and numerous great third-party clients, as well.</p>
+<p>The new PeerTube app is available as a <a href="https://asso.framasoft.org/dolo/h/peertube-apk-latest">download</a> on the PeerTube site as an <code>.apk</code> file, or can be downloaded on the Play Store (or through the Aurora Store, if you're on a de-googled device). It's also available on the Apple App Store, and is coming soon to F-Droid.</p>
+<p>The PeerTube Team notes on their announcement that they had to create an 'allowlist' for the versions of the app hosted on the Play Store and App Store. This is to fit in with those platforms' moderation guidelines. On the Play Store version of the app, you will be able to add any instance you'd like to the list. The team also notes that the F-Droid and website-hosted versions of the app have all PeerTube instances indexed by SepiaSearch available, and as usual, if it hasn't been indexed or is moderated, you can still add any instance you want manually.</p>
+<p>You can read the full announcement on this new app from the PeerTube Team <a href="https://joinpeertube.org/news/peertube-app">here</a>.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Summary of Pine64's November Community Update</h1>
+<p>It's been awhile since we've had a Community Update from Pine64, but in November, a new one was posted on their website. It's got quite a bit in it, so as usual, I encourage you to read the full thing for yourself, which will be linked below. Since it's been awhile since we've been able to go through a Community Update here on this site, I figured we'd summarize this new November update.</p>
+<p>Let's check out some highlights:</p>
+<ul>
+	<li><b>PineCam</b>: PineCam is the first new device that Pine64 has announced in awhile, and the first note mentioned in the Communtiy Update. The PineCam acts as the successor to the original PineCube IP camera, sporting a more polished-up design, better specs, and more features than the original PineCube. Based on the oz64 single-board computer, the PineCam has seen a boost in RAM (512MB, compared the PineCube's 128MB), two RISC-V cores (C906 @1Ghz + C906 @700Mhz) and one ARM core (Cortex-A53 @1Ghz), and a 2MP camera module (GalaxyCore GC02M2, the same module found in PineTab 2 and PineTab V). With its specs and upgraded memory, the PineCam should be capable of running full Linux-based operating systems, such as MotionEyeOS, a popular OS for surveillance cameras.</li>
+	<li><b>PineNote</b>: The PineNote has been one of Pine64's more ambitious projects over the last few years, with some devices going out to devs and folks wanting to test early versions, but a broader release happening when the time is right. We can see those plans beginning to come to fruition with this bit in the Community Update, with a nice image showing how the device is looking running its custom greyscale GNOME session. If you don't know about it, the PineNote is Pine64's attempt to build a FOSS alternative to e-reader and note-taking devices, and the PineNote is really starting to shape up. The factory image runs Debian Trixie, and comes with the GNOME desktop, which sports the aforementioned greyscale theme and some integrated features. These include a quick setting for controlling yellow and blue backlights, a widget that refreshes the display on demand, and a drop-down in task manager to adjust the drawing mode. The production and flashing stages of PineNote have finshed, and devices are making their out way to users who ordered them. I am planning on testing one of these out as well, soon!</li>
+	<li><b>PineTab-V</b>: A new batch of PineTab-V production is getting ready to begin, and the hardware changes from PineTab 2 will be making their way into this new batch. After taking into account some community feedback, Pine64 is adding an accelerometer, along with a status LED for charging and notifications (similar to what is implemented in the PinePhone) to the PineTab 2 and PineTab-V. Fixes were also made to resolve issues with the device charging slowly while powered off, and the device is now properly identified as PineTab-V in the EEPROM.</li>
+	<li><b>Additional stuff</b>: Details were also shared on two other forthcoming Pine64 devices, the PineDio and the Yuzuki Avaota-A1. A story about a BarCamp talk about Pine64 and an SBC handout were also included, as well as a mention of more frequent Community Updates moving forward.</li>
+</ul>
+<p>All in all, a great update, filled with some cool new hardware and updates to look forward to!</p> 
+<p>This is, of course, only a high-level view of the highlights from the update - if you want the full scoop on what Pine64 has been up to lately, here is the <a href="https://pine64.org/2024/11/21/november_2024/">November Community Update</a> in its entirety.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">FOSSphones App Highlights</h1>
+<p>As you're probably used to on these roundups by now, it's time for our FOSSphones App Highlights. This is where we give a little moment to shine to a few FOSS mobile apps we have found and been using since the last roundup.</p>
+<p>This time, two of the major apps we've been using have also ended up as entries in the roundup too, so, I suppose you can say we like them a lot, since they've also made their way into the highlights!</p>
+<ul>
+	<li><a href="https://f-droid.org/en/packages/app.pachli/">Pachli</a>: Pachli is an elegant Mastodon client, one I have been enjoying quite a bit when browsing my fediverse instance, Neighborli, while on the go. The way your top tabs are organized is entirely up to you, allowing you to customize your mobile Fediverse experience to your preferences. For example, I have my "Home", "Federated Feed", "Local Feed", "Notifications", "Explore", and "Private Mentions" in my top bar of Pachli, as they are my most-frequented tabs. Pachli also caches your timeline locally, so you can read it while offline, if you so desire. You can also use Pachli to write posts in the moment, and schedule them to go out whenever you want.</li>
+	<li><a href="https://asso.framasoft.org/dolo/h/peertube-apk-latest">PeerTube</a>: Mentioned above in this roundup, the new PeerTube 'official' app has been fun to use and test out. The version hosted on PeerTube's website, as well as the one coming to F-Droid, will have no pre-defined 'allowlists' like the ones hosted on the Play Store and the Apple App Store, so it's recommended to go with this version for the full experience. Using the app, it has become my favorite way to watch PeerTube on the go, as I was originally trying out some third-party apps as well as just using the browser to watch some PeerTube videos on the go.</li>
+	<li><a href="https://accrescent.app/accrescent.apk">Accrescent</a>: Another one mentioned above, this is one I have been excited about testing out and watching it develop. For an app store in alpha, it is looking good, it has sane settings, and security and privacy are core tenets in its aims.</li>
+</ul>
+<div class="breakHelper">
+	<br>
+</div>
+<p>That about wraps it up for this FOSSphones news roundup. We were able to cover a good bit! If there isn't a new roundup before the 2025 comes around, I hope everyone has a great New Years, stays warm, and we'll see you in the January roundup!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<!--bring in the footer-->
+<footer>
+<div class="footerElement">
+<p style="color:red"><u>fossphones</u></p>
+<p>connect with us on:</p>
+<p><a href="https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://x.com/FSphones">X</a></p>
+<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+<p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+<p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
+</footer>
+</html>
