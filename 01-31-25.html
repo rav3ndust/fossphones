@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<style>
+    code {color: red;}
+</style>
+<!--link in our stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+<title>Linux Phone News - January 31, 2024</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ <a href="community.html">Community</a> | <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~</p>
+</div>
+</head>
+<body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Linux Phone News - January 31, 2025</h1>
+<p>Welcome to the January FOSSphones News Roundup, the first of 2025!</p>
+<p>We've got quite a bit to get through this week, including the return (and open-sourcing!) of Pebble, a new FuriOS update, Flathub now showing mobile-friendly apps, an update on the new PureOS, and more! Let's get right into it and see what's new this month in the world of free and open-source on mobile.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Flathub Now Showing Mobile-Friendly Applications</h1>
+<!--information on flathub's new mobile app section-->
+<p>Flathub has sort of become the de-facto "app store" for GNU/Linux distributions, and that's not just talking about desktop machines - it's also referring to the Linux phones and tablets out there, as well. For those who might not know about it, <a href="https://flatpak.org">Flatpak</a> is a way to containerize applications so that they can run on almost any Linux distro, and <a href="https://flathub.org">Flathub</a> is currently the largest source for Flatpak applications. You can either visit the Flathub website in a web browser to browse through its software selection, or you can look through it using something like <b>GNOME Software</b> or <b>KDE Discover</b>.</p>
+<p>Recently, Flathub began providing a new section to showcase mobile-friendly Linux applications, so you can more easily discover them on your phone or tablet. Labled <b>On the Go</b> on the main Flathub page, this <a href="https://flathub.org/apps/collection/mobile">new section</a> will make it easier than ever for users of Linux phones and tablets to easily find a curated selection of mobile-friendly applications for Linux.</p>
+<p>This is great news for both folks who are new to the mobile Linux space and looking for an easy-to-discover app store, as well as veteran users who just want a quick glance at the latest and greatest in mobile Linux software in one place.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">PebbleOS Open-Sourced, New Smartwatches Coming Soon</h1>
+<!--information on the new pebbleOS-->
+<p>If you remember the original smartwatch that gained massive traction and a cult following after a highly successful Kickstarter campaign, you already know the name before you read it - Pebble!</p>
+<p>PebbleOS, the software that powered the original Pebble watches, has been <a href="https://opensource.googleblog.com/2025/01/see-code-that-powered-pebble-smartwatches.html">open-sourced</a> (aside from some proprietary bits that will have to be rebuilt, which we will cover below). Another exciting thing: there are <a href="https://repebble.com">new</a> Pebbles coming.</p>
+<p>Pebbles had great features, such as a very long battery life, a simple UI that was easy for anyone to  understand, physical buttons, easily hackable, and more. The Pebble 'app store' was awesome and very community-oriented as well, with loads of community-made watchfaces and other things you could use to make your Pebble your very own!</p>
+<p>While PebbleOS is now open-sourced, it is important to remember that a good bit of stuff is going to have to be re-implemented by the community in order to make certain things work - this is because some bits of source code were removed, which includes code for chipset support and the Bluetooth stack. This proprietary code has been removed from the repository, and the rest of the code is licensed under the Apache 2.0 License.</p>
+<p>I currently use (and love) my PineTime running InfiniTime, and will continue to use it. However, I am excited to get a new Pebble when they happen, and re-live that original experience I had with my old Pebble and Pebble Time Steel. The original Pebble platform had a lot of community around it, and PebbleOS being open-sourced will expand that even further. They were great little watches, and I am looking forward to seeing what happens in the future with them.</p>
+<p>As soon as new Pebbles or updates on the newly open-sourced PebbleOS is announced, I will be sure to share it in a future roundup!</p>
+<p>You can see the source code for PebbleOS <a href="https://github.com/google/pebble">in this repo</a>.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">PureOS Crimson: Around the Corner</h1>
+<!--information on the new pureOS crimson release.-->
+<!--relevant link: https://puri.sm/posts/pureos-crimson-development-report-december-2024/-->
+<p><a href="https://pureos.net/">PureOS</a>, the operating system powering Purism's line of devices, is in the home stretch for a new update, named <b>Crimson</b>.</p>
+<p>While the final version of Crimson is not out yet, it is ready for testing (so long as you know it isn't stable, and you are encouraged to test it out on a device that is not your daily driver). If you have a spare Librem 5, or your current Librem 5 is not your 'main phone', you can test out this current development image of Crimson on your device.</p>
+<p>In order to flash this testing image to your device, please follow the <a href="https://docs.puri.sm/Hardware/Librem_5/Maintenance/Reflashing.html">instructions from Purism</a> on flashing your Librem 5. Be sure, when running <code>.scripts/librem5-flash-image</code> that you also add the <code>--variant plain --dist crimson</code> flags, which selects Crimson and disables encryption (this is because encryption is not currently working on these images).</p>
+<p>The full command you should be running to achieve this is <code>./scripts/librem5-flash-image --stable --variant plain --dist crimson</code>. This should get you good to go on testing this new image of Crimson.</p>
+<p>Remember if you decide to test it out, the image is still very much in-development and you might see some issues! If you do, be sure to report it to Purism so that they can get it sorted out before the final version of Crimson is released!</p>
+<p>The Purism Team notes in this update that there are still some things to go before hitting the next big milestone, including:</p>
+<ul>
+	<li>The OS needs to be able to use all the device's available disk space. The tools for resizing the disk on the first boot aren't working just yet.</li>
+	<li>Disk encryption needs to be working as intended - the prompt for unlocking the disk is not currently working properly on Crimson for the Librem 5.</li>
+	<li>Functionality such as placing calls and SMS might also need some work, as they haven't been fully tested yet.</li>
+</ul>
+<p>If you run into any issues, you can let the team know by sending a message to their <a href="https://lists.puri.sm/hyperkitty/list/pureos-project@lists.puri.sm/">mailing list</a> or their <a href="https://source.puri.sm/pureos/">issue tracker</a>. If you want to read the full update from the Purism Team, you can also check out <a href="https://puri.sm/posts/pureos-crimson-development-report-december-2024/">this link</a> for the full scoop.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">New Updates For FuriOS</h1>
+<!--information on the new FuriOS updates-->
+<!--relevant link: https://furilabs.com/update-13-0-7/-->
+<p>FuriOS, the operating system powering the FuriPhone, has a new update! Let's take a look at some of the highlights you can expect if you have a FuriPhone of your own.</p>
+<ul>
+	<li>All the latest-and-greatest from upstream Debian and GNOME.</li>
+	<li>MMS support for missing regions has been added, such as the USA and parts of Canada.</li>
+	<li>Support for using GPS inside Android and Linux simultaneously was added.</li>
+	<li>Improvements to Android startup time and audio latency were made.</li>
+	<li>KVM and Docker both saw support added.</li>
+	<li>Initial implementation of the new Gallery application.</li>
+	<li>Optical image stabilization on the camera was fixed.</li>
+	<li>The boot manager can now support multi-booting on the device.</li>
+	<li>Firefox user-agent issues, including Firefox Sync and issues with YouTube, were addressed.</li>
+	<li>Kernel cleanups, performance improvements, battery fixes, and other maintenance was done.</li>
+</ul>
+<p>These are some of the smaller highlights for now, and you can expect more when the FuriOS Team returns from FOSDEM. You can check out these updates right now if you have a FuriPhone of your own, and you can also read the full scoop from the team <a href="https://furilabs.com/update-13-0-7/">here</a> if you'd like the low-down.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Phosh 0.44.1 Released</h1>
+<!--information on the new phosh release-->
+<p>Always consistent, the mobile Linux GNOME-based desktop environment, <a href="https://phosh.mobi">Phosh</a>, has another release for us to cover in this update.</p>
+<p>This time around, we're covering the Phosh 0.44.1, released on January 17. Here are the highlights:</p>
+<p style="color:red"><b>~ Phosh updates</b></p>
+<ul>
+	<li>Fixes were made to avoid crashing between certain combos of fractional scales.</li>
+	<li>A crash was fixed on unlocking with the media player widget.</li>
+	<li>Make sure all interfaces are registered with <code>wwan-mm</code>.</li>
+	<li>The background image is now refreshed when the dark-style URI changes.</li>
+	<li>Solid background colors are now used if a background image fails to load.</li>
+	<li>Other bug fixes and improvements.</li>
+</ul>
+<p>You can read the full changelog for Phosh <a href="https://gitlab.gnome.org/World/Phosh/phosh/-/releases/v0.44.1">here</a>.</p>
+<p style="color:red"><b>~ Phoc updates</b></p>
+<ul>
+	<li>Work was done to avoid hitting an assert when cleaning up the layer interface.</li>
+	<li>Other bug fixes and improvements were made.</li>
+</ul>
+<p>You can read the full changelog for Phoc <a href="https://gitlab.gnome.org/World/Phosh/phoc/-/releases/v0.44.1">here</a>.</p>
+<p>Run Phosh on your Linux mobile device and haven't updated in awhile? These new bits are waiting for you! Just follow the usual update procedure on your mobile distro of choice. If you want to read the entire update from the Phosh Team, you can also find it <a href="https://phosh.mobi/releases/rel-0.44.1/">here</a>.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">New Pine64 Community Update</h1>
+<!--highlights from the Pine64 community update-->
+<p>There's a brand new update from the Pine64 crew, and while there wasn't any new stuff on PinePhone and PineTab, there were a few things I wanted to highlight, including one I'm looking forward to using myself, the PineNote.</p>
+<p>Let's take a look at some of the highlights from the latest Pine64 community update:</p>
+<ul>
+	<li><b>PineVox update</b>: An update on the PineVox device was written, with community member Gamiee working on firmware for the device. As of the update, the PineVox is capable of doing things like connecting to Home Assistant, detect wakeup commands, and process them. Wakeup detection and audio streaming are currently being handled through Home Assistant, and this is due to change when the detection is working locally on the PineVox device, instead. Up next, Gamiee is aiming to implement connection over WiFi, which will provide much better coverage, instead of using Bluetooth LE.</li>
+	<li><b>PineNote update</b>: The update notes that users have received and have been enjoying their PineNotes since going out a few months back. Since the devices have went out to users, some updates have already happened for the PineNote, including bug fixes and an update to the Linux 6.12 kernel. Users with the device can receive these new goodies by updating through the terminal or through the GUI, using GNOME Software. A new proof-of-concept called <b>Inkput</b> was also shown in this update, which allows the user to input text in the PineNote using handwriting. Very cool! A "First Month Review" of the PineNote is also the last spotlight of this update, written by author 'Caffeine'.</li>
+	<li><b>InfiniTime update</b>: We covered the latest InfiniTime 1.15.0 update in our last FOSSphones news roundup, but it was covered in this community spotlight as well, so we will touch on it again. If you remember, the highlights include a new little weather app you can see on your wrist, a new dice-rolling application, the ability to setup a persistent alarm, and more. I have been running this update on my PineTime since it came out, and it is definitely the best InfinTime thus far. It keeps getting better!</li>
+	<li><b>FOSDEM</b>: FOSDEM was also touched on here, noting that while Pine64 won't have a stand of its own at the event, there will still be Pine64 community members present at FOSDEM, and they plan to schedule a get-together. If this happens, Pine64 will be announcing it on their social media channels.</li>
+</ul>
+<p>These are just some of the main points from this update, and if you want to go even deeper on some of these new announcements, I definitely encourage you to check out the <a href="https://pine64.org/2025/01/11/january_2025/">community update</a> in its entirety from Pine64.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">FOSSphones App Highlights</h1>
+<p>As usual, we like to shine the spotlight on some FOSS mobile apps we like to use or have recently discovered. These are always either free and open-source Android applications, or Linux Phone applications.</p>
+<ul>
+	<li><a href="https://f-droid.org/en/packages/com.daniebeler.pfpixelix/">Pixelix</a>: Pixelix is a client for Pixelfed, a FOSS Instagram-like platform on the fediverse. It has a great and easy-to-understand user interface, allowing you to connect to your chosen Pixelfed instance, follow accounts and discover photos in your feed, and upload photos of your own.</li>
+	<li><a href="https://f-droid.org/en/packages/com.cheogram.android/">Cheogram</a>: Cheogram is an XMPP client based on the well-known Conversations application. It has support for messages using both text and media, including animated media such as GIFs. It supports address book integration, shows timestamps for calls, has a clean UI, contacts and channels can be tagged and browsed with ease, and more. All you need to get started is an account on an XMPP/Jabber service of your choosing.</li>
+	<li><a href="https://f-droid.org/en/packages/io.keepalive.android/">Keep Alive</a>: Keep Alive is a handy little application that aims to do one simple thing - announce to a trusted contact if you haven't used your device in a set amount of time. It's intended as a failsafe for folks who are disabled and live alone or people who might have accidents and need assistance from someone they trust. I have this on my own device in case I have a seizure and hurt myself or something - then it will send an SMS to my wife. This app could be a good use for someone who is elderly, someone who has an issue like epilepsy, or anything else.</li>
+</ul>
+<p>If you have some cool open-source mobile applications you want us to take a look at (or you are building such apps yourself), be sure to give us a shout about it, and we'll make sure it gets highlighted in a future roundup!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<p>We've reached the end of our first FOSSphones news roundup of the year. These were some great updates to start the year off with, and we're already seeing some cool new updates on software and expecting some new hardware this early in the year.</p>
+<p>2025 is already looking good for another year of free software on mobile. As usual, we will be keeping an eye on highlights for the next roundup (including things going on at FOSDEM '25), and will see you again next month! Until then, have a great February!</p>
+<p>Also, if you are going to FOSDEM, have a great time! I hope to be able to make it next year if everything pans out well.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<!--bring in the footer-->
+<footer>
+<div class="footerElement">
+<p style="color:red"><u>fossphones</u></p>
+<p>connect with us on:</p>
+<p><a href="https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://x.com/FSphones">X</a></p>
+<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+<p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+<p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
+</footer>
+</html>
