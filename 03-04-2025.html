@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<style>
+    code {color: red;}
+</style>
+<!--link in our stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+<title>Linux Phone News - March 4, 2025</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ <a href="community.html">Community</a> | <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~</p>
+</div>
+</head>
+<body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Linux Phone News - March 4, 2025</h1>
+<p>Welcome to your new FOSSphones News Roundup, our second one so far of 2025.</p>
+<p>This roundup was supposed to be posted at the end of February, but I've been out of town visiting family with my wife, so we're doing an early March roundup instead! We've heard from a few of our favorite FOSS mobile projects in some updates since last the last roundup, and we have some new things to cover. This includes a call to action for testing the OTA-8 release of Ubuntu Touch, a Q1-2025 check-in from both Mobian and postmarketOS, a new CalyxOS release, and a new release of Phosh.</p>
+<p>So, what are we waiting for? Without further ado, let's dive right into this roundup and see what's new!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Ubuntu Touch OTA-8: A Call for Testing!</h1>
+<!--information on ubuntu touch new ota-8 and the call for testing-->
+<!--relevant link: https://ubports.com/en/blog/ubports-news-1/post/ubuntu-touch-ota-8-call-for-testing-3952-->
+<p>Anyone familiar with the concept of Linux phones has heard of <a href="https://ubuntu-touch.io">Ubuntu Touch</a>, originally pioneered by Canonical and then taken over by the Ubports team after Canonical shuttered the project. It shipped on a few phones back in the 2010s, it ships as an optional operating system for some devices, such as the PinePhone Ubports Community Edition, Volla Phone and the f(x)tec Pro, with support for a bunch of other devices as well.</p>
+<p>Ubuntu Touch has always been one of my favorite mobile distros, and the Ubports team has recently announced a call for testing of the newest iteration of the Ubuntu Touch operating system, 20.04 OTA-8.</p>
+<p><b style="color:red">What's new in Ubuntu Touch 20.04 OTA-8?</b></p>
+<p>The Ubuntu Touch OTA-8 release is considered a maintenance release of the 20.04 series. Being a more minimal release, it won't be packed with brand new features, but it does bring with it some bugfixes and QoL upgrades that are always welcome.</p>
+<p>Here are some of the biggest things users will notice while using OTA-8:</p>
+<ul>
+	<li>Support for VoLTE is being rolled back out on Volla Phone X23 and the Volla Phone 22 (running Halium 12). Support for other devices will be coming further down the line.</li>
+	<li>It is now possible to connect to WPA3-protected wifi networks.</li>
+	<li>You can now remove pictures from contact entries.</li>
+	<li>As always, security updates and general issue fixes.</li>
+</ul>
+<p><b style="color:red">When is OTA-8 releasing?</b></p>
+<p>Ubuntu Touch's OTA-8 dropped onn February 28. Got a device that supports Ubuntu Touch and want to give it a shot? With all these updates coming along, every new release is an even better time to think about checking it out on your own phone!</p>
+<p>If you want to read the entire announcement from the Ubports Team, check out the full scoop at <a href="https://ubports.com/en/blog/ubports-news-1/post/ubuntu-touch-ota-8-call-for-testing-3952">this link</a> for a deeper dive.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Mobian's First Look at 2025 and Beyond</h1>
+<!--looking at information on mobian's first update of 2025-->
+<!--relevant link: https://blog.mobian.org/posts/2025/02/early-2025-news/-->
+<p><a href="https://mobian.org">Mobian</a> is probably a name you're familiar with if you've been hanging around FOSSphones for awhile, as it is probably my favorite mobile Linux distribution. I already run Debian everywhere from my desktop, laptops, and servers, so it seemed like it would make all kinds of sense to run on my Linux phones as well. Mobian is a fine mobile distribution, and I was glad to see lately that the Mobian Team has outlined their plans going forward in 2025 for the distro.</p> 
+<p>In a new post on the Mobian blog, we got a look back at the last few months as well as the roadmap for 2025. The post is chock-full of updates, so we're going to take a quick look at some of the highlights, as usual.</p>
+<p><b style="color:red">Aiming for a 'device-specific apps only' software repository</b></p>
+<p>The Mobian team notes that thanks to the involvement of upstream projects accepting or writing patches to their applications, ensuring their usability on mobile devices, the main Debian repository now has a good amount of adaptive GNOME and KDE software that can be used comfortably on both desktop and mobile devices.</p>
+<p>This has allowed Mobian to drop almost all of the apps they were distributing through their own package repo. These included <b>Evince</b>, which has been replaced by <b>Papers</b>. <b>Loupe</b> has replaced <b>Eye of GNOME</b>, and the main camera application used is now <b>Snapshot</b>, all of these are now available in the main Debian repo.</p>
+<p><b>GNOME Text Editor</b> is noted to now be working decently on mobile devices, as well as <b>GNOME Software</b> and <b>GNOME Settings</b>.</p>
+<p>The team plans on removing the remaining applications before the Trixie release, which include <b>Millipixels</b> (the Librem 5 camera application), which is being replaced by <b>Megapixels v2</b> when it lands in the Debian archive. <b>wake-mobile</b> is due to be dropped as it is no longer actively maintained, and there are .deb packages from upstream available, anyway.</p>
+<p>The team notes that it plans to keep maintaining a patched version of GTK3 until Phosh is ported to GTK4, meaning all packages in the Mobian repo will be Mobian-specific and hardware support packages.</p>
+<p><b style="color:red">A new greeter</b></p>
+<p>The Mobian team notes that back when the project started, no mobile-friendly greeter existed, and so they were going to take a stab at hacking Phosh and creating one, since it was meant to run on a Wayland compositor, had a lockscreen that could be developed into a login screen, and had touch input and keyboard management already.</p>
+<p>Eventually, the team had stripped a lot of functionality, keeping the core and lockscreen features, and called it <b>phog</b>. It worked well, and became a part of Mobian, leaving cleanups and refactoring for a later point in time. The team notes that while the greeter worked fine, it proved to be a "maintenance nightmare", and phog wasn't updated for awhile as the team worked on other things.</p>
+<p>Eventually, a community member (<a href="https://github.com/samcday/">@samcday</a>) came along inspired by this effort the Mobian team made, took unmodified Phosh code, using its core functionality as a shared library, and ensuring <code>libphosh</code> had a decent API, added some Rust bindings and created a greeter called <b>Phrog</b>.</p>
+<p>Phrog is now part of the main Debian repo and is going to be used as the main greeter in Mobian as soon as it makes it way to the <code>testing</code> repo. The Mobian team notes that this will reduce the amount of tech-debt they have to deal with going forward.</p>
+<p><b style="color:red">Supporting more devices with Mobian</b></p>
+<p>The team put a lot of work in ensuring Qualcomm-based devices can be supported using packages present in Debian. Because of these efforts, the only Mobian-specific packages needed are the device kernels. Since this work was done, the Mobian project has added a few new supported devices:</p>
+<ul>
+	<li>Google Pixel 3a XL</li>
+	<li>Fairphone 5</li>
+</ul>
+<p>If you have one of these devices, you can now give Mobian a shot on them!</p>
+<p><b style="color:red">What's coming up next?</b></p>
+<p>The team also had a little "what's next?" section in the update, mentioning that due to low dev bandwidth, they didn't get quite as much knocked out in the 2024 roadmap as they'd have liked, and some of those items will be addressed after the next stable release. For now, the team is going to be focused on bugfixes in preparation for the release of Debian Trixie.</p>
+<p>The team also mentions they will be participating in this year's Google Summer of Code, with their proposal for improving device tweaks management in Debian being approved. The team also plans to attend DebConf'25 in Brest, France, so you might get to say hi to some of the team if you plan on attending!</p>
+<p><b style="color:red">Get the full scoop</b></p>
+<p>This is just a small peek, of course, at the <a href="https://blog.mobian.org/posts/2025/02/early-2025-news/">full post</a> from the Mobian Team, and as usual, I encourage you to read the whole thing to catch up on anything that we might have missed.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">postmarketOS: The Latest Happenings in the New Year</h1>
+<!--look at the new update from postmarketOS-->
+<!--relevant link: https://postmarketos.org/blog/2025/01/28/pmOS-update-2025-01/-->
+<p><a href="https://postmarketos.org/">postmarketOS</a> is a well-known mobile Linux distro that aims to support all kinds of devices, helping stop e-waste and keep devices going with an up-to-date operating system as long as possible.</p>
+<p>I have the postmarketOS Community Edition Pinephone, and have always enjoyed trying out new things that make their way to postmarketOS quickly, such as newer versions of Phosh, GNOME Mobile, Plasma Mobile, and sxmo. Like Mobian and Ubuntu Touch, I'm always happy to see new updates coming out that I can test out and see what's fresh with them.</p>
+<p>If you haven't messed with postmarketOS before, it also has <code>pmbootstrap</code>, a very handy tool for building customized images of postmarketOS for your own testing and usage, with your choice of desktop environment and other cool stuff. Try building a custom postmarketOS image sometime with <code>pmbootstrap</code> and see what you think about it!</p>
+<p>With all that in mind, let's begin getting into this new update from the postmarketOS team and see what has been new! Like the Mobian update, this one is quite big, so we are going to be going through the main highlights.</p>
+<p><b style="color:red">systemd has been merged into edge</b></p>
+<p>Announced in an update <a href="https://postmarketos.org/blog/2024/03/05/adding-systemd/">almost a year ago</a>, systemd has made its way into postmarketOS.</p>
+<p>The systemd packages are placed into a separate repo, so that users can continue using openRC instead if they so choose. However, the postmarketOS team notes that some of the major mobile desktop environmens such as GNOME Mobile, Phosh, and Plasma Mobile will run better with systemd, so they encourage making the switch.</p>
+<p><b style="color:red">a more mobile-friendly Thunderbird</b></p>
+<p>Just like the desktop version of Firefox got a bit of a mobile makeover with <code>mobile-config-firefox</code> on swaths of mobile Linux distributions, the awesome free software email application, Thunderbird, now has a more mobile-friendly look with <code>mobile-config-thunderbird</code>.</p>
+<p><code>mobile-config-thunderbird</code> can be found in postmarketOS edge. If you are on stable, the team notes the package can be backported on demand, and you can also install it directly from the git repo. If you like, you are also free to run it on <a href="https://social.masto.host/@praveen/113860010572080724">other mobile Linux distributions</a>, if you so choose.</p>
+<p><b style="color:red">Lomiri makes its way back to postmarketOS edge</b></p>
+<p><a href="https://lomiri.com/">Lomiri</a>, the desktop environment project from our friends at Ubports that aims to revive Canonical's Unity, which used to be the default desktop experience on Ubuntu, has made its way back into postmarketOS edge repos.</p>
+<p>For awhile, due to libraries and frameworks that Lomiri was dependent on being different in Alpine compared to what the Ubuntu Touch team was using, Lomiri was removed from the master branch and moved into a feature branch in postmarketOS. Thankfully, in 2025, the situation is much different, and the gap of library versions between the two projects are much smaller now, the postmarketOS team notes. Due to most Lomiri-related packages being upstreamed to Alpine, Lomiri is now a usable mobile desktop option on postmarketOS again. So, if you're wanting that 'Unity' feel on your phone and you run postmarketOS, you can now use it once again!</p>
+<p><b style="color:red">pmbootstrap updates</b></p>
+<p><code>pmbootstrap</code> is a tool that allows you to create custom images of postmarketOS. It is now on its 3.2.0 release, and with it, some new changes have been introduced! Note that this release or newer is required for building systemd-enabled images.</p>
+<p>Here are some of the main updates to <code>pmbootstrap</code> to keep in mind:</p>
+<ul>
+	<li>Improvements and fixes related to merging systemd into postmarketOS master branch.</li>
+	<li>"pmbootstrap flasher boot" now works for fastboot-bootpart</li>
+	<li><code>pmbootstrap install --android-recovery-zip</code> has been fixed.</li>
+	<li>Code quality improvements was done that should make maintenance much easier.</li>
+	<li>Smaller issue fixes and improvements were done.</li>
+</ul>
+<p><b style="color:red">Newly supported devices</b></p>
+<p>postmarketOS now supports some new devices! Here's the list:</p>
+<ul>
+	<li>Apple Macbook Air M1 (2020)</li>
+	<li>Banana Pi BPI-CM4IO Baseboard with BPI-CM4 SoM</li>
+	<li>Banana Pi BPI-M2 Zero</li>
+	<li>Linksys WRT1900ACS/WRT1900ACS V2</li>
+	<li>Lenovo ThinkSmart View</li>
+	<li>ODROID N2+</li>
+	<li>ODROID C4</li>
+	<li>Raspberry Pi 5</li>
+	<li>Samsung Galaxy A51</li>
+	<li>Samsung Galaxy Ace 3 LTE</li>
+	<li>Samsung Galaxy J4</li>
+	<li>Samsung Galaxy SII Plus</li>
+	<li>Xiaomi Pad 5</li>
+</ul>
+<p>If you have one of these supported devices and want to try out Linux, consider giving postmarketOS a shot on it!</p>
+<p><b style="color:red">...and even more!</b></p>
+<p>There was a host of other things mentioned in the update by the postmarketOS team, including new stuff in <b>pmaports</b>, misc. news, a future roadmap, some artwork and homepage updates, and more! We won't get into all of it here since it was such a massive update, so make sure you check out the other stuff the team has been up to at the link below!</p>
+<p>Catch the whole update from the postmarketOS Team by reading <a href="https://postmarketos.org/blog/2025/01/28/pmOS-update-2025-01/">the full post</a> so you can catch up on any details we might have missed.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">calyxOS 6.4.2 Brings Android 15 and February Feature Updates</h1>
+<!--information on the new calyxOS 6.4.2 update-->
+<!--relevant link: https://calyxos.org/news/2025/02/22/15-february-feature-update/-->
+<p><a href="https://calyxos.org">CalyxOS</a>, the FOSS Android distribution available for Pixels and some other devices, has been rolling out with its new update, 6.4.2, over the last few days, bringing with it Android 15, better accessibility features, Android Auto support, the usual bugfixes and improvements, and more goodies.</p>
+<p>A good amount of changes were implemented here, and we're going to cover the devices this update is rolling out to, when the update came to the devices, and some of the highlights from the update itself. Let's get into it!</p>
+<p><b style="color:red">Which devices are supported by calyxOS 6.4.2?</b></p>
+<p>If you have any of the following devices, you can run this CalyxOS 6.4.2:</p>
+<ul>
+	<li>Google Pixel 5-9</li>
+	<li>Fairphone 4</li>
+	<li>Fairphone 5</li>
+	<li>Moto g52</li>
+	<li>Moto g42</li>
+	<li>Moto g32</li>
+</ul>
+<blockquote style="color:#ff10f0"><b style="color:#339f14">~</b> For an entire list of devices supported by calyxOS, please check <a href="https://calyxos.org/docs/guide/device-support/">here</a>.</blockquote>
+<p><b style="color:red">When did the update begin rolling out?</b></p>
+<p>As usual, calyxOS has a few update channels, and when your device gets the update depends on which one you're on. Over the last week, the update started hitting their respective channels:</p>
+<p>- <b>Beta channel</b> received the update on February 22, Saturday.</p>
+<p>- <b>Security express channel</b> received the update on February 24, Monday.</p>
+<p>- <b>Stable channel</b> received the update on February 27, Thursday.</p>
+<p>If you're on a supported device and ready to check out the new bits, check for updates! By the time you read this, it will have rolled out to all channels.</p>
+<p><b style="color:red">What are some of the new changes in this update?</b></p>
+<p>There are a good amount of updates to go over from calyxOS 6.4.2. Here are some of the highlights:
+<ul>
+	<li><a href="https://www.android.com/auto/">Android Auto</a> support is here - you can enable it by going to <b>Settings -> Connected devices -> Connection Preferences -> Android Auto</b>.</li>
+	<li><b>eSpeakNG</b> now ships as the default text-to-speech engine.</li>
+	<li>The <b>Talkback</b> screen reader has been added.</li>
+	<li>Editing APNs is now always allowed.</li>
+	<li>MMS-sending issues were fixed.</li>
+	<li>There is now an option to wipe the device after a set number of failed unlock attempts.</li>
+	<li>Upgraded Chromium to 133.0.6943.121.</li>
+	<li>Switched to the new <b>Twelve</b> music app from LineageOS.</li>
+	<li>Added a new PDF viewer app, <b>Camelot</b>, from LineageOS.</li>
+	<li>Allowed enabling monochrome-themed app icons in the launcher.</li>
+	<li>The "Restrict Cleartext" feature is now deprecated, and will be removed in a future update.</li>
+	<li>A number of fixes and improvements to <b>Seedvault</b> were made.</li>
+	<li>There were a number of other fixes and improvements.</li>
+</ul>
+<p>See the full list of changes, supported devices and other details at <a href="https://calyxos.org/news/2025/02/22/15-february-feature-update/">this post</a> from the CalyxOS Team.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Phosh 0.45.0 Released</h1>
+<!--information on the new phosh release-->
+<!--relevant link: https://phosh.mobi/releases/rel-0.45.0/-->
+<p>As normal, there is some news ready for the new release of <a href="https://phosh.mobi">Phosh</a>, the mobile Linux desktop environment built on the GNOME stack. This release, 0.45.0, on February 15, 2025.</p>
+<p>We will go over the changes to Phosh itself, as well as a few of its core components, including <code>phoc</code>, <code>phosh-mobile-settings</code>, and <code>phosh-tour</code>.</p> 
+<p style="color:red"><b>~ Phosh updates</b></p>
+<ul>
+	<li>Brand new quick settings plugin allowing to switch display scales.</li>
+	<li>Thumbnails are now created for screenshots.</li>
+	<li>Captive wi-fi portals can now be detected, allowing the device to open a web browser for authentication with the portal.</li>
+	<li>Apps can now be uninstalled from the application grid.</li>
+	<li>System modal dialogs now fade in.</li>
+	<li>An issue with crashing on unlock while the media player widget was showing has been fixed.</li>
+	<li>The <code>libphosh</code> API has been minimalized and stabilized.</li>
+	<li>The week number setting in the Calendar widget is now properly respected.</li>
+	<li>A 'sound' capability now exists for the notification server.</li>
+	<li>Quick settings pages are now closed when an action is successful.</li>
+	<li>A host of bug fixes and other improvements were made.</li>
+</ul>
+<p>You can read the full changelog for Phosh <a href="https://gitlab.gnome.org/World/Phosh/phosh/-/releases/v0.45.0">here</a>.</p>
+<p style="color:red"><b>~ Phoc updates</b></p>
+<ul>
+	<li>Use the wlroots 0.18.x API (currently on 0.18.2).</li>
+	<li>Support xdg-shell's surface suspend for fully occluded windows (for example, during times the display is locked).</li>
+	<li>Fix debugging issues for touch points and damage tracking.</li>
+	<li>Allow for more useful startup logging information.</li>
+	<li>Allow for logging to be tweaked at runtime.</li>
+	<li>Internal modernization, robustness, and cleanup fixes.</li>
+	<li>Backport fixes and cleanups from branch that tracks wlroots 0.19.x.</li>
+	<li>Make <code>PhocViewChild</code> and <code>PhocView</code> a little more 'boring'.</li>
+	<li>General issue fixes and improvements were made.</li>
+</ul>
+<p>You can read the full changelog for Phoc <a href="https://gitlab.gnome.org/World/Phosh/phoc/-/releases/v0.45.0">here</a>.</p>
+<p style="color:red"><b>~ Phosh Mobile Settings updates</b></p>
+<ul>
+	<li>Add output info to debug output.</li>
+	<li>Some issues were fixed.</li>
+</ul>
+<p>You can read the full changelog for Phosh Mobile Settings <a href="https://gitlab.gnome.org/World/Phosh/phosh-mobile-settings/-/releases/v0.45.0">here</a>.</p>
+<p style="color:red"><b>~ Phosh Tour updates</b></p>
+<ul>
+	<li>Add a "run once mode" to show the Phosh Tour once after the initial login to the system.</li>
+</ul>
+<p>You can read the full changelog for Phosh Tour <a href="https://gitlab.gnome.org/World/Phosh/phosh-tour/-/releases/v0.45.0">here</a>.</p>
+<p>This was quite the update, and Phosh is quite consistent in their updates, with one being always ready at a time for a roundup! I have loved watching this mobile Linux environment grow and continue to get more usage and exposure, so you can bet we'll be covering the next update as well!</p>
+<p>If you've been running Phosh on your own mobile Linux device, make sure you download these updates so you can get the latest bits! It just keeps getting better and better. If you want to read this update in its entirety straight from the Phosh Team, you can check out <a href="https://phosh.mobi/releases/rel-0.45.0/">this post</a> for the low-down!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">FOSSphones App Highlights</h1>
+<!--FOSSphones App Highlights.-->
+<!--Every roundup, we try to highlight at least 3 FOSS apps we've been using on mobile.
+These should always be different each months so we're not highlighting the same apps each time.
+It is okay to highlight the same app again if it has seen some big updates lately.-->
+<p>On every FOSSphones News Roundup, we always try to do our other consistent section - the FOSSphones App Highlights. This is where we shine the spotlight on some of the FOSS mobile apps we've been using, whether they're on proper Linux mobile, or on Android devices.</p>
+<p>Here are a few of the apps I've been using since the last roundup.</p>
+<ul>
+	<li><a href="https://f-droid.org/en/packages/io.naox.inbe/">Inner Breeze</a>: Looking for a FOSS app for controlled breathing and quiet meditation? Inner Breeze is great for this! Using the <a href="https://en.wikipedia.org/wiki/Wim_Hof">Wim Hof Breathing Method</a>, the app helps you to practice mindful breathing techniques. You can track your progress, do daily sessions, and find a bit of tranquility in your busy days. Use Inner Breeze to help take some time to yourself - and to make things better, there is also a desktop version of Inner Breeze so you can do your breathing practices while on your computer, as well, if you choose.</li>
+	<li><a href="https://f-droid.org/en/packages/org.wikipedia/">Wikipedia</a>: Wikipedia is certainly a site that needs no introduction. However, while you might have known there was a mobile app for Wikipedia, did you know there is also an official version of the app on F-Droid? Read about just about anything you can think of and fall down those late-night Wikipedia rabbit holes (don't worry, we all do it) with this app!</li>
+	<li><a href="https://f-droid.org/en/packages/app.vger.voyager/">Voyager</a>: Voyager is a client application for <a href="https://join-lemmy.org/">Lemmy</a>, a link aggregation platform on the fediverse. Think of Lemmy as a decentralized, federated version of reddit - a platform where you can converse with others about just about any topic from tech, politics, religion, music, current events, and more. Voyager is a very sleek and elegant client for Lemmy, with compact and large post feed modes, easy and quick community switcher, moderation tools, a gesture-driven UI, and more. Join the conversation and try out Lemmy with Voyager!</li>
+</ul>
+<p>Got a cool FOSS mobile app you've been using (or building)? Let us know about it so we can give it some time in the spotlight! If you've discovered a cool FOSS mobile apps that we haven't covered here yet, let us know about it by reaching out to us on our email or our social media accounts, and we will check it out and highlight it here in a future roundup.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<p>Well, that's about it - another FOSSphones News Roundup already in the history books. We've seen some cool new releases in this month, and some new announcements from some of our favorite projects on what they've been up to since the new year began, and what some of the plans are going to be for the projects moving forward. We're already three months into 2025, and things are looking good for some of our favorite mobile FOSS projects.</p>
+<p>Until later on this month, hope you're well, and we will see you in the next roundup!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<!--bring in the footer-->
+<footer>
+<div class="footerElement">
+<p style="color:red"><u>fossphones</u></p>
+<p>connect with us on:</p>
+<p><a href="https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://x.com/FSphones">X</a></p>
+<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+<p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+<p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
+</footer>
+</html>
