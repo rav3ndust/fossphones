@@ -206,9 +206,16 @@
 		<item>
 			<title>Linux Phone News - January 31, 2025</title>
 			<description>Catch up on the latest Linux Phone news from the week of January 31, 2025!</description>
-			<link>https://fossphones.com/01-31-2025</link>
+			<link>https://fossphones.com/01-31-2025.html</link>
 			<pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
 			<guid>https://fossphones.com/01-31-2025.html</guid>
+		</item>
+		<item>
+			<title>Linux Phone News - March 4, 2025</title>
+			<description>Catch up on the latest Linux Phone news from the week of March 4, 2025!</description>
+			<link>https://fossphones.com/03-04-2025.html</link>
+			<pubDate>Tue, 4 Mar 2025 00:00:00 +0000</pubDate>
+			<guid>https://fossphones.com/03-04-2025.html</guid>
 		</item>
 		<!--##################################################################-->
 	</channel>
