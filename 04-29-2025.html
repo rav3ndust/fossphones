@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<style>
+    code {color: red; font-size: 16px}
+</style>
+<!--link in our stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+<title>Linux Phone News - April 29, 2025</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ <a href="community.html">Community</a> | <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~</p>
+</div>
+</head>
+<body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Linux Phone News - April 29, 2025</h1>
+<p>Greetings, and welcome to your April edition of the <b>FOSSphones News Roundup</b>!</p>
+<p>This month, we have a few new things to get through, including, as usual, a new release of Phosh, some news on Liberux hardware, and software updates from the worlds of CalyxOS, PureOS, and FuriOS.</p>
+<p>Ready to see what's new in this roundup? Let's get right into the news!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Phosh 0.46.0 is Out!</h1>
+<!--relevant link: https://phosh.mobi/releases/rel-0.46.0/-->
+<p><a href="https://phosh.mobi">Phosh</a>, the mobile Linux environment we all know and love, has seen its next major release.</p>
+<p>This new Phosh update, <b>0.46.0</b>, brings a host of new changes and updates, and as usual, we're going to cover the meat of it here, providing links to the detailed changelogs so you can explore what's new in Phosh even further if you'd like!</p>
+<p style="color:red"><b>~ Phosh updates</b></p>
+<ul>
+	<li>A background image can now be set on the lockscreen. This feature is off by default, but can be enabled via <code>mobile-settings</code>.</li>
+	<li>Quick-settings status pages are now closed when closing the top panel.</li>
+	<li>In notifications, slide-down animations in the message tray are now used.</li>
+	<li><code>media-player</code> downloads cover art when possible.</li>
+	<li><code>layout-manager</code> now handles notches and cutouts in indicator areas.</li>
+	<li>More consistent button-press feedback should now be apparent.</li>
+	<li>A manpage for <code>phosh.gsettings(5)</code> was added.</li>
+	<li><code>media-player</code> now uses <code>can-play</code> to determine whether a widget should be shown or not.</li>
+	<li>Some UI files and bits were prepped to get ready for future GTK4 migration.</li>
+	<li>Wallpaper-friendly defaults were improved, including improved legibility, flicker reduction, and thumbnail-scaling fixes.</li>
+	<li>Issues were fixed and other improvements were made.</li>
+</ul>
+<p>The detailed list of changes for Phosh can be found <a href="https://gitlab.gnome.org/World/Phosh/phosh/-/releases/v0.46.0">here</a>.</p>
+<p style="color:red"><b>~ Phoc changes</b></p>
+<ul>
+	<li>New protocols were added: <code>ext-foreign-toplevel-info</code> and <code>alpha-modifier-v1</code>.</li>
+	<li>An optional spinner animation was added to output shield.</li>
+	<li><code>layer-surface</code> and <code>xdg-surface</code> subsurface and popup handling are now unified.</li>
+	<li>X11 surfaces are now allowed to use transparency.</li>
+	<li><code>ID_INPUT_KEYBOARD</code> is now checked for identifying hardware keyboards - handy for allowing something like flip phones to mark their T9 keyboards as such.</li>
+	<li>Subsurface scaling when rendering to buffer has been fixed.</li>
+	<li>Stale inhibitors are now avoided when forwarding to <code>gnome-session</code>.</li>
+	<li>Usual bugfixes, internal cleanups and other improvements were made.</li>
+</ul>
+<p>The detailed list of changes for Phoc can be found <a href="https://gitlab.gnome.org/World/Phosh/phoc/-/releases/v0.46.0">here</a>.</p>
+<p style="color:red"><b>~ Phosh Mobile Settings updates</b></p>
+<ul>
+	<li>Lockscreen wallpapers can now be set (requires <code>xdg-desktop-portal-phosh</code> 0.46).</li>
+	<li>Maximum haptic feedback strength is now configurable.</li>
+	<li><code>.oga</code> is now allowed as a sound file extension.</li>
+	<li>Other fixes and improvements were made.</li>
+</ul>
+<p>A detailed list of changes for Phosh Mobile Settings can be found <a href="https://gitlab.gnome.org/World/Phosh/phosh-mobile-settings/-/releases/v0.46.0">here</a>.</p>
+<p style="color:red"><b> ~ Phosh Tour updates</b></p>
+<ul>
+	<li>UI translations were handled by Andi Chadler (<b>en_GB</b>) and Jordi Mas i Hernandez (<b>ca</b>).</li>
+</ul>
+<p>A detailed list of changes for Phosh Tour can be found <a href="https://gitlab.gnome.org/World/Phosh/phosh-tour/-/releases/v0.46.0">here</a>.</p>
+<p style="color:red"><b>~ gmobile 0.2.2 updates</b></p>
+<p>This is the first time we're mentioning updates to <code>gmobile</code> here. It is library useful in the building of mobile <code>glib</code>-based projects.</p>
+<ul>
+	<li>There is new wakeup key support for a few devices, including:</li>
+		<ul>
+			<li>Google Pixel 3a</li>
+			<li>SHIFT6mq</li>
+			<li>Samsung Galaxy A5</li>
+			<li>Xioami Mi A2 Lite</li>
+		</ul>
+	<li>New display panel support for a few devices, including:</li>
+		<ul>
+			<li>FuriLabs FLX1 (FuriPhone)</li>
+			<li>Nothing Phone</li>
+		</ul>
+	<li>Some issues and bugs were fixed.</li>
+</ul>
+<p>A detailed list of changes for gmobile 0.2.2 can be found <a href="https://gitlab.gnome.org/World/Phosh/gmobile/-/releases/v0.2.2https://gitlab.gnome.org/World/Phosh/gmobile/-/releases/v0.2.2">here</a>.</p>
+<p>If you want to dive deeper into this release of Phosh, please check out the <a href="https://phosh.mobi/releases/rel-0.46.0/">0.46.0 release announcement</a> from the Phosh Team.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">FuriOS Gets New Updates</h1>
+<!--relevant link: https://furilabs.com/changelog/-->
+<p>If you have a <a href="https://furilabs.com">FuriPhone</a>, you have some new bits waiting for you if you haven't updated in a few days!</p>
+<p>Released April 20, FuriOS 13.0.9 includes some of the following improvements and changes:</p>
+<ul>
+	<li>Rebase all changes on GNOME 48 and Debian as of April 12.</li>
+	<li>A unified daemon was implemented for F-Droid and OpenStore.</li>
+	<li>A module for parallel authentication was implemented.</li>
+	<li>A PAM module for fingerprint authentication was added.</li>
+	<li>Pipewire camera support was implemented, allowing all applications to use the camera.</li>
+	<li>Support was added for two-way clipboard with Android.</li>
+	<li>Remaining crashes on Firefox were fixed.</li>
+	<li>A fix was implemented for Android's virtual radio service getting stuck.</li>
+	<li>Issues with low volumes on the alarm were fixed.</li>
+	<li>On V4L2 Camera, auto-focus is enabled and can be kept enabled.</li>
+	<li>On V4L2 Camera, if the service crashes, a cleanup happens so it doesn't get stuck.</li>
+	<li>Sensors for Android such as gryoscope, magnetometer, and accelerometer were fixed.</li>
+	<li>A fix to allow the screen to be turned off while charging was implemented.</li>
+	<li><code>debconf</code> for noninteractive programs was fixed in APT.</li>
+	<li>Support for killing Android apps was added.</li>
+	<li>Plenty of other new additions, bugfixes, and other improvements were added!</li>
+</ul>
+<p>As you can see, there were a good amount of new additions and fixes in this new FuriOS update, and what we listed here is just a scratch of the surface - there is plenty more in the team's full update in their changelog, which I encourage you to read at the link below. Make sure you update your FuriPhone and these new changes will be waiting for you!</p>
+<p>If you want to learn about all of the new stuff in this update, please see the <a href="https://furilabs.com/changelog/">changelog</a> to learn more!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">PureOS Crimson News</h1>
+<!--relevant link: https://puri.sm/posts/pureos-crimson-development-report-march-2025/-->
+<p><b>PureOS Crimson</b>, the newest version of Purism's Debian-based GNU/Linux distribution, is making more headway. The Purism team made another post recently outlining some new stuff they've been working on to push the new update forward.</p>
+<p><b style="color:red">The latest happenings in Crimson</b></p>
+<p>Ten more packages have seen improvements since the last update we got from the PureOS Team.</p>
+<p><code>librem5-base</code> is a crucial package for the Librem 5, and it is a critical part of bringing the entire operating system together to create a cohesive experience on the device. Some of the latest improvements to the <code>librem5-base</code> package bring in reliability fixes, deal with related package changes from upstream, and handle fixing partition sizing on the first boot of the device.</p>
+<p>Additionally, improvements made to the <code>librem5-flash-image</code> package have simplified for the team to use and maintain it. Another two packages received fixes that were backported from later versions - these include <code>gtk</code> and <code>gnss-share</code>. Still other packages received further fixes and improvements, including <code>millipixels</code>, <code>python-apt</code>, <code>phoc</code>, <code>wlroots-0.16</code>, and <code>osk-sdl</code>.</p>
+<p>New updates have also reached both <b>Crimson</b> and <b>Byzantium</b>, which is helpful for Librem 5 owners right now! Updating will get you new fixes, such as <b>Image Viewer</b> now opening the Pictures directory right away, letting users not have to manually open images. There have also been improvements which should make your phone feel more reliable, responsive, and robust.</p>
+<p>Fixes are also ready for the next Librem 5 kernel release, which will be reaching both Crimson and Byzantium. Some of the improvements found here include things like:</p>
+<ul>
+	<li>The touchscreen should no longer get stuck with active touches.</li>
+	<li>Fast USB chargers providing more than 3 amps will be able to use the full 3 amps supported by the Librem 5, leading to quicker charge times.</li>
+	<li>Reading and writing to the internal storage should now be quicker.</li>
+</ul>
+<p>The Purism team continues to chip away at some issues, testing more functionality with a better foundation with these new changes. The team notes that with all these improvements in the pipeline, we are inching our way closer to an alpha and general release of Crimson, so keep your eyes peeled for news if you use Purism devices!</p>
+<p>To read the full update from the Purism Team, please check out <a href="https://puri.sm/posts/pureos-crimson-development-report-march-2025/">this post</a> on their website.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Liberux Team Has Prototype Dev Boards in Hand</h1>
+<!--relevant link: https://liberux.net/our-first-dev-board-has-arrived/-->
+<p>One forthcoming mobile GNU/Linux device we have our eyes on here at FOSSphones is the <a href="https://liberux.net/">Liberux NEXX</a>.</p>
+<p>The team behind the device has been at work bringing it to fruition, and recently, they hit a new milestone: they have prototype dev boards in hand.</p>
+<p><b style="color:red">The story so far</b></p>
+<p>Initially, the Liberux team had faced some challenges prepping for manufacturing the NEXX boards - delays around Chinese New Year and the shutting down of production lines put a damper on things, and to make matters worse, when the team finally got the assembled boards, they found issues such as critical components not being soldered to the board properly. Thankfully, the team found a local company willing to take on the job of manufacturing new NEXX dev boards.</p>
+<p>The results of this new partnership were promising, and the Liberux team is now working with this local manufacturer from now on to bring the boards to life.</p>
+<p>Since receiving the boards, the electronics team has been working hard to debug the board and get it recognized by a computer. After working through some minor problems, such as misoriented components and soldermask-covered pads, the team reached a big milestone in the journey - communicating with a computer using the processor. A note for the next revision has been documented involving reworking the charging circuit, an issue which has been fixed direclty on the board.</p>
+<p>The team notes that this milestone is a big one for one simple fact - they are working with real hardware now, not simply simulations and schematics. The Liberux NEXX is beginning to look more and more like a reality! After checking the board for good assembly, verifying power supply lines, and working on validating the critical components needed, it's time to move onto the next phase of bringing this vision to fruition: generating a functional boot image, so that the team may begin testing the system's peripherals.</p>
+<p>The team also notes that they have been working in parallel to build a tool that automates the generation of ARM images for boards based on RK3588 and RK3588S CPUs. This will allow the team to iterate with more speed, and makes it simple to test with similar hardware. Next on the roadmap? Validating peripherals including things like the cameras, the display, flash memory, and the RAM. The Liberux NEXX is beginning to take shape!</p>
+<p>Check out some images of the Liberux NEXX dev boards and find out even more by reading <a href="https://liberux.net/our-first-dev-board-has-arrived/">the post</a> shared by the team.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">CalyxOS: April Feature Update</h1>
+<!--relevant link: https://calyxos.org/news/2025/04/25/april-feature-update/-->
+<p>If you run <a href="https://calyxos.org">CalyxOS</a> on your mobile device, you have some new bits coming to you in the April feature update.</p>
+<p>The CalyxOS 6.6.22 April 2025 feature update started rolling down the pipeline a few days ago on the usual <b>Beta</b>, <b>Security express</b>, and <b>Stable</b> channels. The Calyx team notes that it is one of the bigger releases yet, packed with features and long-standing bug fixes.</p>
+<p><b style="color:red">Which devices are supported by calyxOS 6.6.22?</b></p>
+<p>If you have any of the following devices, you can run calyxOS 6.6.22:</p>
+<ul>
+	<li>Google Pixel 4a(5G) - 9</li>
+	<li>Fairphone 4</li>
+	<li>Fairphone 5</li>
+	<li>Moto g32</li>
+	<li>Moto g42</li>
+	<li>Moto g52</li>
+</ul>
+<blockquote style="color:#ff10f0"><b style="color:#339f14">~</b> For an entire list of devices supported by calyxOS, please check <a href="https://calyxos.org/docs/guide/device-support/">here</a>.</blockquote>
+<p><b style="color:red">When did the update begin rolling out?</b></p>
+<p>CalyxOS has a few different update channels, so when you receive your update depends on which channel you're currently tracking. Over this last week, calyxOS channels began receiving the 6.6.22 update as follows:</p>
+<p>- <b>Beta channel</b> received the update on Friday, April 25.</p>
+<p>- <b>Security express</b> also received the update on Friday, April 25.</p>
+<p>- <b>Stable</b> receives the update today, Tuesday, April 29.</p>
+<p><b style="color:red">What's new in this update?</b></p>
+<p>There are a host of new changes and features in this update to get into. We're not going to cover everything here, as usual, but we are going to cover some of the main points. Let's highlight some of the changes to look out for in this update:</p>
+<ul>
+	<li>Chromium was updated to version 135.0.7049.111.</li>
+	<li>Chromium doesn't save payment methods or address details by default.</li>
+	<li>Chromium now asks before opening applications.</li>
+	<li>The Cleartext Restriction feature is being phased out.</li>
+	<li>In <b>Privacy Controls</b>, allow configuring the timeout for microphone and camera access.</li>
+	<li>Include the latest changes from upstream in MicroG.</li>
+	<li>Thunderbird is included in new installations.</li>
+	<li>All included applications were updated.</li>
+	<li>MicroG: Data being sent to Google is now displayed.</li>
+	<li>Aurora Store and F-Droid are added to private space by default if they are installed.</li>
+	<li>Private spaces for secondary users are now supported.</li>
+	<li>Settings having issues working across multiple user profiles were fixed.</li>
+	<li>MMS download was fixed in the Messaging app.</li>
+	<li>In Camera, an issue was fixed where images were in the wrong orientation.</li>
+	<li>Access to hardware attestation was disabled in DroidGuard.</li>
+	<li>Work accounts that setup work profiles can now be signed into when using MicroG.</li>
+	<li>In MicroG, various fixes that should improve support for Google Apps were implemented.</li>
+	<li>Translations were updated.</li>
+	<li>A bunch of other fixes, feature additions, and some device-specific fixes were implemented.</li>
+</ul>
+<p>If you want to find out more about this update, please read <a href="https://calyxos.org/news/2025/04/25/april-feature-update/">the announcement</a> from the CalyxOS Team.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">FOSSphones App Highlights</h1>
+<!--FOSSphones App Highlights.-->
+<!--Every roundup, we try to highlight at least 3 FOSS apps we've been using on mobile.
+These should always be different each months so we're not highlighting the same apps each time.
+It is okay to highlight the same app again if it has seen some big updates lately.-->
+<p>As usual, we're going to wrap up our roundup by sharing some of our favorite FOSS mobile programs we've been finding this month.</p>
+<p>Check out the apps we're highlighting this month, and see if they might be interesting for you to use on your own FOSS mobile device!</p>
+<ul>
+	<li><a href="https://cakewallet.com/">Cake Wallet</a>: Cake Wallet is a free and open-source cryptocurrency wallet. It allows you to store all kinds of different coins in your wallet, including Monero, Bitcoin, Solana, Ethereum, Litecoin, Nano, Bitcoin Cash, and other coins. Cake Wallet is a self-custody wallet, meaning that you control the keys, and not some online custodial service such as Coinbase. You can download Cake Wallet from their <a href="https://github.com/cake-tech/cake_wallet/releases">releases</a>, or you can use the <a href="https://accrescent.app/app/com.cakewallet.cake_wallet">Accrescent</a> app store to download it, if you so choose.</li>
+	<li><a href="https://gitlab.com/ironfox-oss/IronFox">IronFox</a>: IronFox is a fork of the now-discontinued Mull browser, which was a privacy-focused fork of Firefox on mobile. IronFox is now picking up where Mull left off, and if you're looking for a Firefox-based private browser on Android, IronFox will certainly fit the bill. It comes ready for use with privacy-focused tweaks, based on the latest stable version of Firefox. You can grab it from <a href="https://accrescent.app/app/org.ironfoxoss.ironfox">Accrescent</a>.</li>
+	<li><a href="https://f-droid.org/en/packages/com.sosauce.cutemusic/">Cute Music</a>: I listen to a lot of music, and I love testing out new music player software that makes its way to Android. Recently, I discovered this app on F-Droid, and it is a beautiful, fast app that does exactly as it says on the tin. It supports your Material You theme, a tag editor for your songs, support for creating and organizing playlists, and more! I definitely recommend checking out Cute Music if you want an elegant, simple music player on your Android.</li>
+</ul>
+<p>Are you building a FOSS mobile app, or have you been using one that's been really helpful for you that we haven't highlighted here before? If so, make sure you reach out to us and let us know about it - we'll be sure to include it in a future FOSSphones App Highlight!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<p>That just about wraps it up for this April edition of the FOSSphones News Roundup. If you're aware of any developing stories in the world of open-source on mobile, be sure to reach out to us on email or on our social media accounts to let us know about it, and we will take a look at the story for our next roundup!</p>
+<p>Until next time, thanks for stopping by, have a great rest of April, and we'll see you in May for the next roundup!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<!--bring in the footer-->
+<footer>
+<div class="footerElement">
+<p style="color:red"><u>fossphones</u></p>
+<p>connect with us on:</p>
+<p><a href="https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://x.com/FSphones">X</a></p>
+<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+<p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+<p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
+</footer>
+</html>
