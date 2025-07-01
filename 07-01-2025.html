@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<style>
+    code {color: red; font-size: 16px}
+</style>
+<!--link in our stylesheet-->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+<title>Linux Phone News - July 1, 2025</title>
+<div class="headElement">
+	<h1 style="color:red;text-align:center"><a href="index.html">fossphones</a></h1>
+	<p><u><i>your number one source for linux phone news</i></u></p>
+<!--build out a list of hyperlinks for people to click to get around the site-->
+<p style="color:red">~ <a href="community.html">Community</a> | <a href="news.html">News</a> | <a href="os.html">Operating Systems</a> | <a href="software.html">Software</a> | <a href="devices.html">Devices</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a> ~</p>
+</div>
+</head>
+<body>
+<!--separate the header and body-->
+	<div class="breakHelper">
+		<br>
+	</div>
+<!--content-->
+<div class="bodyElement">
+<h1 style="color:red">Linux Phone News - July 1, 2025</h1>
+<p>Greetings, and welcome to your beginning-of-July 2025 FOSSphones News Roundup! I was super busy in May and end of June with personal things and didn't get to cover a roundup for those months, so we're covering the highlights of the last little while here in this roundup, and of course, wrapping it up with some of our favorite open-source mobile applications we've been using lately.</p>
+<p>In this roundup, we have some new updates from Plasma Mobile and Phosh, LineageOS picking up support for more devices, a development update from the PureOS Team, and new releases from postmarketOS and FuriOS. Let's get into it!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">LineageOS Gains Support For More New Devices</h1>
+<!--relevant link: https://9to5google.com/2025/06/24/lineageos-22-now-supports-galaxy-tab-s7-xiaomi-12-series-plus-many-more/-->
+<p>Probably my favorite overall AOSP project due to how many devices it covers and how long those devices remain supported, <a href="https://lineageos.org">LineageOS</a> keeps adding even more devices to the support roster.</p>
+<p>Recently, LineageOS continued its well-known track record by adding a score of new devices into the mix, including all of the Xiaomi 12 device lineup, the Poco F5, and a few others. You should also remember that not only are a wealth of phones supported by Lineage, but also a number of tablets as well, so whatever device you might have, it could be a contender for running LineageOS on, extending support, and keeping the device alive longer than it would have been using its stock version of Android.</p>
+<p>With all this in mnind, let's take a look at which devices are joining the roster for active support - if you have one of these devices, you should consider trying out LineageOS on it, and liberating your phone or tablet!</p>
+<p>Here are the devices with fresh support for LineageOS:</p>
+<ul>
+	<li>Samsung Galaxy Tab S7 (gts7lwifi)</li>
+	<li>Motorola moto g9 (guamp)</li>
+	<li>Motorola moto g9 play (guamp)</li>
+	<li>Motorola moto g82 (rhodep)</li>
+	<li>Xiaomi Mi A3 (laurel_sprout)</li>
+	<li>Xiaomi 12 (cupid)</li>
+	<li>Xiaomi 12 Pro (zeus)</li>
+	<li>Xiaomi 12S (mayfly)</li>
+	<li>Xiaomi 12S Pro (unicorn)</li>
+	<li>Xiaomi 12S Ultra (thor)</li>
+	<li>Xiaomi 12T Pro (diting)</li>
+	<li>Xiaomi MIX Fold 2 (zizhan)</li>
+	<li>Poco F5 (marble)</li>
+	<li>Poco F5 Pro (mondrian)</li>
+</ul>
+<p>The currently up-to-date version of LineageOS is Lineage 22, which is based on Android 15. It should also be noted, since we are speaking on LineageOS, that according to a <a href="https://xdaforums.com/t/lineageos-23-aka-android-16-work-has-officially-begun.4743700/">post on XDA Forums</a>, work on LineageOS 23, which will be based on the freshly-released Android 16, has officially begun. It was noted that initial LineageOS 23 commits have been appearing in the project's Gerrit, but none have been merged just yet. We will keep an eye on the development of LineageOS 23 and of course keep you up to date on its latest happenings here in the FOSSphones News Roundups.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<h1 style="color:red">Plasma Mobile Devlog: Looking Back at the Last Year</h1>
+<!--relevant link: https://plasma-mobile.org/2025/06/18/dev-log/-->
+<p>It's been quite awhile since we've heard some news from the <a href="https://plasma-mobile.org">Plasma Mobile</a> camp, but recently, an update post from the dev log appeared, summarizing the last year (April 2024-June 2025) of development and new features making their way to Plasma Mobile, the beloved mobile environment based on the much-loved Plasma Desktop environment you might already be used to on your GNU/Linux machine.</p>
+<p>We're not going to cover everything here, because there has been a <i>lot</i> of updates to Plasma Mobile over the last year. Instead, we're going to touch on some of the biggest changes, and then link the dev log update at the bottom so you can learn even more about the latest news for yourself, if you'd like. Let's get into it:</p>
+<p style="color:red"><b>Updates to the Task Switcher</b></p>
+<p>Plasma Mobile contributor Luis has been hard at work on bringing back gestures to Plasma Mobile's task switcher. Now using KWin's gestures API, and with several new features not found in the Plasma 5 version, you will notice the following changes to how Task Switcher works:</p>
+<ul>
+	<li>Swiping up fast from the bottom of the device screen will minimize the app currently being used and go to the homescreen.</li>
+	<li>Swiping up from the bottom of the screen and holding will keep the Task Switcher open.</li>
+	<li>Swiping left and right from the bottom of the screen allows for switching through currently open applications.</li>
+	<li>Haptic feedback now occurs during the opening gesture if releasing will open up the Task Switcher.</li>
+</ul>
+<p>Gesture tracking and the flow of animations and activation thresholds was also improved by contributor Micah, while contributor Devin also added support for open tasks to be sorted by their last activation. Finally, contributor Luis also added supprot for double-tapping the task switcher button to switch between the two most recently used applications.</p>
+<p style="color:red"><b>Updates to the Lock Screen</b></p>
+<p>Some cool new changes have been made to the lock screen and how it works, as well. The keypad design has seen an overhaul, using a more traditional PIN-style layout now. The team notes that this implementation is also simpler to render, and easier to use one-handed.</p>
+<p>ISsues with input unresponsiveness on the lock screen were also dealt, including support for logging in without a passcode. The design of the lock screen's clock was also overhauled, in order to be larger and to better blend in with the wallpaper being used.</p>
+<p>Quick action buttons were added to the lock screen, which are user-configurable to allow different actions (for example, toggling the flashlight), to be used while the device is locked.</p>
+<p style="color:red"><b>Updates to Notifications</b></p>
+<p>Popup notifications have now been fully implemented into Plasma Mobile. They have a new look and the ability to show multiple notifications in a stack. Scrolling through a list of overflowing notifications has also been fixed. Some issues with the notification widget were fixed as well, including:</p>
+<ul>
+	<li>Job notifications will now show up properly, and can be dismissed.</li>
+	<li>Notification contents are now clipped in the right way as they are being dismissed.</li>
+</ul>
+<p>I've got to say that I'm loving the looks of the refreshed notifications! Looking great.</p>
+<p style="color:red"><b>Updates to the Homescreen</b></p>
+<p>The homescreen has also been seeing some updates and polish. Here are some of the newest changes you can expect to see:</p>
+<ul>
+	<li>A search bar has been added to the list of applications.</li>
+	<li>Support for touchpad interaction has been added.</li>
+	<li>Option was added to be able to lock the homescreen layout from being edited.</li>
+	<li>The settings view is closed now whenever the home button has been pressed.</li>
+	<li>A dialog was added for user confirmation when deleting folders.</li>
+	<li>App icon resizing to only predefined states has been fixed.</li>
+	<li>Haptics have been added to various actions performed on the home screen.</li>
+	<li>Widgets don't activate popups anymore when being held for editing.</li>
+	<li>Situations where favorited apps may not active when tapped were fixed.</li>
+</ul>
+<p style="color:red"><b>Updates to the Action Drawer</b></p>
+<p>The Action Drawer is what you see when you pull down your notification shade all the way. You are presented with widgets for doing things like selecting networks, turning off and on mobile data, managing your sound, turning on flashlight and do not disturb, and other actions like that. You can also do things like control your music in this area.</p>
+<p>The Action Drawer has seen a number of updates. Here are some of the highlights:</p>
+<ul>
+	<li>An expanded mode to the music widget when tapped has been added in, allowing for song position to be changed.</li>
+	<li>The action drawer can be opened even when an app is full-screened.</li>
+	<li>Overscroll animation was added for when the panel is fully open and the finger overshoots its target.</li>
+	<li>New marquee for quick settings tiles was added.</li>
+	<li>Quick settings are now hidden when they're not applicable.</li>
+	<li>The order of quick settings after being adjusted from the Settings screen has been fixed.</li>
+	<li>A new quick setting was added in which can toggle whether all apps are shown in fullscreen.</li>
+	<li>Screen recording quick setting is now properly ported to Plasma 6 and has been brought back in.</li>
+</ul>
+<p style="color:red"><b>Updates to the Status Bar</b></p>
+<p>Like Android, your status bar on Plasma Mobile is where you see important details such as the current time, your sound level, signal strength, battery level, and more. The status bar in Plasma Mobile has also seen some updates, so let's look into some of the highlights there:</p>
+<ul>
+	<li>Status bar height can now be resized in Settings.</li>
+	<li>Status bar can now be swiped down, allowing it to be shown when an app is in fullscreen mode.</li>
+	<li>A configuration option was added to toggle showing the battery percentage label.</li>
+	<li>A new optional setting to show the date in the status bar, along with the time, has been added.</li>
+</ul>
+<p style="color:red"><b>Updates to the Settings App</b></p>
+<p>The Settings app is how you configure how you want your Plasma Mobile to look and feel, and to handle some system stuff. Here are some of the new changes that have made their way into Settings:</p>
+<ul>
+	<li>The Settings app is now organized into categories.</li>
+	<li>A new toggle has been added to force showing all settings modules, including ones that aren't mobile-centric.</li>
+	<li>Traffic monitor was added to the Wifi settings.</li>
+	<li>A vendor information card has been added to the Information settings module.</li>
+	<li>Issues that were present when setting up mobile connections with IPv6 have been dealt with.</li>
+</ul>
+<p>As usual, there were also loads of other general bug fixes, quality-of-life improvements, and changes brought into individual applications as well.</p>
+<p><b style="color:#39ff14;font-size:20px">~</b> If you want to dive even deeper into what's been going on in the development of Plasma Mobile, I encourage you to check out the full <a href="https://plasma-mobile.org/2025/06/18/dev-log/">dev log update</a> from the Plasma Mobile Team to get the full scoop.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">postmarketOS 25.06 Released: What's New?</h1>
+<!--relevant link: https://postmarketos.org/blog/2025/06/22/v25.06-release/-->
+<p><a href="https://postmarketos.org">postmarketOS</a> is easily one of my favorite mobile Linux projects, long aiming for keeping devices running and avoiding e-waste.</p>
+<p>The project has recently seen its big 25.06 release, bringing with it a ton of new changes and updates that you are sure to enjoy on your mobile Linux device. There are loads of changes and improvements here, so as usual, we are going to focus on the main highlights, and encourage you to read the full post from the postmarketOS team linked at the bottom for even more information on the things we didn't cover.</p>
+<p>The main story this time around is that this is the big release that finally introduces <code>systemd</code> into postmarketOS. We announced this quite awhile back on a previous FOSSphones News Roundup, and the change is finally being made official in postmarketOS. In this release of postmarketOS, the team (as usual), targets the most recent release of Alpine Linux, this one being Alpine 3.22. Let's take a look at some of the finer details of the release and dive into the highlights:</p>
+<p style="color:red"><b>Mobile Desktop Environment Updates</b></p>
+<p>postmarketOS offers you several mobile desktop environments to choose from to use as the user interface for your Linux phone. The supported environments have all seen updates in this release of postmarketOS, as usual. Here's the highlights:</p>
+<ul>
+	<li>GNOME 48 and <code>gnome-shell-mobile 48.mobile.0</code> replace their old variants in this release. These new updates bring in performance improvements with things like new fonts, dynamic triple buffering, notification stacking, improvements in window placement and how input is handled, and more.</li>
+	<li>Plasma Mobile 6.3.5 makes its debut in this release, replacing version 6.2.4 from the previous postmarketOS version. In this release, improvements to the task switcher, window placement, the action drawer, quick settings, status bar, and more have been made.</li>
+	<li>Phosh 0.47.0 replaces version 0.45.0 from the previous release of postmarketOS. There have been some new changes since the last release, including setting lockscreen wallpapers (enabled in pmOS!), improvements to the quick settings, adjusting haptic strength, and a change to the default on-screen keyboard.</li>
+	<li>Sxmo remains on the 1.17.1 release. The prebuilt images for this environment use openRC, though you can still build your own systemd-based Sxmo image by making use of <code>pmbootstrap</code>, if you so prefer.</li>
+</ul>
+<p style="color:red"><b>More Changes of Note</b></p>
+<p>There have been some other notable changes you might want to know about in this postmarketOS release, as well. Here are some of the main ones:</p>
+<ul>
+  <li>A new <code>os-installer</code> user interface is now available, with its main use-case being making installations of postmarketOS on laptops, netbooks, and convertibles even simpler. You can grab a prebuilt image or build your own using this UI, flash it to a flash drive, and boot it, creating an encrypted installation on the internal storage, if you so prefer.</li>
+  <li><code>mobile-config-thunderbird</code> is included for the first time, turning Thunderbird into a mobile-friendly application.</li>
+  <li><code>mobile-config-firefox</code> has seen some improvements and UI fixes, including making Youtube use its proper mobile site.</li>
+  <li>The <code>openssh-client</code> package is no longer installed by default. If you need it, you can install it using <code>apk add openssh-client</code>.</li>
+</ul>
+<p style="color:red"><b>Device Updates and New Stuff</b></p>
+<p>A host of changes have been made to the device front as well, so let's take a look at some of the highlights of these changes and improvements:</p>
+<ul>
+  <li>Initial camera support has been added in for a few devices, including the OnePlus 6, moto E5 Plus, moto G5s, Xiaomi Redmi 3S, Xiaomi Redmi 4 Standard, and Xiaomi Redmi 4A.</li>
+  <li>MSM89x7: Audio and charging support has been enabled for devices supported by this 'close-to-mainline' kernel - flashlight and suspend support have also been added for the pmi8950.</li>
+  <li>Device ports with downstream kernels have been split into their own categories.</li>
+  <li>Kernel upgrades, bug fixes, and general improvements have been made for all devices supported by postmarketOS.</li>
+</ul>
+<p style="color:red"><b>New Devices in Community Category</b></p>
+<p>Some new devices have been ported to postmarketOS, and the list is huge. If you have one of these devices handy, you can now run postmarketOS on it!</p>
+<ul>
+  <!--list all new devices ported to pmOS in this update-->
+  <li>ASUS MeMO Pad 7</li>
+  <li>Arrow DragonBoard 410c</li>
+  <li>BQ Aquarius X5</li>
+  <li>Fairphone 4</li>
+  <li>Generic x86_64</li>
+  <li>Google Chromebooks with x64 CPU</li>
+  <li>Google Gru Chromebooks</li>
+  <li>Google Kukui Chromebooks</li>
+  <li>Google Nexus 10</li>
+  <li>Google Oak Chromebooks</li>
+  <li>Google Pixel 3a</li>
+  <li>Google Pixel 3a XL</li>
+  <li>Google Trogdor Chromebooks</li>
+  <li>Google Veyron Chromebooks</li>
+  <li>moto G5 Plus</li>
+  <li>Xiaomi Mi A1</li>
+  <li>Xiaomi Mi A2 Lite</li>
+  <li>Xiaomi Redmi 4 Prime</li>
+  <li>Xiaomi Redmi 5 Plus</li>
+  <li>Xiaomi Redmi 7</li>
+  <li>Xiaomi Redmi Note 4</li>
+  <li>Xiaomi Redmi S2/Y2</li>
+  <li>Xiaomi Mi 9T / Redmi K20</li>
+  <li>Xiaomi POCO X3 NFC</li>
+  <li>Lenovo A6000</li>
+  <li>Lenovo A6010</li>
+  <li>Lenovo Thinkpad X13s</li>
+  <li>Microsoft Surface RT</li>
+  <li>moto G4 play</li>
+  <li>Nokia N900</li>
+  <li>NVIDIA Tegra ARMv7</li>
+  <li>ODROID XU4</li>
+  <li>OnePlus 6</li>
+  <li>ONePlus 6T</li>
+  <li>Pine64 Pinebook Pro</li>
+  <li>Pine64 PinePhone</li>
+  <li>Pine64 PinePhone Pro</li>
+  <li>Pine64 ROCKPro64</li>
+  <li>Purism Librem 5</li>
+  <li>SHIFT6mq</li>
+  <li>Samsung Chromebook</li>
+  <li>Samsung Chromebook 2 11.6"</li>
+  <li>Samsung Galaxy A3 (2015)</li>
+  <li>Samsung Galaxy A5 (2015)</li>
+  <li>Samsung Galaxy Core Prime VE LTE</li>
+  <li>Samsung Galaxy E7</li>
+  <li>Sansung Galaxy Grand Max</li>
+  <li>Samsung Galaxy S III (GT-I9300 and SHW-M440S)</li>
+  <li>Samsung Galaxy S4 Mini Value Edition</li>
+  <li>Samsung Galaxy Tab 2 7.0"</li>
+  <li>Samsung Galaxy Tab 2 10.0"</li>
+  <li>Samsung Galaxy Tab A 8.0 (2015)</li>
+  <li>Samsung Galaxy Tab A 9.7 (2015)</li>
+  <li>Wileyfox Swift</li>
+  <li>Xiaomi Mi Note 2</li>
+  <li>Xiaomi Mi Pad 5 Pro</li>
+  <li>Xiaomi Pocophone F1</li>
+  <li>Xiaomi Redmi 2</li>
+</ul>
+<p>It's noted that postmarketOS is also due to receive a new name in the future, and members of postmarketOS Team will be present at conferences such as FOSSY 2025, KDE Akademy 2025, and Linux Day 2025, to name a few.</p>
+<p>Want to dive even deeper into this big 25.06 release from postmarketOS? Please be sure to check out <a href="https://postmarketos.org/blog/2025/06/22/v25.06-release/">the full update</a> from the postmarketOS Team for the whole scoop!</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">Phosh 0.48.0 Released</h1>
+<!--relevant link: https://phosh.mobi/releases/rel-0.48.0/-->
+<p><a href="https://phosh.mobi">Phosh</a> is probably the most well-known mobile Linux environment, and it is a regular in these roundups, since Phosh is putting out new versions pretty much every month. This roundup is no different, with Phosh 0.48.0, the newest release, making its way onto the scene. As usual, we will be covering the highlights of the release, covering different components of the Phosh ecosystem. Let's take a look at what's new this time around:</p>
+<p style="color:red">~ Phosh changes</p>
+<ul>
+	<li>A new lockscreen plugin allows you to interact with all currently running media players using the MPRIS protocol.</li>
+	<li>VAPI files are built so one can write plugins using Vala.</li>
+	<li>Cell Broadcast dialogs are enabled by default. Mobile Settings now has the UI bits needed for this.</li>
+	<li>List of adaptive applications were updated.</li>
+	<li>Various bug fixes were done, as well as prepping for GTK4.</li>
+</ul>
+<p>A detailed list of changes for Phosh can be found <a href="https://gitlab.gnome.org/World/Phosh/phosh/-/releases/v0.48.0">here</a>.</p>
+<p style="color:red">~ Phoc changes</p>
+<ul>
+	<li><code>wlroots</code> was updated to version 0.19.0.</li>
+	<li>Output configurations are saved and restored in single output case.</li>
+	<li>Adaptive sync is now supported.</li>
+	<li>New protocol support for <code>shortcuts-inhibit</code>, <code>ext-image-capture-source-v1</code>, and <code>ext-image-capture-copy-v1</code>.</li>
+	<p>Issues and bug fixes were done.</p>
+</ul>
+<p>A detailed list of changes for Phoc can be found <a href="https://gitlab.gnome.org/World/Phosh/phoc/-/releases/v0.48.0">here</a>.</p>
+<p style="color:red">~ Phosh Mobile Settings changes</p>
+<ul>
+	<li>New panel for setting cell broadcast categories.</li>
+	<li><code>feedback-panel</code> allows to configure notification categories that should wake the screen.</li>
+	<li><code>osk-panel</code> now allows for configuration of key indicator popover.</li>
+	<li>Make <code>osk-panel</code> aware of of the <code>phosh-osk-stub</code> to <code>stevia</code> rename.</li>
+	<li>Several issues were fixed.</li>
+</ul>
+<p>A detailed list of changes for Phosh Mobile Settings can be found <a href="https://gitlab.gnome.org/World/Phosh/phosh-mobile-settings/-/releases/v0.48.0">here</a>.</p>
+<p>You can dive deeper into this 0.48.0 release of Phosh by reading through the detailed lists of changes for each Phosh component, or checking through the announcement from the Phosh Team <a href="https://phosh.mobi/releases/rel-0.48.0/">here</a>.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">The PureOS 'Crimson' May 2025 Dev Report</h1>
+<!--relevant link: https://puri.sm/posts/pureos-crimson-development-report-may-2025/-->
+<p><a href="https://puri.sm">Purism</a> keeps on building with the PureOS "Crimson" dev reports, and the latest dev report is looking good, as well.</p>
+<p>The team is aiming on wrapping up the last remaining tasks for providing ready-to-flash images of PureOS Crimson for the Librem 5, and progress is looking good. Currently, the tam is working on getting Crimson images built and published, working on a method to use them for testing, finishing up some work on <code>gnome-control-center</code>, and then this new milestone will be complete.</p>
+<p>The team previously had an image built in January, but it was not complete. Building this image required some patches to <code>debos</code> working around unresolved issues. In this new update, the team is working to focus on fixing the root issues in the image build for Crimson, so that up-to-date images can be generated automatically.</p>
+<p>In the new post, the team riffs on bootstrapping and how it works for building an operating system image. You begin by "bootstrapping" a working installation of an operating system into a local directory on your machine. Then you can pack an image file that can be booted on other machines.</p>
+<p>The team expands on bootstrapping: How it requires the laying down of a minimal set of files so the operating system's given package manager can work. The package manager itself is then used to install anything else you might want on the system. On Debian, the most common tool is <code>debootstrap</code> - which lays down files in such a way that <code>dpkg</code> and <code>apt</code> work as they should.</p>
+<p>After some issues trying to bootstrap PureOS Crimson between different architectures, the team began noticing some issues. The bootstrap thought some needed packages were not present, and the packages not found were system packages needed by the PureOS team to successfully setup a PureOS Crimson system. Whatever the issue was, it was not present in the packages themselves or in the tooling that the team was using to install said packages.</p>
+<p>After some investigation into the issue, the team discovered the trouble was coming from the archive's package lists. Debian provides a list of all packages that are currently available and compatible with a given CPU architecture. This is how your <code>apt</code> package manager is able to find out what dependencies need to be installed when you ask the package manager to install a given package. While both Debian and PureOS provide such a list, only Debian had what was needed for an important package, <code>cron-daemon-common</code>. This is because, presently, PureOS is using a newer archive format supported by <code>apt</code>. The package in question isn't a package specific to one architecture, and as such, there's only one version of it for "all" architectures. Debian lists all of the packages in the "all" category in each architecture's package list, but PureOS does things a little differently and provides its own, separate "all" list.</p>
+<p>To fix the issue, <code>debootstrap</code> needed to understand the archive features which were essential to the bootstrapping of the system. The team proposed a fix for <code>debootstrap</code> an d pushed it upstream. The images are now building reliably, and the team continues to iterate on the images. Encrypted and plain images are available, and Librem 5 installations will now greet the user with a Phosh greeter.</p>
+<p>The team has also been at work fixing up issues in other individual packages, working toward making Crimson images suitable for more testing. GNOME Clocks and Authenticator apps have both been brought to parity with their Byzantium counterparts. Rendering issues in GNOME Console and web browsers have also been fixed.</p>
+<p>You can try your hand at building your own image for testing now, if you choose - there are instructions linked on the post for anyone who would like to try. Next, the team is working on building these images in CI so they will update automatically, and it is noted that more on this will be mentioned in the next update from the team.</p>
+<p>Want to read the whole update from Purism in full? Be sure to check out <a href="https://puri.sm/posts/pureos-crimson-development-report-may-2025/">this post</a> from the PureOS Team for the whole scoop and to catch up on anything we might have missed.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">FuriOS 13.1.0 Update is Here</h1>
+<!--relevant link: https://furilabs.com/update-13-1-0/-->
+<p>If you have a FuriPhone, you have some new bits in the next (13.1.0) upgrade! The list of changes are small, but are of course, more than welcome for those quality of life upgrades you've come to expect!</p>
+<p>Here are the updates you can expect to see on FuriOS 13.1.0:</p>
+<ul>
+	<li>Support is now included for installing applications from the <a href="https://open-store.io">OpenStore</a>, which you might know from the Ubuntu Touch project.</li>
+	<li>Your encryption password can now be changed if you wish.</li>
+	<li>Installation of Ubuntu Touch can now be done as a dualboot.</li>
+	<li>Fixes for some GPU crashes, modem crashes, issues with MMS, and fingerprint stability improvements have been made, along with kernel updates to improve system performance and overall stability.</li>
+</ul>
+<p>As you can see, this was a small release with some needed improvements and some new features, including a new app store you can try out on your FuriOS device! If you liked the OpenStore on Ubuntu Touch, you are also sure to enjoy it here on your FuriOS device. Certainly the biggest new addition, and a very welcome one for anyone looking to broaden their horizons on where they can install software from.</p>
+<p>To read the the update in full, along with the full changelog for FuriOS 13.1.0, be sure to check out <a href="https://furilabs.com/update-13-1-0/">this post</a> from the FuriOS Team.</p>
+<div class="breakHelper">
+    <br>
+</div>
+<h1 style="color:red">FOSSphones App Highlights</h1>
+<!--FOSSphones App Highlights.-->
+<!--Every roundup, we try to highlight at least 3 FOSS apps we've been using on mobile.
+These should always be different each months so we're not highlighting the same apps each time.
+It is okay to highlight the same app again if it has seen some big updates lately.-->
+<p>If you've been a long-term reader of FOSSphones, you know that every single roundup, we like to feature some of our favorite mobile FOSS apps that we've been using since the last roundup. We're routinely looking for more open-source mobile software to test out and add to our devices (whether they're Linux mobile or FOSS AOSP applications).</p>
+<p>Here are some of my favorite pieces of software I've used on my mobile devices since our last roundup:</p>
+<ul>
+	<li><a href="https://f-droid.org/en/packages/com.Arturo254.opentune/">OpenTune</a> is a YouTube Music client with a Material 3 design. It has become my go-to app for streaming music on the go for those songs I might not have in my local collection on my phone. It has zero advertisements, background playback, easy library management, an offline mode, a great-looking design that uses Material 3, tempo/pitch control, audio normalization, and more. It is a great little FOSS music app that I happily recommend to anyone.</li>
+	<li><a href="https://f-droid.org/en/packages/cn.super12138.todo/">To Do</a> is a minimal to-do application that uses Material Design 3. Tasks can be set with different priority levels, allowing you to sort your tasks by different levels of importance. To Do is a very simple FOSS mobile app that does just what it says on the tin - lets you make to-do lists in a simple way, with no added frills or other nonsense built-in.</li>
+	<li><a href="https://f-droid.org/en/packages/live.mehiz.mpvkt/">Mpvkt</a> is a mobile frontend for <code>mpv</code>, an extremely versatile multimedia player well-known and loved on GNU/Linux. Mpvkt has a very simple and easy-to-understand UI, features advanced configuration and scripting capabilities, much like <code>mpv</code> itself, as well as provides Picture-in-Picture (PiP), and multimodal controls for allowing the easy control of things like volume, brightness, and media playback. Definitely a great piece of software for playing media of any kind on your mobile device.</li>
+</ul>
+<p>Those are our App Highlights for this roundup! As usual, if you're aware of any great FOSS mobile apps we've yet to cover, please consider shooting us an email and letting us know about it, or hit us up on our social pages and tell us! We will be sure to cover it in a future FOSSphones App Highlight.</p>
+<div class="breakHelper">
+	<br>
+</div>
+<p>You're all caught up! That covers the last little bit of big news in the FOSS mobile space, and new things are happening all the time! 2025 has proven to be an exciting year in the world of FOSS on mobile, and it's hard to believe that we're already halfway through the year. Wrapping up this roundup halfway through the year, I'm excited to see what the second half of the year is going to bring to the world of FOSS on mobile, and as usual, FOSSphones will be here to cover the highlights in our roundups.</p>
+<p>Hope your last couple of months have been spectacular, and wishing you a great July (happy Independence Day to fellow Americans celebrating in a few days), and as usual, we will see you in the next FOSSphones News Roundup!</p>
+<div class="breakHelper">
+	<br>
+</div>
+<!--bring in the footer-->
+<footer>
+<div class="footerElement">
+<p style="color:red"><u>fossphones</u></p>
+<p>connect with us on:</p>
+<p><a href="https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://x.com/FSphones">X</a></p>
+<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
+<p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
+<p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
+<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
+</div>
+</footer>
+</html>
