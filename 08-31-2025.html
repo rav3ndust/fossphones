@@ -23,15 +23,13 @@
 <div class="bodyElement">
 <h1 style="color:red">Linux Phone News - August 31, 2025</h1>
 <p>Welcome to the August edition of your monthly FOSSphones news roundup! It's been a busy month, and I'm finally able to spend this weekend diving into the August wrap-up. Thanks for joining in, once again!
-
-We have quite a bit to cover in this roundup, including a new release of Phosh (as usual - our Phosh friends are always busy!), a new release of FuriOS, news from the CalyxOS community, the announcement of the discontinuation of the PinePhone Pro, and a funded project from postmarketOS. We also, of course, have our monthly mobile FOSS app spotlights to go through, so let's jump right into it!</p>
+<p>We have quite a bit to cover in this roundup, including a new release of Phosh (as usual - our Phosh friends are always busy!), a new release of FuriOS, news from the CalyxOS community, the announcement of the discontinuation of the PinePhone Pro, and a funded project from postmarketOS. We also, of course, have our monthly mobile FOSS app spotlights to go through, so let's jump right into it!</p>
 <div class="breakHelper">
 	<br>
 </div>
 <h1 style="color:red">Phosh 0.49.0 release</h1>
-<p>We usually have a new release of Phosh to cover in each of our monthly roundups, and this one is no different! The ever-busy Phosh Team has been hard at work on the popular mobile Linux environment, and on August 15, brought out this new **0.49.0** release of Phosh for you to enjoy on your devices.
-
-Here's what's new in this release, covering each component and the changes they received in this update:</p>
+<p>We usually have a new release of Phosh to cover in each of our monthly roundups, and this one is no different! The ever-busy Phosh Team has been hard at work on the popular mobile Linux environment, and on August 15, brought out this new <b>0.49.0</b> release of Phosh for you to enjoy on your devices.</p>
+<p>Here's what's new in this release, covering each component and the changes they received in this update:</p>
 <p><b>~Phosh changes</b></p>
 <ul>
 	<li><code>upcoming-events</code> is allowed to exclude days without events.</li>
@@ -88,62 +86,4 @@ Here's what's new in this release, covering each component and the changes they 
 <p>By the way, if you're a CalyxOS user and have not read the open letter to the community about the leadership transition and the current hiatus, we encourage you to check it out - it's linked <a href="https://calyxos.org/news/2025/08/01/a-letter-to-our-community/">here</a>.</p>
 <p> In regards to this new OTA push (the final before the hiatus ends and normal development resumes), here are some things to expect:</p>
 <ul>
-	<li>Through a system notification, users will be informed that the current version of the OS will receive no future updates, linking them to the community letter to learn more about the transition and hiatus. Once the project comes out of the hiatus, an additional notification will be received, directing users to reinstall CalyxOS to receive updates going forward.</li>
-	<li>Moto and Fairphone devices will receive a patch to fix an issue the team discovered relating to an anti-rollback protection feature.</li>
-	<li>The latest open-source security updates for Android 15 (note that this is not a full CalyxOS security update, but 2025-08-01 platform patches only).</li>
-</ul>
-<p>This OTA will be rolling out to the <b>Security Express</b> and <b>Beta</b> channels on September 2, and will hit the <b>Stable</b> channel the following day, September 3. It's important to remember that this OTA is unrelated to the work to port to Android 16 or the AOSP QPR1 update, which the team is monitoring and working on.</p>
-<p>You can read more about this OTA push by checking out the announcement from the CalyxOS Team <a href="https://calyxos.org/news/2025/08/27/last-ota-update-before-new-calyxos-release/">here</a>.</p>
-<div class="breakHelper">
-	<br>
-</div>
-<h1 style="color:red">PinePhone Pro has been discontinued</h1>
-<p>The good folks at Pine64, home of the PinePhone, PineTime, PineTab, Pinebook Pro, and a host of single-board computers and other open hardware projects, have announced the discontinuation of the PinePhone Pro. In a post from August 14 (link below), the team shared that the Pro edition of the PinePhone was not selling well enough to keep production of the devices going. However, if you are the owner of a PinePhone Pro, there is still a spot of good news - spare parts are still going to be made for at least two years, demand-dependent.</p>
-<p>The PinePhone project as a whole is still alive and well, though. While the PinePhone Pro has been officially de-listed from the Pine Store, you can still purchase the trusty PinePhone if you don't have one yet. There will also be a limited run of refurbished PinePhone Pro devices you can purchase if you wish.</p>
-<p>While it is always saddening to see a FOSS hardware device bidding farewell, I hope that this allows Pine64 to continue to build its vision hardware-wise for a new PinePhone device in the future while continuing to keep the current iteration of PinePhone up and going. As the owner of my two trusty PinePhones (a PinePhone postmarketOS Community Edition as well as a Braveheart Edition), I'm ever-hopeful and thankful for the wonderful, hackable hardware we get from devices like the PinePhone!</p>
-<p>If you wish, you can check out the announcement of the PinePhone Pro's discontinuation at <a href="https://pine64.org/2025/08/14/august_2025_short_update/">this post</a> from the Pine64 blog.</p>
-<div class="breakHelper">
-	<br>
-</div>
-<h1 style="color:red">new postmarketOS project: from callaudiod to wireplumber plugin</h1>
-<p> The postmarketOS Team recently acquired higher-than-expected donations, more than the team had budgeted for the year (awesome!), and began making plans to put it to good use. The team amended the budget to add a project expense, and allotted 6400€ for some audio-related work.</p>
-<p>This project's goal is to replace the aging <code>callaudiod</code> service, originally built for PulseAudio, and replace it with a new, modern plugin that integrates cleanly with Pipewire. Richard A., a postmarketOS contributor known for his work in maintaining the Pixel 3a port, adding support for call audio on the device and in the kernel, and efforts in getting VoLTE working on mainline Qualcomm devices, was contracted to handle implementing the Wireplumber solution.</p>
-<p>So far, working throughout the summer, Richard A. has submitted upstream merge requests for the new Wireplumber module and Lua scripts that handle automatic call audio routing through ModemManager. This will allow phone calls to seamlessly switch audio profiles without any extra components or handling at the app level. </p>
-<p>This work is still under review, but once it is integrated, it will help pave the way for gradually deprecating <code>callaudiod</code> and maturing the mobile Linux audio stack. Thanks, Richard A. and the postmarketOS team, for continuing to push forward in this important area in making Linux phones even better!</p>
-<p>Would you like to learn more about this effort from the postmarketOS team? Check out their <a href="https://postmarketos.org/blog/2025/08/17/callaudiod-wireplumber-project/">blog post</a> detailing the story in full!</p>
-<div class="breakHelper">
-	<br>
-</div>
-<h1 style="color:red">FOSSphones App Highlights</h1>
-<!--FOSSphones App Highlights.-->
-<!--Every roundup, we try to highlight at least 3 FOSS apps we've been using on mobile.
-These should always be different each months so we're not highlighting the same apps each time.
-It is okay to highlight the same app again if it has seen some big updates lately.-->
-<p>As you know, every month we go through and highlight some of our favorite FOSS mobile applications we've been using. August is no different in this regard, and I have a few great pieces of software I've been using on my LineageOS devices I'd like to share.</p>
-<ul>
-	<li><a href="https://f-droid.org/packages/app.olauncher/">Olauncher</a>: Olauncher is a minimal launcher for Android devices, and it is exceptionally clean. It has no icons and no distractions, just a simple homescreen where you can pin up to eight apps, and an apps drawer you can pull up to select other apps that aren't pinned. I started using it last month as the main launcher for my devices, and am pleased with both the functionality and the aesthetic - I already use a very minimalistic desktop, so going the same route on my phone seemed to make sense! If you want to give it a shot, I definitely recommend installing Olauncher on your own device and seeing how you like the flow of using it.</li>
-	<li><a href="https://f-droid.org/packages/com.dn0ne.lotus/">Lotus</a>: Lotus is an elegant, open-source music player for Android. Using Material Design, it matches the theme of your device, or allows you to set up your own theme style in the settings. It has an equalizer built right in so you can adjust the audio how you like it, as well as audio focus, which pauses music playback on the device when another application needs to play audio. I have been using it lately as the main music player for my local collection when on the go, and it has been a very nice experience.</li>
-	<li><a href="https://f-droid.org/packages/com.kin.easynotes/">Easy Notes</a>: Easy Notes is an extremely simple and beautiful note-taking app that does just what it says on the tin - easily provides facilities to write your notes! You can write your notes in Markdown, and then switch to reader mode to view them nicely formatted and ready for you. When you launch the app, you'll see your notes waiting in expandable boxes, and a button at the bottom inviting you to write your next note. Using Material Design, it also matches your device's theme, blending right in with your other Material apps and looking good doing it. It's become my main app for taking notes on the go (and I've used so many note-taking apps!)</li>
-</ul>
-<p>Are there some FOSS mobile apps you'd like us to shine the spotlight on that we haven't gotten around to yet? Please get in touch with us over email or our social channels and let us know about them so we can be sure to include them in a future FOSSphones App Highlight!</p>
-<div class="breakHelper">
-	<br>
-</div>
-<p>That's another FOSSphones news roundup wrapped! As always, thanks for stopping by and reading this edition.</p> 
-<p>Enjoy the rest of your summer as we get closer to approaching autumn (hard to believe we're already towards the tail end of the year), and we will see you in the September edition of the FOSSphones news roundup!</p>
-<div class="breakHelper">
-	<br>
-</div>
-<!--bring in the footer-->
-<footer>
-<div class="footerElement">
-<p style="color:red"><u>fossphones</u></p>
-<p>connect with us on:</p>
-<p><a href="https://neighborli.xyz/@FOSSphones">Neighborli</a> | <a href="https://x.com/FSphones">X</a></p>
-<p><i>like what we're doing? send us some crypto if you want to contribute to keeping this site up and running!</i></p>
-<p><b style="color:red">Bitcoin address (BTC):</b></p> <p><u>1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</u></p>
-<p><b style="color:red">Ethereum address (ETH):</b></p> <p><u>0xc51F36C9f939b721890c7df922D197cE068E4D4e</u></p>
-<p style="color:red">fossphones is proudly built and maintained by <a href="https://rav3ndust.xyz">rav3ndust</a>.</p>
-</div>
-</footer>
-</html>
+	<li>Through a system notification, users will be informed that the current version of the OS will receive no future updates, linking them to the community letter to learn more about the transition and hiatus. Once the project comes out of the hiatus, an additional notification will be received, directing users to r
